@@ -1,0 +1,3 @@
+{
+  "/api/extract-ocr/route": "app/api/extract-ocr/route.js"
+}

@@ -1,0 +1,3 @@
+{
+  "/api/extract-soap-azure/route": "app/api/extract-soap-azure/route.js"
+}
