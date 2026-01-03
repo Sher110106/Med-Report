@@ -1,8 +1,0 @@
-{
-  "/_global-error/page": "/_global-error",
-  "/_not-found/page": "/_not-found",
-  "/api/extract-direct/route": "/api/extract-direct",
-  "/api/extract-ocr/route": "/api/extract-ocr",
-  "/api/extract-soap/route": "/api/extract-soap",
-  "/page": "/"
-}
