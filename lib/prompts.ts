@@ -173,34 +173,104 @@ You must capture ALL quantifiable test results (Bloodwork, Urine, Imaging). Do n
 **1. OCR Correction & Inference:**
 The input is raw OCR text. Correct obvious typos (e.g., "S6PT" -> "SGPT", "1O0 mg" -> "100 mg") based on medical context.
 
-**2. Target Schema (JSON Structure):**
+**2. Confidence Scoring Reference & Few-Shot Examples:**
+Use the examples below to calibrate your "confidence_score" (0.00 - 1.00).
+
+---
+
+**TIER 1: HIGH CONFIDENCE (1.00)**
+*Criteria:* Text is perfectly clear. No typo correction needed. Standard units are present.
+*Input:* "HbA1c: 5.7 %"
+*Extraction:*
+{
+  "test_name": "HbA1c",
+  "value": "5.7",
+  "unit": "%",
+  "confidence_score": 1.00
+}
+
+---
+
+**TIER 2: GOOD CONFIDENCE (0.90 - 0.99)**
+*Criteria:* Minor OCR noise (spacing, capitalization) but meaning is unambiguous.
+*Input:* "Platelets : 1 50 , 000 /uL"
+*Reasoning:* Extra spaces in number, but clearly reads 150,000.
+*Extraction:*
+{
+  "test_name": "Platelets",
+  "value": "150000",
+  "unit": "/uL",
+  "original_text": "Platelets : 1 50 , 000 /uL",
+  "confidence_score": 0.95
+}
+
+---
+
+**TIER 3: MODERATE CONFIDENCE (0.70 - 0.89)**
+*Criteria:* Required correcting a specific medical typo or inferring a standard unit.
+*Input:* "S6PT: 45 (High)"
+*Reasoning:* "S6PT" is a character recognition error for "SGPT" (ALT). The value is clear.
+*Extraction:*
+{
+  "test_name": "SGPT",
+  "value": "45",
+  "unit": "Unknown", 
+  "flag": "High",
+  "original_text": "S6PT: 45 (High)",
+  "confidence_score": 0.85
+}
+
+---
+
+**TIER 4: LOW CONFIDENCE (0.50 - 0.69)**
+*Criteria:* Text was heavily distorted, smudged, or ambiguous. You made a "best guess" based on context/shapes.
+*Input:* "Alk Phos: 1SZ IU/L"
+*Reasoning:* The value "1SZ" is not a number. Visually, "S" resembles "5" and "Z" resembles "2". Context suggests 152 is a plausible value for Alkaline Phosphatase.
+*Extraction:*
+{
+  "test_name": "Alkaline Phosphatase",
+  "value": "152",
+  "unit": "IU/L",
+  "original_text": "Alk Phos: 1SZ IU/L",
+  "confidence_score": 0.60
+}
+
+---
+
+**TIER 5: UNRELIABLE (< 0.50)**
+*Criteria:* The text is nearly illegible, contradicts itself, or values are missing.
+*Input:* "Ldl - [illegible] 0"
+*Reasoning:* Cannot determine if the value is 0, 10, or missing.
+*Extraction:*
+{
+  "test_name": "LDL Cholesterol",
+  "value": "Unknown",
+  "unit": "Unknown",
+  "original_text": "Ldl - [illegible] 0",
+  "confidence_score": 0.00
+}
+
+---
+
+**3. Target Schema (JSON Structure):**
 
 A. **patient_metadata**:
    - name, age, gender, date_of_visit (YYYY-MM-DD).
 
 B. **diagnostics_and_labs** (CRITICAL SECTION):
-   - Extract every single lab test or diagnostic measure found (e.g., SGPT, Hgb, TSH, X-Ray findings).
+   - Extract every single lab test or diagnostic measure found.
    - For each item, create an object with:
      - test_name: Standardized name (e.g., "ALT/SGPT").
-     - value: The numeric or qualitative result (e.g., "45", "Negative").
-     - unit: The unit of measurement (e.g., "IU/L", "mg/dL"). If missing, output "Unknown".
-     - flag: Any indicator of abnormality (e.g., "High", "Low", "Critical", or "Normal").
+     - value: The numeric or qualitative result.
+     - unit: The unit of measurement. If missing, output "Unknown".
+     - flag: Any indicator of abnormality (e.g., "High", "Low", "Critical", "Normal").
      - original_text: The exact text snippet from the OCR.
+     - confidence_score: (See Reference Above).
 
-C. **clinical_assessment**:
-   - chief_complaint: Reason for visit.
-   - symptoms: List of subjective symptoms reported.
-   - diagnosis: Confirmed or suspected conditions.
-
-D. **treatment_plan**:
+C. **treatment_plan**:
    - medications: List of drugs (Name, Dosage, Frequency).
-   - procedures_ordered: Specific tests or procedures ordered for the future.
-   - lifestyle_advice: Diet/exercise instructions.
 
-**3. Output Requirements:**
-For diagnostics_and_labs and medications, return a LIST of objects.
-For all extracted values, include a confidence_score (0.00-1.00).
-
+**4. Output Requirements:**
 Output ONLY the valid JSON object following this schema:
 {
   "patient_metadata": {
@@ -219,11 +289,6 @@ Output ONLY the valid JSON object following this schema:
       "confidence_score": 0.00
     }
   ],
-  "clinical_assessment": {
-    "chief_complaint": "<Reason for visit>",
-    "symptoms": ["<List of symptoms>"],
-    "diagnosis": "<Diagnosis or Unknown>"
-  },
   "treatment_plan": {
     "medications": [
       {
@@ -232,13 +297,10 @@ Output ONLY the valid JSON object following this schema:
         "frequency": "<Frequency>",
         "confidence_score": 0.00
       }
-    ],
-    "procedures_ordered": ["<List of procedures/tests ordered>"],
-    "lifestyle_advice": "<Diet/exercise instructions or Unknown>"
+    ]
   },
   "metadata": {
-    "ocr_quality_check": "<Comment on overall legibility>",
-    "extraction_notes": "<Any important notes about the extraction>"
+    "ocr_quality_check": "<Comment on overall legibility>"
   }
 }`;
 
