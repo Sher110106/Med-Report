@@ -138,10 +138,3 @@ All models output structured SOAP JSON with confidence scores:
 - **Styling**: Tailwind CSS 4.1
 - **AI Providers**: Google AI, Azure OpenAI, OpenRouter, AWS Bedrock
 
-## 📄 License
-
-ISC License
-
----
-
-Built with ❤️ for medical AI research
