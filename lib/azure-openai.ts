@@ -5,17 +5,28 @@ const deployment = "gpt-5-mini";
 const visionDeployment = "gpt-4o"; // Vision-capable model for OCR
 const apiVersion = "2024-12-01-preview";
 
-const client = new AzureOpenAI({
-  apiKey: process.env.AZURE_KEY!,
-  endpoint: endpoint,
-  apiVersion: apiVersion,
-});
+// Lazy initialization to avoid crash when Azure credentials aren't configured
+let client: AzureOpenAI | null = null;
+
+function getClient(): AzureOpenAI {
+  if (!client) {
+    if (!process.env.AZURE_KEY) {
+      throw new Error("AZURE_KEY environment variable is not set");
+    }
+    client = new AzureOpenAI({
+      apiKey: process.env.AZURE_KEY,
+      endpoint: endpoint,
+      apiVersion: apiVersion,
+    });
+  }
+  return client;
+}
 
 export async function callAzureOpenAI(
   systemPrompt: string,
   userContent: string
 ): Promise<string> {
-  const response = await client.chat.completions.create({
+  const response = await getClient().chat.completions.create({
     model: deployment,
     max_completion_tokens: 16384,
     messages: [
@@ -38,7 +49,7 @@ export async function callAzureOpenAIWithImage(
   imageBase64: string,
   mimeType: string
 ): Promise<string> {
-  const response = await client.chat.completions.create({
+  const response = await getClient().chat.completions.create({
     model: visionDeployment,
     max_completion_tokens: 16384,
     messages: [

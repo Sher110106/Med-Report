@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "image": "medical_note_02.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T08:35:23.440Z",
+    "latencyMs": 10505
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Critical care follow-up",
+        "hpi": "Patient is doing well this morning per critical care assessment.",
+        "symptoms": [],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": "Stable (VSS)",
+          "hr": "Regular rate and rhythm",
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "General: No acute distress",
+            "Chest: Clear to auscultation bilaterally",
+            "Cardiovascular: Regular rate and rhythm, S1S2 normal",
+            "Abdomen: Soft, non-tender, non-distended, positive bowel sounds",
+            "Extremities: No edema"
+          ],
+          "text_raw": "VSS Gen: NAD Chest: CTA (B) CV: RRR S1S2 OK Abd: soft, NT, ND + BS Ext: ø edema"
+        },
+        "labs_imaging": "Labs reviewed (specific results not documented)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Acute Respiratory Failure",
+          "certainty_degree": 0.95,
+          "evidence_text": "1. Acute Resp. Falure"
+        },
+        "differential_diagnosis": [
+          "Septic shock",
+          "Acute kidney injury (AKI)",
+          "Metabolic encephalopathy"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Antibiotics",
+            "dosage": "Unknown",
+            "sig": "Continue current regimen",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Pressors",
+            "dosage": "Unknown",
+            "sig": "Continue current regimen",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Continue mechanical ventilation",
+          "Follow renal function",
+          "Check labs"
+        ],
+        "patient_instructions": "Critical care management to continue"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Good legibility with minor abbreviations. Some medical shorthand present.",
+      "critical_ambiguities": [
+        "Specific antibiotic names not specified",
+        "Specific pressor agents not detailed",
+        "Lab values not provided despite being reviewed"
+      ]
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "image": "medical_note_03.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:45:41.734Z",
+    "latencyMs": 39710
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "SGPT",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "SGPT",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Serum Creatinine",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Creatinine",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Urine Routine & Microscopy",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Urine : RM",
+        "confidence_score": 1
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Hydroxychloroquine (HCQS)",
+          "dosage": "200mg",
+          "frequency": "one daily at night",
+          "confidence_score": 1
+        },
+        {
+          "name": "Methotrexate (Folitrax)",
+          "dosage": "15 mg",
+          "frequency": "once per week (Friday night)",
+          "confidence_score": 1
+        },
+        {
+          "name": "Folic Acid (Folvite)",
+          "dosage": "5 mg",
+          "frequency": "twice per week (Saturdays, Sundays)",
+          "confidence_score": 1
+        },
+        {
+          "name": "Rabeprazole + Domperidone (Rablet-D)",
+          "dosage": "one tablet",
+          "frequency": "daily before breakfast (x2 months)",
+          "confidence_score": 1
+        },
+        {
+          "name": "Vitamin D3 (D-logy)",
+          "dosage": "one capsule",
+          "frequency": "once every month",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Prednisolone (Wysolone)",
+          "dosage": "5 mg",
+          "frequency": "once daily",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Text legibility is high with clear pharmaceutical instructions. Investigation section lists test orders but does not contain quantitative results or values. Patient metadata (Name, DOB) is missing or illegible (e.g., '2 gram June. 16' appears to be a fragmented date or unrelated text)."
+    }
+  }
+}

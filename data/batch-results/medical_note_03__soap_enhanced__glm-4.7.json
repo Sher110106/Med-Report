@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "image": "medical_note_03.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:41:54.962Z",
+    "latencyMs": 48010
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Unknown",
+        "hpi": "Unknown",
+        "symptoms": [],
+        "patient_history": "SLE (Systemic Lupus Erythematosus) with Scleroderma"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown (Header present, but content lists medications)"
+        },
+        "labs_imaging": "SGPT, Creatinine, Urine RM ordered"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Systemic Lupus Erythematosus (SLE) with Scleroderma",
+          "certainty_degree": 0.98,
+          "evidence_text": "S.L.E. with Scleroderma"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "HCQs (Hydroxychloroquine)",
+            "dosage": "200mg",
+            "sig": "One daily at night",
+            "handwriting_confidence": 1
+          },
+          {
+            "drug": "Folitrax (Methotrexate)",
+            "dosage": "15mg",
+            "sig": "Once per week (Friday night)",
+            "handwriting_confidence": 1
+          },
+          {
+            "drug": "Folvite (Folic Acid)",
+            "dosage": "5mg",
+            "sig": "Twice per week (Saturdays, Sundays)",
+            "handwriting_confidence": 1
+          },
+          {
+            "drug": "Rablet-D (Rabeprazole + Domperidone)",
+            "dosage": "Standard dose",
+            "sig": "One daily before breakfast for 2 months",
+            "handwriting_confidence": 1
+          },
+          {
+            "drug": "Cap. D-logy (Vitamin D)",
+            "dosage": "Standard dose",
+            "sig": "One capsule every month",
+            "handwriting_confidence": 1
+          },
+          {
+            "drug": "Wysolone (Prednisolone)",
+            "dosage": "5mg",
+            "sig": "Once daily",
+            "handwriting_confidence": 1
+          }
+        ],
+        "procedures_ordered": [
+          "SGPT",
+          "Creatinine",
+          "Urine: RM (Routine Microscopy)"
+        ],
+        "patient_instructions": "Continue prescribed medications. Adhere to weekly/monthly schedule."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Text is legible but structurally misaligned. Headers for 'Chief Complaints', 'Allergic history', 'Examination', and 'Investigation' incorrectly precede medication lines, suggesting column merging or template artifacts.",
+      "critical_ambiguities": [
+        "The phrase '2 gram June. 16' appears at the top; '2 gram' is ambiguous and treated as noise, 'June 16' is assumed to be the date."
+      ]
+    }
+  }
+}

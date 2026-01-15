@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "image": "medical_note_02.webp",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T08:39:28.877Z",
+    "latencyMs": 10638
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2018-12-02"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Vital Signs",
+        "value": "Stable",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "VSS",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "General Appearance",
+        "value": "No Acute Distress",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Gen: NAD",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Chest Examination",
+        "value": "Clear to Auscultation Bilateral",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Chest: CTA (B)",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Cardiovascular Examination",
+        "value": "Regular Rate and Rhythm, S1S2 OK",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "CV: RRR S1S2 OK",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Abdominal Examination",
+        "value": "Soft, Non-tender, Non-distended, Positive Bowel Sounds",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Abd: soft, NT, ND + BS",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Extremities Examination",
+        "value": "No Edema",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Ext: ø edema",
+        "confidence_score": 0.85
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Antibiotics",
+          "dosage": "Unknown",
+          "frequency": "Continue current regimen",
+          "confidence_score": 0.8
+        },
+        {
+          "name": "Vasopressors",
+          "dosage": "Unknown",
+          "frequency": "Continue current regimen",
+          "confidence_score": 0.8
+        },
+        {
+          "name": "Mechanical Ventilation",
+          "dosage": "Unknown",
+          "frequency": "Continue current settings",
+          "confidence_score": 0.8
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Good quality OCR with clear medical abbreviations and legible handwriting. Minor symbol interpretation needed for 'ø' (no edema). Document appears to be a critical care progress note with standard medical terminology."
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:48:17.354Z",
+    "latencyMs": 13642
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Right S1 Radiculopathy",
+        "hpi": "Patient is a 41-year-old male presenting for follow-up regarding right S1 radiculopathy, which is now better.",
+        "symptoms": [
+          "Right S1 Radiculopathy"
+        ],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Straight Leg Raise: Normal",
+            "Right Ankle Jerk: Normal",
+            "Right Extensor Hallucis Longus: Normal"
+          ],
+          "text_raw": "SLR (N) Rt AJ / EHL (N) (N)"
+        },
+        "labs_imaging": "Pending (Uric Acid, Creatinine ordered)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "S1 Radiculopathy, Right",
+          "certainty_degree": 1,
+          "evidence_text": "- Δ (Rt) S1 Radiculopathy"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Tricobal",
+            "dosage": "Cap",
+            "sig": "OD (once daily)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Complamina-R-HS",
+            "dosage": null,
+            "sig": "रात में (at night)",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Oxetol",
+            "dosage": "150",
+            "sig": "BD (twice daily)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "PURIC",
+            "dosage": "40",
+            "sig": "OD (once daily)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Emanzen D",
+            "dosage": null,
+            "sig": "BD (twice daily)",
+            "handwriting_confidence": 0.8
+          },
+          {
+            "drug": "Zerodol SP",
+            "dosage": null,
+            "sig": "BD (twice daily)",
+            "handwriting_confidence": 0.8
+          },
+          {
+            "drug": "Esofag D",
+            "dosage": null,
+            "sig": "BD (twice daily), खाली पेट (empty stomach)",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "Lab tests: Uric Acid, Creatinine"
+        ],
+        "patient_instructions": "All medications for 2 months duration."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Fair. Handwritten numbers and Hindi text present. Some medication names and dosages are abbreviated or unclear.",
+      "critical_ambiguities": [
+        "Medication 'Complamina - R - HS' format is unusual.",
+        "Dosages for Complamina, Emanzen D, and Zerodol SP are not specified.",
+        "The instruction 'Emanzen D / or Zerodol SP' indicates an alternative choice, but it's unclear which one is primary.",
+        "The purpose of the numbers and dashes following each medication (e.g., '1 --- 0 --- 0') is ambiguous, possibly a prescription quantity format."
+      ]
+    }
+  }
+}

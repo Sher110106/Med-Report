@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:39:16.770Z",
+    "latencyMs": 11612
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "48",
+      "gender": "M",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Weight",
+        "value": "95",
+        "unit": "kg",
+        "flag": "Unknown",
+        "original_text": "WT 95kg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Blood Pressure",
+        "value": "120/80",
+        "unit": "mmHg",
+        "flag": "Normal",
+        "original_text": "BP: 120/80mmHg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Pulse",
+        "value": "84",
+        "unit": "/min",
+        "flag": "Normal",
+        "original_text": "P: 84/min",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "SpO2",
+        "value": "98",
+        "unit": "%",
+        "flag": "Normal",
+        "original_text": "SpO2: 98%",
+        "confidence_score": 1
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Foracort",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.8
+        },
+        {
+          "name": "INCS (intranasal corticosteroid)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.8
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Text is legible with minor abbreviation usage; no significant OCR noise detected."
+    }
+  }
+}

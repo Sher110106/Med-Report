@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:34:55.466Z",
+    "latencyMs": 19521
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Loss of smell post COVID, effort limitation, and mucoid expectoration",
+        "hpi": "48-year-old male jeweler with history of smoking (social/occupational) presents with loss of smell following COVID infection, feels effort limited since illness, and has mucoid expectoration with triggers. Positive response to Foracort and intranasal corticosteroids (INCS).",
+        "symptoms": [
+          "Loss of smell",
+          "Effort limitation",
+          "Mucoid expectoration"
+        ],
+        "patient_history": "Known history of asthma, no known comorbidities, social/occupational smoking history, no drug allergy, no family history reported, GERD status uncertain"
+      },
+      "objective": {
+        "vitals": {
+          "bp": "120/80mmHg",
+          "hr": "84/min",
+          "temp": null,
+          "rr": null,
+          "weight": "95kg"
+        },
+        "physical_exam": {
+          "findings": [
+            "Chest examination: chest clear"
+          ],
+          "text_raw": "O/E: Chest - clear."
+        },
+        "labs_imaging": "CBC, IgE, S. Mg, Vit D3, B12 levels requested; Complete PFT with spirometry, DLco, transfer factor testing ordered"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Post-COVID syndrome with chronic cough",
+          "certainty_degree": 0.85,
+          "evidence_text": "Loss of smell post COVID, mucoid expectoration"
+        },
+        "differential_diagnosis": [
+          "GERD (status uncertain)",
+          "Asthma (known history)"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Foracort",
+            "dosage": "Unknown",
+            "sig": "Patient has benefited from previous use",
+            "handwriting_confidence": 0.75
+          },
+          {
+            "drug": "INCS (Intranasal Corticosteroids)",
+            "dosage": "Unknown",
+            "sig": "Patient has benefited from previous use",
+            "handwriting_confidence": 0.75
+          }
+        ],
+        "procedures_ordered": [
+          "CBC",
+          "IgE level",
+          "Serum Magnesium",
+          "Vitamin D3 level",
+          "Vitamin B12 level",
+          "Complete Pulmonary Function Testing - spirometry, DLco, transfer factor",
+          "Vaccination (unspecified)"
+        ],
+        "patient_instructions": "No drug allergy noted; Vaccination recommended; PFT testing scheduled"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Clear and legible, minor abbreviation usage",
+      "critical_ambiguities": [
+        "GERD status indicated as '+/-' suggesting uncertainty"
+      ]
+    }
+  }
+}

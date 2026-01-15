@@ -57,6 +57,33 @@ export function saveComparisonRun(run: ComparisonRun): void {
   const runs = loadRuns();
   runs.push(run);
   saveRuns(runs);
+
+  // Also save individual model files for easier access
+  const runDir = path.join(STORAGE_DIR, "runs", run.id);
+  if (!fs.existsSync(runDir)) {
+    fs.mkdirSync(runDir, { recursive: true });
+  }
+
+  // Save the full run metadata
+  fs.writeFileSync(
+    path.join(runDir, "meta.json"),
+    JSON.stringify({
+      id: run.id,
+      timestamp: run.timestamp,
+      imageHash: run.imageHash,
+      ocrText: run.ocrText
+    }, null, 2)
+  );
+
+  // Save each model's output individually
+  run.results.forEach(result => {
+    if (result.success && result.output) {
+      fs.writeFileSync(
+        path.join(runDir, `${result.modelId}.json`),
+        JSON.stringify(result.output, null, 2)
+      );
+    }
+  });
 }
 
 export function getAllRuns(): ComparisonRun[] {

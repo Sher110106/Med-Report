@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T08:33:27.881Z",
+    "latencyMs": 71336
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Richard (Dave) De Bronkart",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2009-09-15"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Septal perforation duration",
+        "value": "15",
+        "unit": "years",
+        "flag": "Present",
+        "original_text": "perf sept x 15 yr c̄\nsilicon button",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Silicone button (nasal)",
+        "value": "In place / in good position",
+        "unit": "Unknown",
+        "flag": "Present",
+        "original_text": "O. nose - ⊕ button in good posn.",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Post-operative site (s/p op)",
+        "value": "Clear",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "s/p op - clear",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Neck exam",
+        "value": "Clear",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Renal cell neck - clear",
+        "confidence_score": 0.75
+      },
+      {
+        "test_name": "Palpable masses (neck)",
+        "value": "None identified",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "ca Ø masses",
+        "confidence_score": 0.75
+      },
+      {
+        "test_name": "Ears (prior exam)",
+        "value": "OK",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "2007. ears -> ok.",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Clinical status / overall",
+        "value": "Doing well",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Doing well",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Impression",
+        "value": "s/p septal perforation",
+        "unit": "Unknown",
+        "flag": "Present",
+        "original_text": "I. s/p septal perforated",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Silicone plug",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Present",
+        "original_text": "+ silicon plug",
+        "confidence_score": 0.95
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Nasal saline",
+          "dosage": "Unknown",
+          "frequency": "PRN",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Overall legibility good; most clinical lines clear. Two short lines marked [ILLEGIBLE] in source. A few terms (e.g., 'Renal cell neck') appear to be OCR errors and have been interpreted conservatively."
+    }
+  }
+}

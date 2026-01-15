@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:29:07.251Z",
+    "latencyMs": 9745
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol / Acetaminophen",
+          "dosage": "Unknown",
+          "frequency": "OTC (as needed for fever)",
+          "original_text": "paracet if fever OTC",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Diarolyte",
+          "dosage": "Unknown",
+          "frequency": "OTC (as needed)",
+          "original_text": "OTC diarolyte",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Inhalers",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "original_text": "DH inhalers",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Text is largely legible; however, multiple sections are marked '[ILLEGIBLE]' and certain details like the patient's name, age, and specific medication dosages are absent. No structured lab results (bloodwork, urine, imaging) are explicitly present in the provided text."
+    }
+  }
+}

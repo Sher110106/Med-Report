@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:23:33.781Z",
+    "latencyMs": 40269
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Female",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Antibiotics",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.8
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "The document is a clinical history and plan note rather than a lab report. It contains no quantifiable test results (values/units) for the diagnostics_and_labs section. The treatment plan lists 'regular paracet pain' and 'Rx empirically Abx'. Gender inferred from context (Implanon, LMP). Date of visit is illegible."
+    }
+  }
+}

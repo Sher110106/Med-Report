@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:28:18.727Z",
+    "latencyMs": 55422
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "ENT nose visit",
+        "hpi": "Follow-up for perforated septum of 15 years duration with silicon button. Patient reports doing well.",
+        "symptoms": [],
+        "patient_history": "Perforated septum (15 years), Renal cell carcinoma (implied by neck check context), Silicon button insertion"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Nose: button in good position",
+            "Post-operative status clear",
+            "Neck clear (no masses)",
+            "Ears normal"
+          ],
+          "text_raw": "O. nose - ⊕ button in good posn. s/p op - clear Renal cell neck - clear ca Ø masses 2007. ears -> ok."
+        },
+        "labs_imaging": "None mentioned"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Status post septal perforation with silicon plug",
+          "certainty_degree": 0.98,
+          "evidence_text": "I. s/p septal perforated + silicon plug"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Saline (Nasal irrigation/spray)",
+            "dosage": "Unknown",
+            "sig": "PRN",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [],
+        "patient_instructions": "Use saline as needed."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Legible handwriting, but contains medical shorthand and potential fragmentation.",
+      "critical_ambiguities": [
+        "The phrase 'Renal cell neck - clear' is syntactically unusual; interpreted as a neck exam clearing masses for a patient with a history of renal cell carcinoma.",
+        "The date '2007' is isolated in the objective section; its exact significance (diagnosis date? surgery date?) is contextual."
+      ]
+    }
+  }
+}

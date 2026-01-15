@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "image": "medical_note_05.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:01:39.940Z",
+    "latencyMs": 20775
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Skin exam (eczema)",
+        "value": "flare up",
+        "unit": "Unknown",
+        "flag": "Abnormal",
+        "original_text": "4/7 hx dry itchy skin chest+back sore cracked",
+        "confidence_score": 0.85
+      },
+      {
+        "test_name": "Symptoms review - bleeding",
+        "value": "absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no bleed",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "Symptoms review - discharge",
+        "value": "absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no discharge",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "Symptoms review - spread",
+        "value": "absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no spread elsewhere",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "Systemic review - fever",
+        "value": "absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no fevers",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "Systemic review - vomiting",
+        "value": "absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no vomit",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "Systemic review - SOB/cough",
+        "value": "absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no SOB/cough",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "Systemic review - bowel symptoms",
+        "value": "absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no bowel sx",
+        "confidence_score": 0.8
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Betnovate (betamethasone valerate) cream",
+          "dosage": "Unknown",
+          "frequency": "BD (twice daily)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Cetraben (emollient)",
+          "dosage": "Unknown",
+          "frequency": "QDS (four times daily)",
+          "confidence_score": 0.85
+        },
+        {
+          "name": "Antihistamines",
+          "dosage": "Unknown",
+          "frequency": "trial",
+          "confidence_score": 0.7
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Note contains some illegible text and truncated words (e.g., '4/7 hx', 'DHx nil regular nkDA', 'pharm manger'). Patient metadata is missing. No bloodwork, urine, or imaging results are present in this clinical note, which focuses on dermatological assessment and treatment plan for eczema."
+    }
+  }
+}

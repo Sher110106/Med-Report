@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:20:57.885Z",
+    "latencyMs": 14881
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Lower abdominal/suprapubic pain with gradual onset 2 days ago",
+        "hpi": "Patient experiencing lower abdominal/suprapubic pain with gradual onset 2 days ago, described as burning and constant, progressively worsening. Patient reports pink urine. Denies frank hematuria and dysuria. Experiencing nausea without vomiting. Reports feeling hot and sweaty. Sexually active with regular partner, last STD screening 6 months ago, unprotected sexual intercourse 2 days ago. Last menstrual period 2 weeks ago.",
+        "symptoms": [
+          "Lower abdominal pain",
+          "Suprapubic pain",
+          "Burning sensation",
+          "Pink urine",
+          "Nausea",
+          "Feeling hot",
+          "Sweating"
+        ],
+        "patient_history": "None significant. Implanon for contraception."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown"
+        },
+        "labs_imaging": "Pending pregnancy test, urine dipstick and MSU"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Urinary Tract Infection (Probable)",
+          "certainty_degree": 0.7,
+          "evidence_text": "Imp: ?UTI"
+        },
+        "differential_diagnosis": [
+          "Pregnancy",
+          "Other causes of urinary symptoms"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Empirical Antibiotics",
+            "dosage": "Unknown",
+            "sig": "For UTI (specific medication not specified)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Paracetamol",
+            "dosage": "Regular",
+            "sig": "For pain",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "Pregnancy test",
+          "Urine dipstick",
+          "MSU",
+          "Review in 24-48 hours if symptoms not improving",
+          "Return earlier if worse symptoms (fever, abdominal pain, vomiting)"
+        ],
+        "patient_instructions": "Return for review in 24-48 hours if symptoms not improving or earlier if experiencing fever, abdominal pain, or vomiting"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility with multiple illegible sections marked",
+      "critical_ambiguities": [
+        "Bowel symptoms section partially illegible",
+        "Some text between urinary symptoms and sexually active section illegible"
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T08:50:57.257Z",
+    "latencyMs": 42222
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Right S1 radiculopathy (improving)",
+        "hpi": "41-year-old male with right S1 radiculopathy. Note: 'Better now'.",
+        "symptoms": [
+          "Right S1 radiculopathy",
+          "Improvement noted ('Better now')"
+        ],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "SLR (straight leg raise) normal",
+            "Right AJ / EHL normal",
+            "Neurological status noted as (N) / normal"
+          ],
+          "text_raw": "- Δ (Rt) S1 Radiculopathy\nBetter now\n- SLR (N)\nRt AJ / EHL (N)\n(N)"
+        },
+        "labs_imaging": "Uric Acid requested; Creatinine requested (note: 'खाली पेट' = fasting)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Right S1 radiculopathy",
+          "certainty_degree": 0.95,
+          "evidence_text": "Δ (Rt) S1 Radiculopathy"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Cap Tricobal",
+            "dosage": "Not specified in note",
+            "sig": "OD (once daily)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Complamina - R (HS) [ambiguous name]",
+            "dosage": "Not specified in note",
+            "sig": "HS (at bedtime) / रात में",
+            "handwriting_confidence": 0.5
+          },
+          {
+            "drug": "Oxetol",
+            "dosage": "150 mg",
+            "sig": "BD (twice daily)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "PURIC-40 (likely febuxostat 40 mg)",
+            "dosage": "40 mg",
+            "sig": "OD (once daily)",
+            "handwriting_confidence": 0.65
+          },
+          {
+            "drug": "Emanzen D or Zerodol SP",
+            "dosage": "Not specified in note",
+            "sig": "BD (twice daily)",
+            "handwriting_confidence": 0.6
+          },
+          {
+            "drug": "Esofag D",
+            "dosage": "Not specified in note",
+            "sig": "BD (twice daily); take on empty stomach ('खाली पेट')",
+            "handwriting_confidence": 0.5
+          }
+        ],
+        "procedures_ordered": [
+          "Uric Acid (lab) - fasting",
+          "Creatinine (lab) - fasting"
+        ],
+        "patient_instructions": "All medications prescribed for 2 months. Take Esofag D on empty stomach. Return for labs: Uric Acid and Creatinine (fasting)."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility. Clinical exam and most medication names readable but several drug names/brands and one drug identity/dose ambiguous.",
+      "critical_ambiguities": [
+        "Line: 'Complamina - R - HS रात में' — drug name unclear/possibly misspelled",
+        "Line: 'PURIC - 40' — likely febuxostat 40 mg but brand unclear",
+        "Line: 'Emanzen D / or Zerodol SP' — two options listed; 'Emanzen D' unclear",
+        "Line: 'Esofag D' — drug identity unclear (PPI/prokinetic?)",
+        "Abbreviation 'Rt AJ / EHL' — likely 'Right ankle jerk / extensor hallucis longus' but not explicit",
+        "Dosages for Tricobal, Complamina-R, Emanzen D and Esofag D are not specified in the note"
+      ]
+    }
+  }
+}

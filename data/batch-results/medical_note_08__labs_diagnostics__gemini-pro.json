@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T09:24:42.943Z",
+    "latencyMs": 41922
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Female",
+      "date_of_visit": "2024-01-07"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Antibiotics",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Text contains medical shorthand (2/7, 2/52, 6/12) and some OCR noise (e.g., '?7/1/24'). The document represents a consultation note with a plan/orders, but contains no completed diagnostic result values to extract."
+    }
+  }
+}

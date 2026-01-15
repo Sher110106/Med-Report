@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "image": "medical_note_02.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:35:12.432Z",
+    "latencyMs": 13197
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Unknown",
+        "hpi": "Unknown",
+        "symptoms": [],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "General: No acute distress (NAD)",
+            "Chest: Clear to auscultation bilaterally (CTA (B))",
+            "Cardiovascular: Regular rate and rhythm, S1 and S2 heart sounds present (RRR S1S2 OK)",
+            "Abdomen: Soft, non-tender, non-distended, bowel sounds present (NT, ND + BS)",
+            "Extremities: No edema (ø edema)"
+          ],
+          "text_raw": "Gen: NAD\nChest: CTA (B)\nCV: RRR S1S2 OK\nAbd: soft, NT, ND + BS\nExt: ø edema"
+        },
+        "labs_imaging": "Labs reviewed"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Acute Respiratory Failure",
+          "certainty_degree": 0.95,
+          "evidence_text": "1. Acute Resp. Falure"
+        },
+        "differential_diagnosis": [
+          "Septic Shock",
+          "Acute Kidney Injury (AKI)",
+          "Metabolic Encephalopathy"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Antibiotics",
+            "dosage": "Unknown",
+            "sig": "Continue (cont)",
+            "handwriting_confidence": 0.8
+          },
+          {
+            "drug": "Vasopressors",
+            "dosage": "Unknown",
+            "sig": "Continue (cont)",
+            "handwriting_confidence": 0.8
+          }
+        ],
+        "procedures_ordered": [
+          "Continue mechanical ventilation (vent)",
+          "Follow renal function (Follow renal fxn)",
+          "Check labs"
+        ],
+        "patient_instructions": "Unknown"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Legible, no significant OCR noise",
+      "critical_ambiguities": []
+    }
+  }
+}

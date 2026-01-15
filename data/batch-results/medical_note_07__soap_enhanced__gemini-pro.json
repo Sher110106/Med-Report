@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T09:14:41.253Z",
+    "latencyMs": 47831
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Generally unwell, sore throat, runny nose, fatigue, myalgia, joint pain",
+        "hpi": "Patient presents with a 4-day history (4/7) of being generally unwell. Reports sore throat (noted as improving), runny nose, fatigue, myalgia, and joint pain. Also reports nasal congestion and a dry, constant cough. Night sweats present for 4 days. Fever noted initially, settling with paracetamol and ibuprofen. Reports generalized, intermittent headaches. Appetite is reduced. Patient explicitly denies chest pain, visual symptoms, photophobia, nausea/vomiting, bowel/urinary symptoms, and rashes. Social history notes stressful work but no mood symptoms.",
+        "symptoms": [
+          "Generally unwell",
+          "Sore throat",
+          "Runny nose",
+          "Fatigue",
+          "Myalgia",
+          "Joint pain",
+          "Cough (dry, constant)",
+          "Nasal congestion",
+          "Night sweats",
+          "Fever",
+          "Shortness of breath on exertion (modifier illegible)",
+          "Headaches (generalized, intermittent)",
+          "Reduced appetite"
+        ],
+        "patient_history": "PMH: Nil. DH: Nil. NKDA (No Known Drug Allergies). FH: Grandmother T2DM (Type 2 Diabetes). SH: Lives alone, accountant, occasional smoker, occasional alcohol (etOH), work stressful."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown (Note appears to be subjective history and plan only, no explicit physical exam findings recorded in snippet)"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Viral Upper Respiratory Tract Infection (URTI)",
+          "certainty_degree": 0.85,
+          "evidence_text": "Imp: viral URTI/influenza"
+        },
+        "differential_diagnosis": [
+          "Influenza"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "Regular",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Ibuprofen",
+            "dosage": "Unknown",
+            "sig": "Regular",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Review in 5-7 days"
+        ],
+        "patient_instructions": "Management: Rest, push fluids, regular paracetamol/ibuprofen. Conservative management, monitor temperature. Review in 5-7 days. Discussed red flag symptoms (SOB, chest pain, fevers); if present, urgent review with Dr."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate. Several illegible words and shorthand notations (e.g., 4/7, r/v).",
+      "critical_ambiguities": [
+        "SOB [ILLEGIBLE] on exertion - Unclear if patient HAS SOB on exertion or if it is 'nil' on exertion.",
+        "Date of visit is incomplete."
+      ]
+    }
+  }
+}

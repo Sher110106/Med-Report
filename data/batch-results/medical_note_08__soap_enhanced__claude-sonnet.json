@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T09:21:29.122Z",
+    "latencyMs": 10107
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Lower abdominal/suprapubic pain for 2 days",
+        "hpi": "2 days ago onset of lower abdominal/suprapubic pain with gradual onset, burning, constant, and worsening. Associated with pink urine, feeling hot and sweaty, and nausea without vomiting. Patient is sexually active with regular partner, had unprotected sexual intercourse 2 days ago. Last STD screening 6 months ago. Last menstrual period 2 weeks ago.",
+        "symptoms": [
+          "Lower abdominal pain",
+          "Suprapubic pain",
+          "Burning sensation",
+          "Pink urine",
+          "Feeling hot",
+          "Sweaty",
+          "Nausea"
+        ],
+        "patient_history": "No significant past medical history, no past surgical history, currently has Implanon contraceptive"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Not documented"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Urinary Tract Infection (probable)",
+          "certainty_degree": 0.7,
+          "evidence_text": "Imp: ?UTI also exclude pregnancy"
+        },
+        "differential_diagnosis": [
+          "Pregnancy"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Antibiotics (empirical for UTI)",
+            "dosage": "Unknown",
+            "sig": "Unknown - empirical treatment",
+            "handwriting_confidence": 0.6
+          },
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "Regular for pain",
+            "handwriting_confidence": 0.85
+          }
+        ],
+        "procedures_ordered": [
+          "Pregnancy test",
+          "Urine dipstick",
+          "Midstream urine (MSU)"
+        ],
+        "patient_instructions": "Return for review in 24-48 hours if symptoms not improving or earlier if worse symptoms develop (fever, abdominal pain, vomiting). Regular paracetamol for pain."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate quality with some illegible sections, medical abbreviations present",
+      "critical_ambiguities": [
+        "Some text marked as [ILLEGIBLE]",
+        "Specific antibiotic type and dosing not clearly specified",
+        "Exact paracetamol dosing not specified"
+      ]
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "image": "medical_note_03.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:42:17.717Z",
+    "latencyMs": 22251
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Unknown",
+        "hpi": "Patient has established diagnoses of SLE and Scleroderma; no new complaints documented.",
+        "symptoms": [],
+        "patient_history": "Systemic Lupus Erythematosus (SLE), Scleroderma"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown"
+        },
+        "labs_imaging": "SGPT, Creatinine, Urine RM (ordered, results pending)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "SLE with Scleroderma",
+          "certainty_degree": 1,
+          "evidence_text": "S.L.E. with Scleroderma"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "HCQs",
+            "dosage": "200mg",
+            "sig": "one daily at night",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "folitrax",
+            "dosage": "15mg",
+            "sig": "once per week (Friday night)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Folvite",
+            "dosage": "5mg",
+            "sig": "twice per week (Saturdays, Sundays)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Rablet-D",
+            "dosage": "Unknown",
+            "sig": "one daily for 2 months before breakfast",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "D-logy",
+            "dosage": "Unknown",
+            "sig": "one every month",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Wysolone",
+            "dosage": "5mg",
+            "sig": "once daily",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "SGPT",
+          "Creatinine",
+          "Urine RM"
+        ],
+        "patient_instructions": "Unknown"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly legible; minor uncertainty in brand names (D-logy) and missing dosage for Rablet-D.",
+      "critical_ambiguities": [
+        "No chief complaint or symptomatic details provided",
+        "No documented advice or follow-up plan beyond labs"
+      ]
+    }
+  }
+}

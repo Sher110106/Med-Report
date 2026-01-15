@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "image": "medical_note_02.webp",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:39:17.737Z",
+    "latencyMs": 16430
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2018-12-02"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Acute Respiratory Failure",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Critical",
+        "original_text": "1. Acute Resp. Falure",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "Septic Shock",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Critical",
+        "original_text": "2. septic shock",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "Acute Kidney Injury (AKI)",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Critical",
+        "original_text": "3. AKI",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "Metabolic Encephalopathy",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Critical",
+        "original_text": "4. Med Encephalopathy",
+        "confidence_score": 0.8
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Antibiotics (Abx)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.8
+        },
+        {
+          "name": "Pressors",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.8
+        },
+        {
+          "name": "Ventilator Support (Vent)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.8
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "The text is generally legible, but specific lab results and detailed patient metadata are missing. Further review of the original document may be necessary to capture all required information."
+    }
+  }
+}

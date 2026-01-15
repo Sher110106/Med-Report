@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T08:49:31.415Z",
+    "latencyMs": 10572
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Right S1 Radiculopathy",
+        "hpi": "41-year-old male with right S1 radiculopathy, reports improvement ('Better now').",
+        "symptoms": [
+          "Right S1 Radiculopathy (improved)"
+        ],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "SLR (Straight Leg Raise) - Normal",
+            "Right AJ/EHL - Normal"
+          ],
+          "text_raw": "SLR (N) Rt AJ / EHL (N) (N)"
+        },
+        "labs_imaging": "Uric Acid and Creatinine ordered"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Right S1 Radiculopathy",
+          "certainty_degree": 0.95,
+          "evidence_text": "Δ (Rt) S1 Radiculopathy"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Tricobal",
+            "dosage": "Unknown",
+            "sig": "OD (once daily) - morning",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Complamina-R",
+            "dosage": "Unknown",
+            "sig": "HS (at bedtime) - 1 tablet at night",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Oxetol",
+            "dosage": "150mg",
+            "sig": "BD (twice daily) - morning and evening",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "PURIC",
+            "dosage": "40mg",
+            "sig": "OD (once daily) - morning",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Emanzen D or Zerodol SP",
+            "dosage": "Unknown",
+            "sig": "BD (twice daily) - morning and evening",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Esofag D",
+            "dosage": "Unknown",
+            "sig": "BD (twice daily) - morning and evening, empty stomach",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Uric Acid test",
+          "Creatinine test"
+        ],
+        "patient_instructions": "All medications for 2 months. Esofag D to be taken on empty stomach (खाली पेट)."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Good overall legibility with some medical abbreviations and Hindi text mixed in.",
+      "critical_ambiguities": [
+        "Some medication dosages not clearly specified",
+        "Mixed Hindi and English text in instructions"
+      ]
+    }
+  }
+}

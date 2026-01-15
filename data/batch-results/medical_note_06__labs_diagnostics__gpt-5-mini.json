@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:11:01.174Z",
+    "latencyMs": 39265
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Symptom: Headache (left-sided)",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Present",
+        "original_text": "headache left side few hrs ago",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Headache character",
+        "value": "gradual throbbing, no radiation",
+        "unit": "Unknown",
+        "flag": "Present",
+        "original_text": "gradual throbbing nil radiatn-",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Visual aura",
+        "value": "Present (before onset)",
+        "unit": "Unknown",
+        "flag": "Present",
+        "original_text": "visual aura\nbefore onset",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Photophobia",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Present",
+        "original_text": "photophobia",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Visual disturbance: zigzag lines",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Present",
+        "original_text": "zigzag lines",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Blurred vision",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Present",
+        "original_text": "blurred vision",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Visual note: 'in vision'",
+        "value": "Unclear/ambiguous",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "in vision",
+        "confidence_score": 0.6
+      },
+      {
+        "test_name": "Nausea/Vomiting",
+        "value": "Vomiting x2 today, nauseous",
+        "unit": "Unknown",
+        "flag": "Present",
+        "original_text": "nauseous vomit x2 today",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Neck pain",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Present",
+        "original_text": "neck pain",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Neck stiffness",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "nil stiffness",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Speech disturbance",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no speech disturbe",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Limb weakness or numbness",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no limb weakness/numbness",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Coordination/balance issues",
+        "value": "Unclear (text illegible)",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "[ILLEGIBLE] coordination/balance issues",
+        "confidence_score": 0.6
+      },
+      {
+        "test_name": "Recent head injury",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no recent head injury",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Fever",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no fever",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Rashes",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no rashes",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "History: similar episode",
+        "value": "Occurred 2 weeks ago, resolved with analgesia",
+        "unit": "Unknown",
+        "flag": "Historical",
+        "original_text": "similar episode 2/52 ago resolved w/analgesia",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Patient concern",
+        "value": "Concerned about brain cancer",
+        "unit": "Unknown",
+        "flag": "Concern",
+        "original_text": "pt worried brain Ca",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Past Medical History",
+        "value": "None reported",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "PMH nil",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Drug history: current medication",
+        "value": "Microgynon",
+        "unit": "Unknown",
+        "flag": "Current medication",
+        "original_text": "DH microgynon NKDA",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Allergies",
+        "value": "No known drug allergies (NKDA)",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "DH microgynon NKDA",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Family history",
+        "value": "Mother: migraine",
+        "unit": "Unknown",
+        "flag": "Relevant",
+        "original_text": "FH mother migraine",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Social history: living situation",
+        "value": "Lives alone",
+        "unit": "Unknown",
+        "flag": "Social",
+        "original_text": "SH lives alone fashion industry stressed ++",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Social history: occupation",
+        "value": "Fashion industry",
+        "unit": "Unknown",
+        "flag": "Social",
+        "original_text": "SH lives alone fashion industry stressed ++",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Stress",
+        "value": "Marked/positive (stressed ++)",
+        "unit": "Unknown",
+        "flag": "Relevant",
+        "original_text": "SH lives alone fashion industry stressed ++",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Mood symptoms",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "nil mood sx",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Smoking",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "nil smoking/etOH",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Alcohol (etOH)",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "nil smoking/etOH",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Impression",
+        "value": "Migraine",
+        "unit": "Unknown",
+        "flag": "Diagnosis",
+        "original_text": "Imp: migraine",
+        "confidence_score": 1
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Microgynon (combined oral contraceptive pill)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Switch to POP (progestogen-only pill) - planned",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Paracetamol (regular)",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "NSAID (regular)",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly legible clinical note with clear symptoms, assessment and plan. A few illegible/ambiguous tokens (e.g., '[ILLEGIBLE]', 'in vision', 'disturbe') and no laboratory or imaging results present."
+    }
+  }
+}

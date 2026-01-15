@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "image": "medical_note_03.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T08:43:15.090Z",
+    "latencyMs": 32004
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Follow-up for S.L.E. with Scleroderma",
+        "hpi": "Patient presents with a diagnosis of S.L.E. with Scleroderma. The clinical note lists medications under the complaint, history, and examination sections, indicating a follow-up or prescription refill visit rather than a new acute complaint.",
+        "symptoms": [],
+        "patient_history": "S.L.E. (Systemic Lupus Erythematosus) with Scleroderma"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Examination :- (3) Tab. Folvite 5 mg twice per week (Saturdays, Sundays)"
+        },
+        "labs_imaging": "Pending/Ordered: SGPT, Creatinine, Urine : RM"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Systemic Lupus Erythematosus (S.L.E.) with Scleroderma",
+          "certainty_degree": 0.98,
+          "evidence_text": "S.L.E. with Scleroderma"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Tab. HCQs (Hydroxychloroquine)",
+            "dosage": "200mg",
+            "sig": "One daily at night",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Tab. Folitrax (Methotrexate)",
+            "dosage": "15 mg",
+            "sig": "Once per week (Friday night)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Tab. Folvite (Folic Acid)",
+            "dosage": "5 mg",
+            "sig": "Twice per week (Saturdays, Sundays)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Rablet-D (Rabeprazole/Domperidone)",
+            "dosage": "Unknown strength",
+            "sig": "One daily x2 months before breakfast",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Cap. D-logy (Vitamin D)",
+            "dosage": "Unknown strength",
+            "sig": "One every month",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Tab. Wysolone (Prednisolone)",
+            "dosage": "5 mg",
+            "sig": "Once daily",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "SGPT",
+          "Creatinine",
+          "Urine : RM (Routine Microscopy)"
+        ],
+        "patient_instructions": "Take medications as prescribed. Complete ordered investigations (SGPT, Creatinine, Urine)."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Legible, but doctor wrote medications across all sections (History, Exam, etc.) regardless of headers.",
+      "critical_ambiguities": "The text '2 gram' near the date is ambiguous and lacks context."
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T09:05:58.799Z",
+    "latencyMs": 10743
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Headache left side few hours ago",
+        "hpi": "Patient presents with gradual throbbing headache on left side that started few hours ago with no radiation. Associated with visual aura (zigzag lines in vision) before onset, photophobia, blurred vision, nausea and vomiting twice today, and neck pain without stiffness. No speech disturbance, no limb weakness/numbness, coordination/balance issues unclear due to illegibility. No recent head injury, no fever, no rashes. Similar episode 2 weeks ago that resolved with analgesia. Patient worried about brain cancer.",
+        "symptoms": [
+          "Headache (left side)",
+          "Throbbing pain",
+          "Visual aura",
+          "Zigzag lines in vision",
+          "Photophobia",
+          "Blurred vision",
+          "Nausea",
+          "Vomiting (2 episodes today)",
+          "Neck pain"
+        ],
+        "patient_history": "No significant past medical history. Family history of migraine in mother. Lives alone, works in fashion industry, reports high stress levels."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "No neck stiffness",
+            "No speech disturbance",
+            "No limb weakness/numbness",
+            "Coordination/balance assessment illegible"
+          ],
+          "text_raw": "neck pain nil stiffness, no speech disturbe, no limb weakness/numbness, [ILLEGIBLE] coordination/balance issues"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Migraine",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: migraine"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Progestogen-only pill (POP)",
+            "dosage": "Unknown",
+            "sig": "To replace current COCP (Microgynon)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "Regular use as needed",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "NSAIDs",
+            "dosage": "Unknown",
+            "sig": "Regular use as needed",
+            "handwriting_confidence": 0.85
+          }
+        ],
+        "procedures_ordered": [
+          "Keep headache diary",
+          "Review in 1 week",
+          "Discuss prophylactic treatment if needed"
+        ],
+        "patient_instructions": "Change contraceptive pill from combined oral contraceptive pill (Microgynon) to progestogen-only pill. Keep headache diary. Use regular paracetamol/NSAIDs for pain relief. Return in 1 week for review to discuss prophylactic treatment or earlier if symptoms worsen (headache, vomiting, vision changes) or if concerns arise."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Generally legible with some illegible sections in neurological examination and final instructions",
+      "critical_ambiguities": [
+        "Coordination/balance assessment illegible",
+        "Final symptom list in return instructions partially illegible",
+        "Date partially illegible (??/1/??)"
+      ]
+    }
+  }
+}

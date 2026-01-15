@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:39:37.936Z",
+    "latencyMs": 20664
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "48",
+      "gender": "Male",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Complete Blood Count (CBC)",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "CBC",
+        "confidence_score": 0.5
+      },
+      {
+        "test_name": "IgE",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "IgE",
+        "confidence_score": 0.5
+      },
+      {
+        "test_name": "Serum Magnesium",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "S. Mg",
+        "confidence_score": 0.5
+      },
+      {
+        "test_name": "Vitamin D3",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Vit D3",
+        "confidence_score": 0.5
+      },
+      {
+        "test_name": "Vitamin B12",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "B12 levels",
+        "confidence_score": 0.5
+      },
+      {
+        "test_name": "Pulmonary Function Test (PFT) - Spirometry",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Complete PFT- spirometry",
+        "confidence_score": 0.5
+      },
+      {
+        "test_name": "Diffusing Capacity for Carbon Monoxide (DLco)",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "DLco",
+        "confidence_score": 0.5
+      },
+      {
+        "test_name": "Transfer Factor",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "transfer factor",
+        "confidence_score": 0.5
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Foracort",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.8
+        },
+        {
+          "name": "Inhaled Corticosteroids (INCS)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.8
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "The text is generally legible, but specific values for lab tests and medications are missing. The overall context is clear."
+    }
+  }
+}

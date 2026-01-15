@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:41:29.086Z",
+    "latencyMs": 40621
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "48",
+      "gender": "Male",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Weight",
+        "value": "95",
+        "unit": "kg",
+        "flag": "Unknown",
+        "original_text": "WT 95kg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Blood Pressure",
+        "value": "120/80",
+        "unit": "mmHg",
+        "flag": "Normal",
+        "original_text": "BP: 120/80mmHg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Pulse",
+        "value": "84",
+        "unit": "beats/min",
+        "flag": "Normal",
+        "original_text": "P: 84/min",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Oxygen saturation (SpO2)",
+        "value": "98",
+        "unit": "%",
+        "flag": "Normal",
+        "original_text": "SpO2: 98%",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Chest auscultation",
+        "value": "clear",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "O/E: Chest - clear.",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Smoking status",
+        "value": "Former occasional smoker",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Used to sm. occ.",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Anosmia (loss of smell) - post COVID",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Abnormal",
+        "original_text": "Loss of smell post COVID.",
+        "confidence_score": 0.98
+      },
+      {
+        "test_name": "Sputum character",
+        "value": "Mucoid expectoration",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Mucoid expectoration. Triggers +",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Triggers",
+        "value": "Positive",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Triggers +",
+        "confidence_score": 0.85
+      },
+      {
+        "test_name": "Gastroesophageal reflux (GER/GERD)",
+        "value": "Possible (+/-)",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "GER +/-",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "Drug allergy",
+        "value": "None",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "No any drug allergy",
+        "confidence_score": 0.99
+      },
+      {
+        "test_name": "Family history",
+        "value": "No significant family history reported",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "- No family",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "History of asthma",
+        "value": "Present (h/o asthma)",
+        "unit": "Unknown",
+        "flag": "Chronic condition",
+        "original_text": "h/o asthma",
+        "confidence_score": 0.98
+      },
+      {
+        "test_name": "CBC (Complete Blood Count)",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "CBC, IgE, S. Mg, Vit D3, B12 levels.",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "IgE",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "CBC, IgE, S. Mg, Vit D3, B12 levels.",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Serum Magnesium (S. Mg)",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "CBC, IgE, S. Mg, Vit D3, B12 levels.",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Vitamin D3",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "CBC, IgE, S. Mg, Vit D3, B12 levels.",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Vitamin B12",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "CBC, IgE, S. Mg, Vit D3, B12 levels.",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Spirometry (PFT)",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "Complete PFT- spirometry, DLco, transfer factor",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "DLco (diffusing capacity / transfer factor)",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "Complete PFT- spirometry, DLco, transfer factor",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Transfer factor",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "Complete PFT- spirometry, DLco, transfer factor",
+        "confidence_score": 0.95
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Foracort (budesonide + formoterol)",
+          "dosage": "Not specified",
+          "frequency": "Not specified",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "INCS (intranasal corticosteroid)",
+          "dosage": "Not specified",
+          "frequency": "Not specified",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Vaccination (recommended)",
+          "dosage": "As per schedule / Not specified",
+          "frequency": "As per schedule",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Overall legible with common medical abbreviations and shorthand. Minor inferences made for abbreviations (e.g., 'h/o asthma', 'Foracort', 'INCS') and for ambiguous shorthand ('No family' interpreted as no family history)."
+    }
+  }
+}

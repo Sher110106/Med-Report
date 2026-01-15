@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:26:14.447Z",
+    "latencyMs": 38883
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Diarrhoea",
+        "hpi": "24-year-old with 3-day history of watery diarrhoea (6 times/day) associated with left lower quadrant crampy, intermittent pain. Also reports 1-day history of bilious vomiting (no haematemesis) and lethargy/weakness. Symptoms began after consuming takeaway Chinese food 4 days ago; wife and children also had vomiting (no diarrhoea). Patient reports symptoms affecting activities of daily living, needing to be near toilet often.",
+        "symptoms": [
+          "Diarrhoea (watery, no blood)",
+          "Increased bowel frequency (6 times/day)",
+          "Left lower quadrant pain (crampy, intermittent, no radiation)",
+          "Vomiting (bilious, no blood)",
+          "Fever (day 1 only, now absent)",
+          "Lethargy",
+          "Weakness"
+        ],
+        "patient_history": "Asthma (on inhalers)"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "No physical exam findings explicitly mentioned."
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Gastroenteritis",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: gastroenteritis"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [],
+        "procedures_ordered": [
+          "Review in 3-5 days if not better",
+          "Earlier review if symptoms worsen"
+        ],
+        "patient_instructions": "Conservative management: rest, push fluids. May take paracetamol if fever develops (OTC). Use diarolyte. Return earlier if condition worsens."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly legible with clear clinical narrative. A few small sections are illegible. The date format '24/1/2?' is ambiguous but appears to be a patient identifier or date.",
+      "critical_ambiguities": [
+        "One line after 'fever d1 nil since' is illegible.",
+        "One word in Social History (after 'wife+children') is illegible.",
+        "One line in Plan section (after the instructions) is illegible."
+      ]
+    }
+  }
+}

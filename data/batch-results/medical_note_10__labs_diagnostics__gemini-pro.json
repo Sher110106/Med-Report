@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T09:40:47.962Z",
+    "latencyMs": 56437
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "48",
+      "gender": "Male",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Weight",
+        "value": "95",
+        "unit": "kg",
+        "flag": "Normal",
+        "original_text": "WT 95kg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Blood Pressure",
+        "value": "120/80",
+        "unit": "mmHg",
+        "flag": "Normal",
+        "original_text": "BP: 120/80mmHg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Pulse",
+        "value": "84",
+        "unit": "/min",
+        "flag": "Normal",
+        "original_text": "P: 84/min",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "SpO2",
+        "value": "98",
+        "unit": "%",
+        "flag": "Normal",
+        "original_text": "SpO2: 98%",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Triggers",
+        "value": "Positive",
+        "unit": "Unknown",
+        "flag": "Abnormal",
+        "original_text": "Triggers +",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Chest Auscultation",
+        "value": "Clear",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "O/E: Chest - clear.",
+        "confidence_score": 1
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Vaccination",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Text is legible. Abbreviations are standard medical shorthand (sm. occ., c, h/o). Vitals are clearly structured."
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:07:13.922Z",
+    "latencyMs": 33015
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Left-sided headache for a few hours",
+        "hpi": "Patient reports a left-sided headache that began a few hours ago, gradual onset, throbbing, no radiation. Reports visual aura prior to onset with photophobia, zigzag lines and blurred vision (described as 'in vision' in the note). Nauseous with 2 episodes of vomiting today. Neck pain reported without neck stiffness. No speech disturbance. No limb weakness or numbness. Possible coordination/balance issues (illegible text). No recent head injury, no fever, no rashes. Patient had a similar episode 2 weeks ago which resolved with analgesia. Patient is worried about brain cancer.",
+        "symptoms": [
+          "Left-sided headache",
+          "Gradual onset",
+          "Throbbing pain",
+          "No radiation",
+          "Visual aura",
+          "Photophobia",
+          "Zigzag lines (visual disturbance)",
+          "Blurred vision",
+          "Reported 'in vision' (unclear phrase in note)",
+          "Nausea",
+          "Vomiting (2 episodes today)",
+          "Neck pain",
+          "No neck stiffness",
+          "No speech disturbance",
+          "No limb weakness",
+          "No limb numbness",
+          "Possible coordination/balance issues ([ILLEGIBLE])",
+          "No recent head injury",
+          "No fever",
+          "No rashes",
+          "Similar episode 2 weeks ago resolved with analgesia",
+          "Patient worried about brain cancer"
+        ],
+        "patient_history": "PMH: nil. Drug history: Microgynon. NKDA. Family history: mother migraine. Social history: lives alone; works in fashion industry; stressed ++; no mood symptoms; no smoking; no alcohol."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Neck pain with no neck stiffness",
+            "No speech disturbance",
+            "No limb weakness",
+            "No limb numbness",
+            "[ILLEGIBLE] coordination/balance issues (mentioned, illegible)",
+            "No recent head injury",
+            "No fever",
+            "No rashes"
+          ],
+          "text_raw": "neck pain\nnil stiffness\n\nno speech disturbe\nno limb weakness/numbness\n[ILLEGIBLE] coordination/balance issues\n\nno recent head injury no fever no rashes"
+        },
+        "labs_imaging": "Unknown"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Migraine",
+          "certainty_degree": 0.98,
+          "evidence_text": "Imp: migraine"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Microgynon",
+            "dosage": "Unknown",
+            "sig": "Current combined oral contraceptive pill (COCP)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Progestogen-only pill (POP)",
+            "dosage": "Unknown",
+            "sig": "Change COCP to POP (switch contraception)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "Regular paracet as needed for headache",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "NSAID",
+            "dosage": "Unknown",
+            "sig": "Regular NSAIDs as needed for headache",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Keep headache diary",
+          "Review in 1 week to discuss prophylactic treatment (or earlier if worse symptoms)",
+          "Change COCP to POP (as per plan)"
+        ],
+        "patient_instructions": "1) Change COCP to POP. 2) Keep a headache diary. 3) Regular paracetamol / NSAIDs for symptomatic relief. 4) Review in 1 week to discuss prophylactic treatment or earlier if worse symptoms (HA [ILLEGIBLE] vomit vision) or concerns."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly legible clinical note with minor OCR issues (some words truncated/illegible, e.g., 'disturbe', bracketed illegible text).",
+      "critical_ambiguities": [
+        "[ILLEGIBLE] coordination/balance issues (exact wording illegible)",
+        "Phrase 'in vision' (unclear meaning)",
+        "Bracketed illegible text in follow-up instruction: 'HA [ILLEGIBLE] vomit vision' (unclear exact words)",
+        "No dosages provided for Microgynon, POP, paracetamol, or NSAIDs",
+        "No vitals or formal physical exam section labeled"
+      ]
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T09:36:02.732Z",
+    "latencyMs": 39222
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Loss of smell post COVID, effort limitation, mucoid expectoration",
+        "hpi": "48-year-old male jeweler. Reports loss of smell post-COVID and feels effort limited since then. Reports mucoid expectoration. Note indicates positive triggers and possible GERD (+/-). Patient has historically benefited from Foracort (Formoterol/Budesonide) and INCS (Intranasal Corticosteroids).",
+        "symptoms": [
+          "Loss of smell (post COVID)",
+          "Effort limited",
+          "Mucoid expectoration",
+          "Triggers positive",
+          "Possible GERD symptoms"
+        ],
+        "patient_history": "Former smoker (Used to sm. occ.), No known comorbidities, Post-COVID status, No drug allergies, No family history of asthma"
+      },
+      "objective": {
+        "vitals": {
+          "bp": "120/80 mmHg",
+          "hr": "84/min",
+          "temp": null,
+          "rr": null,
+          "weight": "95kg",
+          "spo2": "98%"
+        },
+        "physical_exam": {
+          "findings": [
+            "Chest: Clear"
+          ],
+          "text_raw": "O/E: Chest - clear."
+        },
+        "labs_imaging": "Pending (Ordered in Plan)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Post-COVID Sequelae / Respiratory Symptoms",
+          "certainty_degree": 0.85,
+          "evidence_text": "Loss of smell post COVID. Feels effort limited since."
+        },
+        "differential_diagnosis": [
+          "Gastroesophageal Reflux Disease (GER +/-)"
+        ]
+      },
+      "plan": {
+        "medications": [],
+        "procedures_ordered": [
+          "CBC",
+          "IgE level",
+          "Serum Magnesium (S. Mg)",
+          "Vitamin D3 level",
+          "Vitamin B12 level",
+          "Complete PFT (Pulmonary Function Test): spirometry, DLco, transfer factor"
+        ],
+        "patient_instructions": "Vaccinate."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate. Abbreviations used (sm. occ., N. known comorbs, INCS) required clinical inference.",
+      "critical_ambiguities": "Exact status of 'GER +/-' implies uncertainty/differential. 'Foracort + INCS' mentioned as historical benefit ('Has benefited c'), not explicitly listed under current Rx orders."
+    }
+  }
+}

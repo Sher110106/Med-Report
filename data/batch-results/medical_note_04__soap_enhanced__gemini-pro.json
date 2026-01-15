@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T08:50:14.532Z",
+    "latencyMs": 42614
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Follow-up for Right S1 Radiculopathy",
+        "hpi": "41-year-old male patient presenting for follow-up. States condition is 'Better now'.",
+        "symptoms": [
+          "Right S1 Radiculopathy symptoms (improving)"
+        ],
+        "patient_history": "Right S1 Radiculopathy"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "SLR (Straight Leg Raise): Normal",
+            "Right Ankle Jerk (AJ): Normal",
+            "Extensor Hallucis Longus (EHL): Normal"
+          ],
+          "text_raw": "- SLR (N)\nRt AJ / EHL (N)\n(N)"
+        },
+        "labs_imaging": "Pending (Orders for Uric Acid, Creatinine)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Right S1 Radiculopathy",
+          "certainty_degree": 0.95,
+          "evidence_text": "- Δ (Rt) S1 Radiculopathy"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Cap Tricobal",
+            "dosage": "Unknown strength",
+            "sig": "OD (1-0-0) x 2 months",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Complamina - R",
+            "dosage": "Unknown strength",
+            "sig": "HS (at night/रात में) (0-0-1) x 2 months",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Oxetol",
+            "dosage": "150",
+            "sig": "BD (1-0-1) x 2 months",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "PURIC",
+            "dosage": "40",
+            "sig": "OD (1-0-0) x 2 months",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Emanzen D / or Zerodol SP",
+            "dosage": "Unknown strength",
+            "sig": "BD (1-0-1) x 2 months",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Esofag D",
+            "dosage": "Unknown strength",
+            "sig": "BD (1-0-1) on empty stomach (खाली पेट) x 2 months",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Uric Acid test",
+          "Creatinine test"
+        ],
+        "patient_instructions": "All medications for 2 months. Esofag D to be taken on empty stomach."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Clear text with some Hindi instructions mixed with English medical abbreviations.",
+      "critical_ambiguities": []
+    }
+  }
+}

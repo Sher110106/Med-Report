@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:12:10.673Z",
+    "latencyMs": 35841
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Generally unwell, sore throat, runny nose",
+        "hpi": "Patient presents with a 4-7 day history of feeling generally unwell, with a sore throat, runny nose, fatigue, myalgia, and joint pain. Symptoms include a sore throat and dry, constant cough. They report nasal congestion and night sweats over 4-7 days, with an initial fever that settled with paracetamol/ibuprofen. No chest pain. Shortness of breath noted on exertion. Reports generalized, intermittent headaches with no visual symptoms or photophobia. Denies nausea, vomiting, bowel or urinary symptoms. Drinking fluids but has reduced appetite. No rashes.",
+        "symptoms": [
+          "Generally unwell",
+          "Sore throat",
+          "Runny nose",
+          "Fatigue",
+          "Myalgia",
+          "Joint pain",
+          "Cough (dry, constant)",
+          "Nasal congestion",
+          "Night sweats",
+          "Fever (initially)",
+          "Headaches (generalized, intermittent)",
+          "Reduced appetite"
+        ],
+        "patient_history": "No significant past medical history (PMH nil). No known drug history (DH nil). NKDA. Family history of Type 2 Diabetes Mellitus (T2DM) in grandmother. Lives alone, works as an accountant, is an occasional smoker and occasional alcohol (etOH) consumer. Reports stressful work but no mood symptoms."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Viral Upper Respiratory Tract Infection / Influenza",
+          "certainty_degree": 0.9,
+          "evidence_text": "Imp: viral URTI/influenza"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "PRN for fever/pain management, as part of 'regular paracet/ibuprofen'",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Ibuprofen",
+            "dosage": "Unknown",
+            "sig": "PRN for fever/pain management, as part of 'regular paracet/ibuprofen'",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Monitor temperature",
+          "Review in 5-7 days"
+        ],
+        "patient_instructions": "Conservative management: rest, push fluids, regular paracetamol/ibuprofen. Discussed red flag symptoms (shortness of breath, chest pain, fevers) - if present, seek urgent review with Doctor."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Legible core clinical information. Minor OCR slashes (/) and formatting line (~). Some specific words in the plan section are illegible.",
+      "critical_ambiguities": [
+        "Initial header section is mostly illegible ('??/1/[ILLEGIBLE]').",
+        "In the symptom list, the word after 'improving' is illegible.",
+        "The word 'SOB' is clear, but the following text on exertion is partially illegible.",
+        "In Plan point 2: 'r/v 5-7d IN[ILLEGIBLE]' - context suggests 'if no improvement' or similar, but word is unreadable.",
+        "The final line of the note is fully illegible."
+      ]
+    }
+  }
+}

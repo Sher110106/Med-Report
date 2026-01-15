@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T09:09:55.076Z",
+    "latencyMs": 7371
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Female",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "NSAIDs",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "POP (Progestin-only pill)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate quality OCR with some illegible sections. Clinical notes are mostly readable with clear treatment plan. No quantifiable diagnostic tests or lab results present in this consultation note - appears to be a clinical assessment for migraine headache."
+    }
+  }
+}

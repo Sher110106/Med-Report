@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T09:22:05.030Z",
+    "latencyMs": 35404
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Lower abdominal / suprapubic pain",
+        "hpi": "Patient presents with lower abdominal and suprapubic pain beginning 2 days ago (2/7). Onset was gradual, described as burning, constant, and worsening. Patient reports pink urine, feeling hot, and sweaty. Nausea is present, but vomiting is denied. History includes unprotected sexual intercourse 2 days ago. Last menstrual period was 2 weeks ago (2/52).",
+        "symptoms": [
+          "Lower abdominal pain",
+          "Suprapubic pain",
+          "Burning pain",
+          "Pink urine",
+          "Feeling hot",
+          "Sweating",
+          "Nausea"
+        ],
+        "patient_history": "Implanon (contraceptive implant). Last STD check 6 months ago (6/12). No other PMH or PSH."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Not recorded in text"
+        },
+        "labs_imaging": "Pending (Pregnancy test, Urine dip, MSU ordered)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Urinary Tract Infection (Suspected)",
+          "certainty_degree": 0.6,
+          "evidence_text": "Imp: ?UTI"
+        },
+        "differential_diagnosis": [
+          "Pregnancy"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Antibiotics (Empirical)",
+            "dosage": "Unknown",
+            "sig": "for UTI",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "Regularly for pain",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Pregnancy test",
+          "Urine dip",
+          "MSU (Mid-Stream Urine) culture"
+        ],
+        "patient_instructions": "Review in 24-48 hours if symptoms not improving, or earlier if symptoms worsen (fever, abdominal pain, vomiting)."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate. Contains standard medical shorthand (2/7, 6/12, 2/52) and some illegible words.",
+      "critical_ambiguities": [
+        "[ILLEGIBLE] sx urinary sx - prevents full confirmation of urinary negatives",
+        "Specific name and dosage of antibiotic is not specified (written as 'Abx')",
+        "Date is ambiguous (?7/1/24)"
+      ]
+    }
+  }
+}

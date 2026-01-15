@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "image": "medical_note_02.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T08:36:30.397Z",
+    "latencyMs": 28118
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Status update - patient doing well this AM",
+        "hpi": "12/2/18 critical care progress note: Patient is doing well this AM. Vitals stable (VSS). Physical exam: no acute distress, chest clear to auscultation bilaterally, heart regular rate and rhythm, abdomen soft/non-tender/non-distended with bowel sounds, no extremity edema. Labs reviewed. Impression lists acute respiratory failure, septic shock, AKI, and Med encephalopathy. Plan: continue antibiotics, pressors, ventilator; follow renal function and check labs.",
+        "symptoms": [
+          "None reported (patient doing well this AM)",
+          "No acute distress"
+        ],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "VSS (vital signs stable)",
+            "General: NAD (no acute distress)",
+            "Chest: CTA (B) - clear to auscultation bilaterally",
+            "Cardiovascular: RRR S1S2 OK - regular rate and rhythm, normal S1/S2",
+            "Abdomen: soft, NT, ND + BS - non-tender, non-distended, bowel sounds present",
+            "Extremities: ø edema - no edema"
+          ],
+          "text_raw": "VSS\nGen: NAD\nChest: CTA (B)\nCV: RRR S1S2 OK\nAbd: soft, NT, ND + BS\nExt: ø edema"
+        },
+        "labs_imaging": "Labs reviewed; plan to check labs (no specific lab values provided)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Acute Respiratory Failure",
+          "certainty_degree": 0.98,
+          "evidence_text": "1. Acute Resp. Falure"
+        },
+        "differential_diagnosis": [
+          {
+            "value": "Septic shock",
+            "certainty_degree": 0.98,
+            "evidence_text": "2. septic shock"
+          },
+          {
+            "value": "Acute Kidney Injury (AKI)",
+            "certainty_degree": 0.98,
+            "evidence_text": "3. AKI"
+          },
+          {
+            "value": "Med Encephalopathy (ambiguous - 'Med' unclear: medication-induced vs metabolic)",
+            "certainty_degree": 0.7,
+            "evidence_text": "4. Med Encephalopathy"
+          }
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Antibiotics (unspecified)",
+            "dosage": "Unknown",
+            "sig": "Continue (cont Abx)",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Vasopressors (unspecified)",
+            "dosage": "Unknown",
+            "sig": "Continue (pressors)",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Mechanical ventilation (ventilator support)",
+            "dosage": "N/A",
+            "sig": "Patient on ventilator / continue ventilator support",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "Continue antibiotics",
+          "Continue vasopressors",
+          "Continue mechanical ventilation",
+          "Follow renal function",
+          "Check labs"
+        ],
+        "patient_instructions": "Continue current therapies (antibiotics, vasopressors, ventilator); follow renal function and repeat/check labs as ordered."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Overall legible critical care note with abbreviations. Minor OCR/abbreviation issues (e.g., 'Falure' missing i, 'Med Encephalopathy' ambiguous). Vitals stated as 'VSS' without numeric values. Medications (antibiotics, pressors) not specified by name or dose.",
+      "critical_ambiguities": [
+        "'Acute Resp. Falure' - OCR misspelling of 'Failure' (inferred)",
+        "'Med Encephalopathy' - ambiguous whether 'Med' = metabolic or medication-induced encephalopathy",
+        "VSS present but no numeric vital sign values provided",
+        "Antibiotics and pressors referenced but specific agents and dosages not listed",
+        "No specific lab values provided despite 'Labs reviewed'"
+      ]
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:20:42.500Z",
+    "latencyMs": 97116
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Lower abdominal/suprapubic pain",
+        "hpi": "2 days history of gradual onset, burning, constant, and worsening lower abdominal/suprapubic pain. Patient reports pink urine but no frank haematuria and nil dysuria. Associated symptoms include nausea and feeling hot and sweaty. No bowel symptoms, vomiting, chest pain, shortness of breath, palpitations, headaches, or visual symptoms reported. Patient is sexually active with a regular partner, last STD check 6 months ago, and had unprotected sexual intercourse 2 days ago. LMP was 2 weeks ago.",
+        "symptoms": [
+          "Lower abdominal pain",
+          "Suprapubic pain",
+          "Burning sensation",
+          "Pink urine",
+          "Nausea",
+          "Feeling hot",
+          "Feeling sweaty"
+        ],
+        "patient_history": "Past Medical History: Nil. Past Surgical History: Nil. Drug History: Implanon. Family History: Nil. Social History: Lives with 2 flatmates, accountant, non-smoker, social alcohol use."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Possible Urinary Tract Infection (UTI)",
+          "certainty_degree": 0.7,
+          "evidence_text": "Imp: ?UTI"
+        },
+        "differential_diagnosis": [
+          "Pregnancy"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Antibiotics",
+            "dosage": "Unknown",
+            "sig": "Empirically for UTI",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "Regular for pain",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "Pregnancy test",
+          "Urine dipstick",
+          "Midstream Specimen of Urine (MSU)"
+        ],
+        "patient_instructions": "Review in 24-48 hours if symptoms not improving or earlier if symptoms worsen (fever, abdominal pain, vomiting)."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Generally legible handwriting, but contains some illegible sections and unclear date.",
+      "critical_ambiguities": [
+        "Date of visit is ambiguous (?7/1/24)",
+        "One line of symptoms is illegible [ILLEGIBLE] sx",
+        "Specific antibiotic name and dosage not listed in Rx"
+      ]
+    }
+  }
+}

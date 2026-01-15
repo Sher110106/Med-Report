@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:48:51.926Z",
+    "latencyMs": 34070
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Right S1 Radiculopathy (improving)",
+        "hpi": "41-year-old male presenting with Right S1 Radiculopathy. Patient reports condition is 'Better now'.",
+        "symptoms": [
+          "Radiculopathy"
+        ],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Straight Leg Raise (SLR) Normal",
+            "Right Ankle Jerk (AJ) Normal",
+            "Right Extensor Hallucis Longus (EHL) Normal"
+          ],
+          "text_raw": "SLR (N) Rt AJ / EHL (N) (N)"
+        },
+        "labs_imaging": "Uric Acid, Creatinine (Ordered)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Right S1 Radiculopathy",
+          "certainty_degree": 0.95,
+          "evidence_text": "Δ (Rt) S1 Radiculopathy"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Tricobal",
+            "dosage": "Unknown",
+            "sig": "OD (Once daily)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Complamina",
+            "dosage": "Unknown",
+            "sig": "HS (at night)",
+            "handwriting_confidence": 0.8
+          },
+          {
+            "drug": "Oxetol",
+            "dosage": "150mg",
+            "sig": "BD (Twice daily)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Puric",
+            "dosage": "40mg",
+            "sig": "OD (Once daily)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Emanzen D or Zerodol SP",
+            "dosage": "Unknown",
+            "sig": "BD (Twice daily)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Esofag D",
+            "dosage": "Unknown",
+            "sig": "BD (Twice daily) on empty stomach",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "Uric Acid",
+          "Creatinine"
+        ],
+        "patient_instructions": "Take all medications for 2 months. Take Esofag D on an empty stomach."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Generally legible. Some dosage details are messy (Complamina). Hindi text included for instructions.",
+      "critical_ambiguities": [
+        "Complamina dosage string is confusing ('1 0 --- 0 --- 1' alongside 'HS')",
+        "Specific dosage strengths missing for Tricobal, Complamina, Emanzen D, and Esofag D"
+      ]
+    }
+  }
+}

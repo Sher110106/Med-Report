@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:17:14.851Z",
+    "latencyMs": 8429
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "original_text": "regular paracet/ibuprofen",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Ibuprofen",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "original_text": "regular paracet/ibuprofen",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Clinical note mostly legible with some illegible tokens marked [ILLEGIBLE]. No quantitative laboratory, imaging, or vital-sign test results present in the text."
+    }
+  }
+}

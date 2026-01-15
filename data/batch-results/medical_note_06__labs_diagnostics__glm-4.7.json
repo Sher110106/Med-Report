@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:09:00.206Z",
+    "latencyMs": 79578
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Female",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Progestogen-Only Pill (POP)",
+          "dosage": "Unknown",
+          "frequency": "Daily (Implied by change from COCP)",
+          "original_text": "change COCP to POP",
+          "confidence_score": 1
+        },
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "regular",
+          "original_text": "regular paracet/NSAIDs",
+          "confidence_score": 1
+        },
+        {
+          "name": "NSAIDs",
+          "dosage": "Unknown",
+          "frequency": "regular",
+          "original_text": "regular paracet/NSAIDs",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "OCR text is generally clear and legible with standard medical abbreviations. Patient name and specific date values are missing or illegible. One word in the warning section is marked [ILLEGIBLE]."
+    }
+  }
+}

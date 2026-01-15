@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:27:33.504Z",
+    "latencyMs": 19370
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Diarrhea for 3 days, vomiting",
+        "hpi": "3 days of watery diarrhea (no blood), bowel movements 6 times per day, lower left quadrant (LLQ) crampy, intermittent pain, no radiation. Vomiting with bilious content, no hematemesis, fever on day 1, no fever since. Patient feels lethargic and weak. Recent consumption of Chinese takeaway 4 days ago with wife and children. Wife and children did not develop symptoms.",
+        "symptoms": [
+          "Diarrhea (watery, no blood)",
+          "Bowel movements 6 times/day",
+          "Lower left quadrant (LLQ) crampy pain (intermittent, no radiation)",
+          "Vomiting (bilious, no hematemesis)",
+          "Fever (day 1, no fever since)",
+          "Lethargy",
+          "Weakness"
+        ],
+        "patient_history": "Asthma, uses decongestant (DH) inhalers"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Gastroenteritis",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: gastroenteritis"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "PRN for fever",
+            "handwriting_confidence": 0.8
+          }
+        ],
+        "procedures_ordered": [
+          "OTC diarolyte (oral rehydration solution)"
+        ],
+        "patient_instructions": "Conservative management. Rest, push fluids. Follow up in 3-5 days if not better, sooner if worse."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility. Some sections are illegible.",
+      "critical_ambiguities": [
+        "Vital signs not mentioned",
+        "Physical exam findings illegible",
+        "Medication dosage and instructions for diarolyte not clearly legible"
+      ]
+    }
+  }
+}

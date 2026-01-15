@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:29:49.114Z",
+    "latencyMs": 7395
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "PRN for fever",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "OTC Diarolyte",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility; several [ILLEGIBLE] blocks; no quantitative labs present."
+    }
+  }
+}

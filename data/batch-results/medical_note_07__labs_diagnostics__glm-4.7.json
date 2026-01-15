@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:16:11.092Z",
+    "latencyMs": 37866
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "regular",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Ibuprofen",
+          "dosage": "Unknown",
+          "frequency": "regular",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Patient demographics (name, age, gender) and specific visit date are illegible. Clinical history, social history, and treatment plan are clearly legible. No quantitative bloodwork, urine, or imaging results are present in the document."
+    }
+  }
+}

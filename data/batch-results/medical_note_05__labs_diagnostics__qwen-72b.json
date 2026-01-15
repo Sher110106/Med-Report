@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "image": "medical_note_05.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:02:25.208Z",
+    "latencyMs": 9670
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Unknown",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "??/1/[ILLEGIBLE]",
+        "confidence_score": 0
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Betnovate",
+          "dosage": "BD",
+          "frequency": "Twice daily",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Cetraben",
+          "dosage": "QDS",
+          "frequency": "Four times daily",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Antihistamines",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "The majority of the text is legible, but some sections are heavily distorted or illegible, particularly the patient metadata and initial diagnostic values."
+    }
+  }
+}

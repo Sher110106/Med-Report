@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "image": "medical_note_02.webp",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T08:40:22.151Z",
+    "latencyMs": 32380
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2018-12-02"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Vital signs",
+        "value": "Stable",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "VSS",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "General exam",
+        "value": "No acute distress",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Gen: NAD",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Chest auscultation",
+        "value": "Clear to auscultation bilaterally",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Chest: CTA (B)",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Cardiovascular exam",
+        "value": "Regular rate and rhythm; S1 S2 normal",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "CV: RRR S1S2 OK",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Abdominal exam",
+        "value": "Soft, non-tender, non-distended, bowel sounds present",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Abd: soft, NT, ND + BS",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Extremities exam",
+        "value": "No edema",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Ext: ø edema",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Labs reviewed",
+        "value": "Reviewed (specific lab values not provided in note)",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Labs reviewed",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Diagnosis: Acute respiratory failure",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Critical",
+        "original_text": "1. Acute Resp. Falure",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Diagnosis: Septic shock",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Critical",
+        "original_text": "2. septic shock",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Diagnosis: Acute kidney injury (AKI)",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Abnormal",
+        "original_text": "3. AKI",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Diagnosis: Encephalopathy",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Abnormal",
+        "original_text": "4. Med Encephalopathy",
+        "confidence_score": 0.9
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Antibiotics (unspecified)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Vasopressors (unspecified)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Mechanical ventilation (plan: continue vent)",
+          "dosage": "N/A",
+          "frequency": "Continuous as indicated",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Overall legible clinical note with standard abbreviations; some minor typos/abbreviations (e.g., 'Falure', 'Med Encephalopathy') but meanings are clear."
+    }
+  }
+}

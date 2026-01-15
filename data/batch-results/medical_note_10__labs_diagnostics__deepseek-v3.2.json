@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:36:56.947Z",
+    "latencyMs": 19163
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "48",
+      "gender": "M",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Weight",
+        "value": "95",
+        "unit": "kg",
+        "flag": "Normal",
+        "original_text": "WT 95kg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Blood Pressure",
+        "value": "120/80",
+        "unit": "mmHg",
+        "flag": "Normal",
+        "original_text": "BP: 120/80mmHg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Pulse Rate",
+        "value": "84",
+        "unit": "/min",
+        "flag": "Normal",
+        "original_text": "P: 84/min",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Oxygen Saturation",
+        "value": "98",
+        "unit": "%",
+        "flag": "Normal",
+        "original_text": "SpO2: 98%",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Complete Blood Count",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "CBC",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Immunoglobulin E",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "IgE",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Serum Magnesium",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "S. Mg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Vitamin D3",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Vit D3",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Vitamin B12",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "B12 levels",
+        "confidence_score": 1
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Foracort",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Vaccine",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Legible with minor shorthand notations (O/E, Rx, h/o, comorbs). No significant OCR errors apparent. Some test results are indications for future tests rather than current values."
+    }
+  }
+}

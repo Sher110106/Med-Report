@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "image": "medical_note_03.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T08:47:21.872Z",
+    "latencyMs": 19785
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "ALT/SGPT",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "SGPT",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Creatinine",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Creatinine",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Urine (RM)",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Urine : RM",
+        "confidence_score": 0.95
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Hydroxychloroquine (HCQs)",
+          "dosage": "200 mg",
+          "frequency": "one daily at night",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Folitrax",
+          "dosage": "15 mg",
+          "frequency": "once per week (Friday night)",
+          "confidence_score": 0.8
+        },
+        {
+          "name": "Folvite (Folic acid)",
+          "dosage": "5 mg",
+          "frequency": "twice per week (Saturdays, Sundays)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Rablet-D",
+          "dosage": "one tablet",
+          "frequency": "once daily before breakfast for 2 months",
+          "confidence_score": 0.75
+        },
+        {
+          "name": "Cap. D-logy",
+          "dosage": "one capsule",
+          "frequency": "one every month",
+          "confidence_score": 0.75
+        },
+        {
+          "name": "Wysolone (Prednisolone)",
+          "dosage": "5 mg",
+          "frequency": "once daily",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Overall legible. Medication list is clear, though several brand names (Folitrax, Rablet-D, D-logy) may be ambiguous in identity; lab test names present but results/values are not provided."
+    }
+  }
+}

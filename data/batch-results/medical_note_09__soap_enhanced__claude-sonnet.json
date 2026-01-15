@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T09:27:45.039Z",
+    "latencyMs": 11033
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Diarrhea for 3 days",
+        "hpi": "Patient presents with 3 days of watery diarrhea without blood, 6 bowel movements per day, associated with left lower quadrant crampy intermittent pain without radiation. Day 1 had bilious vomiting without hematemesis and fever, but no vomiting since. Patient reports lethargy and weakness. Had Chinese takeaway 4 days ago; rest of family (wife and children) had vomiting but no diarrhea. No other known contacts with similar illness.",
+        "symptoms": [
+          "Watery diarrhea",
+          "Left lower quadrant pain (crampy, intermittent)",
+          "Bilious vomiting (day 1 only)",
+          "Fever (day 1 only)",
+          "Lethargy",
+          "Weakness"
+        ],
+        "patient_history": "Asthma, on inhalers"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "[ILLEGIBLE sections present]"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Gastroenteritis",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: gastroenteritis"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "If fever, over-the-counter",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Dioralyte",
+            "dosage": "Unknown",
+            "sig": "Over-the-counter for rehydration",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Review in 3-5 days if not better",
+          "Return earlier if condition worsens"
+        ],
+        "patient_instructions": "Conservative management with rest and push fluids. Take paracetamol if fever develops. Use over-the-counter Dioralyte for rehydration. Return for review in 3-5 days if not improving, or earlier if symptoms worsen."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate quality with several illegible sections. Date partially unclear, some text fragments unreadable.",
+      "critical_ambiguities": [
+        "Date appears incomplete (24/1/2?)",
+        "Several illegible text sections throughout the note",
+        "Some medication instructions may be incomplete due to illegibility"
+      ]
+    }
+  }
+}

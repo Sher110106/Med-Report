@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "image": "medical_note_02.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:34:06.680Z",
+    "latencyMs": 21200
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Patient doing well",
+        "hpi": "Patient is doing well this morning.",
+        "symptoms": [],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": "VSS (Vital Signs Stable)",
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "General: NAD (No Acute Distress)",
+            "Chest: CTA (B) (Clear to Auscultation Bilateral)",
+            "Cardiovascular: RRR (Regular Rate and Rhythm), S1S2 OK",
+            "Abdomen: soft, NT (Non-Tender), ND (Non-Distended) + BS (Bowel Sounds)",
+            "Extremities: No edema"
+          ],
+          "text_raw": "Gen: NAD, Chest: CTA (B), CV: RRR S1S2 OK, Abd: soft, NT, ND + BS, Ext: ø edema"
+        },
+        "labs_imaging": "Reviewed"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Multiple Critical Conditions",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: 1. Acute Resp. Falure, 2. septic shock, 3. AKI, 4. Med Encephalopathy"
+        },
+        "differential_diagnosis": [
+          "Acute Respiratory Failure",
+          "Septic Shock",
+          "Acute Kidney Injury (AKI)",
+          "Metabolic Encephalopathy"
+        ]
+      },
+      "plan": {
+        "medications": [],
+        "procedures_ordered": [
+          "Follow renal function",
+          "Check labs"
+        ],
+        "patient_instructions": "Continue antibiotics, pressors, ventilator support"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Generally clear and legible. Medical abbreviations are standard.",
+      "critical_ambiguities": []
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "image": "medical_note_03.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T08:46:21.556Z",
+    "latencyMs": 9692
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2024-06-16"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "SGPT/ALT",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "SGPT",
+        "confidence_score": 0.2
+      },
+      {
+        "test_name": "Creatinine",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Creatinine",
+        "confidence_score": 0.2
+      },
+      {
+        "test_name": "Urine Routine Microscopy",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Urine : RM",
+        "confidence_score": 0.3
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Hydroxychloroquine",
+          "dosage": "200mg",
+          "frequency": "once daily at night",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Methotrexate (Folitrax)",
+          "dosage": "15mg",
+          "frequency": "once per week (Friday night)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Folic Acid (Folvite)",
+          "dosage": "5mg",
+          "frequency": "twice per week (Saturdays, Sundays)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Rabeprazole + Domperidone (Rablet-D)",
+          "dosage": "Unknown",
+          "frequency": "once daily before breakfast for 2 months",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Vitamin D3 (D-logy)",
+          "dosage": "Unknown",
+          "frequency": "once every month",
+          "confidence_score": 0.85
+        },
+        {
+          "name": "Prednisolone (Wysolone)",
+          "dosage": "5mg",
+          "frequency": "once daily",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Document is relatively clear but appears to be a prescription format rather than lab results. Lab tests (SGPT, Creatinine, Urine RM) are mentioned under 'Investigation' section but no values are provided - only test names are listed, suggesting these are ordered tests rather than completed results."
+    }
+  }
+}

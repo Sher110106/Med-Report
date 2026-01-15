@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:31:16.575Z",
+    "latencyMs": 48534
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Richard ( Dave ) De Bronkart",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2009-09-15"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Saline",
+          "dosage": "Unknown",
+          "frequency": "PRN",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Overall legibility is good. Contains some medical shorthand and symbols (e.g., 's/p', 'Ø', 'c̄'). There are two distinct blocks of '[ILLEGIBLE]' text where data could not be retrieved. 'Silicon' is likely a typo for 'Silicone' regarding the button, but interpreted as a device rather than a medication."
+    }
+  }
+}

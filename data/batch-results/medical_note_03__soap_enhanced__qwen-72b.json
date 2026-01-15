@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "image": "medical_note_03.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:42:32.419Z",
+    "latencyMs": 14199
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Unknown",
+        "hpi": "Unknown",
+        "symptoms": [],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Systemic Lupus Erythematosus (SLE) with Scleroderma",
+          "certainty_degree": 0.95,
+          "evidence_text": "S.L.E. with Scleroderma"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Hydroxychloroquine (HCQ)",
+            "dosage": "200mg",
+            "sig": "one daily at night",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Folitrax",
+            "dosage": "15mg",
+            "sig": "once per week (Friday night)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Folvite",
+            "dosage": "5mg",
+            "sig": "twice per week (Saturdays, Sundays)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Rablet-D",
+            "dosage": "one daily",
+            "sig": "x2 months before breakfast",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "D-logy",
+            "dosage": "one every month",
+            "sig": "Cap. D-logy one every month",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Wysolone",
+            "dosage": "5mg",
+            "sig": "once daily",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "SGPT",
+          "Creatinine",
+          "Urine: RM"
+        ],
+        "patient_instructions": "Unknown"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility. Chief complaint and history of present illness are not clearly mentioned.",
+      "critical_ambiguities": [
+        "Chief complaint and history of present illness are not clearly mentioned",
+        "Physical exam findings are not clearly mentioned",
+        "Patient instructions are not clearly mentioned"
+      ]
+    }
+  }
+}

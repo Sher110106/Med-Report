@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T08:32:16.042Z",
+    "latencyMs": 30303
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Richard ( Dave ) De Bronkart",
+      "age": "Unknown",
+      "gender": "Male",
+      "date_of_visit": "2009-09-15"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Physical Exam - Nose (Septal Button)",
+        "value": "Present, good position",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "O. nose - ⊕ button in good posn.",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Physical Exam - Operative Site",
+        "value": "Clear",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "s/p op - clear",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Physical Exam - Neck",
+        "value": "Clear",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "Renal cell neck - clear",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Physical Exam - Masses",
+        "value": "None",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "ca Ø masses",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Physical Exam - Ears",
+        "value": "Ok",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "ears -> ok.",
+        "confidence_score": 0.95
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Saline",
+          "dosage": "Unknown",
+          "frequency": "PRN (As needed)",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Handwritten note with standard medical shorthand (⊕, Ø, c̄). Text is legible with high confidence in meaning despite abbreviations."
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:34:35.440Z",
+    "latencyMs": 141021
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Loss of smell post COVID, effort limitation, mucoid expectoration",
+        "hpi": "48-year-old male jeweler with a history of occasional smoking and asthma presents with loss of smell following COVID-19 infection. He reports feeling effort-limited since the infection and has mucoid expectoration. He notes positive triggers for symptoms and possible GERD (GER+/-). He has previously benefited from Foracort and intranasal corticosteroids (INCS). No known drug allergies. No significant family history.",
+        "symptoms": [
+          "Loss of smell (Anosmia)",
+          "Exertional dyspnea (effort limitation)",
+          "Mucoid expectoration",
+          "GERD symptoms",
+          "Positive triggers"
+        ],
+        "patient_history": "Asthma, Occasional smoking history, Post-COVID status"
+      },
+      "objective": {
+        "vitals": {
+          "bp": "120/80mmHg",
+          "hr": "84/min",
+          "temp": null,
+          "rr": null,
+          "weight": "95kg"
+        },
+        "physical_exam": {
+          "findings": [
+            "Chest clear to auscultation",
+            "SpO2 98%",
+            "No drug allergies",
+            "No family history"
+          ],
+          "text_raw": "O/E: Chest - clear. SpO2 98%. No any drug allergy. No family history."
+        },
+        "labs_imaging": "Pending: CBC, IgE, S. Mg, Vit D3, B12 levels, Complete PFT (spirometry, DLco, transfer factor)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Asthma",
+          "certainty_degree": 0.9,
+          "evidence_text": "h/o asthma"
+        },
+        "differential_diagnosis": [
+          "Post-COVID syndrome",
+          "GERD"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Foracort",
+            "dosage": "Unknown",
+            "sig": "Continue (Patient has benefited)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Intranasal Corticosteroids (INCS)",
+            "dosage": "Unknown",
+            "sig": "Continue (Patient has benefited)",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "CBC",
+          "IgE",
+          "Serum Magnesium (S. Mg)",
+          "Vitamin D3 level",
+          "Vitamin B12 level",
+          "Complete PFT (Spirometry, DLco, Transfer factor)",
+          "Vaccination"
+        ],
+        "patient_instructions": "Get vaccinated."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Good legibility. Text is fragmented but clear.",
+      "critical_ambiguities": [
+        "GER +/- status ambiguous (could mean GERD present or ruled out)",
+        "Conflict between 'N. known comorbs' and 'h/o asthma' (likely implies no other comorbidities)"
+      ]
+    }
+  }
+}

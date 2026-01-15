@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "image": "medical_note_02.webp",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:38:45.926Z",
+    "latencyMs": 127373
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2018-12-02"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Antibiotics",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Pressors",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Text is legible with standard medical abbreviations (e.g., VSS, NAD, AKI). No specific quantifiable lab results (e.g., CBC, BMP) were listed in the note, only a statement that 'Labs reviewed'."
+    }
+  }
+}

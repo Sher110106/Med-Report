@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T08:53:50.633Z",
+    "latencyMs": 12028
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "JITENDER KR",
+      "age": "41",
+      "gender": "M",
+      "date_of_visit": "2011-08-10"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "SLR (Straight Leg Raise)",
+        "value": "Normal",
+        "unit": "Clinical test",
+        "flag": "Normal",
+        "original_text": "SLR (N)",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Right Ankle Jerk",
+        "value": "Normal",
+        "unit": "Clinical test",
+        "flag": "Normal",
+        "original_text": "Rt AJ / EHL (N)",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Extensor Hallucis Longus",
+        "value": "Normal",
+        "unit": "Clinical test",
+        "flag": "Normal",
+        "original_text": "Rt AJ / EHL (N)",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Uric Acid",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Uric Acid",
+        "confidence_score": 0.85
+      },
+      {
+        "test_name": "Creatinine",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Creatinine",
+        "confidence_score": 0.95
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Cap Tricobal",
+          "dosage": "Unknown",
+          "frequency": "OD (Once daily)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Complamina-R",
+          "dosage": "Unknown",
+          "frequency": "HS (At bedtime)",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Oxetol",
+          "dosage": "150mg",
+          "frequency": "BD (Twice daily)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "PURIC",
+          "dosage": "40mg",
+          "frequency": "OD (Once daily)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Emanzen D / Zerodol SP",
+          "dosage": "Unknown",
+          "frequency": "BD (Twice daily)",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Esofag D",
+          "dosage": "Unknown",
+          "frequency": "BD (Twice daily) - Empty stomach",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Good quality OCR with clear medication names and dosing schedules. Some handwritten portions in Hindi/Devanagari script. Date format appears to be DD-MM-YY. Clinical examination findings clearly documented. Lab tests mentioned for ordering but no results provided."
+    }
+  }
+}

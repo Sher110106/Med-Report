@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:23:43.742Z",
+    "latencyMs": 9458
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Female",
+      "date_of_visit": "2024-07-01"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Pregnancy Test",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "Plan: 1. pregnancy test",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Urine Dipstick",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "2. urine dip + MSU",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Mid-Stream Urine Culture",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "2. urine dip + MSU",
+        "confidence_score": 1
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Antibiotics",
+          "dosage": "Empirical",
+          "frequency": "As prescribed for UTI",
+          "confidence_score": 1
+        },
+        {
+          "name": "Paracetamol",
+          "dosage": "Regular",
+          "frequency": "As needed for pain",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Good overall legibility though some words marked [ILLEGIBLE]. Key medical terms and plan clearly readable."
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:53:25.972Z",
+    "latencyMs": 16569
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Mr. Jitender Kr",
+      "age": "41",
+      "gender": "M",
+      "date_of_visit": "2011-08-10"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Uric Acid",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Uric Acid",
+        "confidence_score": 0
+      },
+      {
+        "test_name": "Creatinine",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Creatinine",
+        "confidence_score": 0
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Cap Tricobal",
+          "dosage": "OD",
+          "frequency": "1 --- 0 --- 0",
+          "confidence_score": 1
+        },
+        {
+          "name": "Complamina - R",
+          "dosage": "HS",
+          "frequency": "रात में --- 1 0 --- 0 --- 1",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Oxetol 150",
+          "dosage": "BD",
+          "frequency": "1 --- 0 --- 1",
+          "confidence_score": 1
+        },
+        {
+          "name": "PURIC - 40",
+          "dosage": "OD",
+          "frequency": "1 --- 0 --- 0",
+          "confidence_score": 1
+        },
+        {
+          "name": "Emanzen D / or Zerodol SP",
+          "dosage": "BD",
+          "frequency": "1 --- 0 --- 1",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Esofag D",
+          "dosage": "BD",
+          "frequency": "1 --- 0 --- 1",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly legible; minor spacing issues in medication frequencies; two lab orders listed without values"
+    }
+  }
+}

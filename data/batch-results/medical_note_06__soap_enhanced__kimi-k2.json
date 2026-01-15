@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:05:27.568Z",
+    "latencyMs": 10011
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Headache left side for few hours",
+        "hpi": "Patient experienced gradual throbbing headache starting on left side few hours prior to visit. Visual symptoms included zigzag lines and blurred vision before onset of headache. Headache associated with photophobia, nausea with 2 episodes of vomiting today. No radiation of pain. No neck stiffness. Episodes of headache preceded by visual aura. Similar episode 2 weeks ago resolved with analgesia. No speech disturbance, no limb weakness/numbness, no fever, no rashes, no recent head injury. Patient expresses worry about brain cancer.",
+        "symptoms": [
+          "Headache left side",
+          "Throbbing headache",
+          "Photophobia",
+          "Zigzag lines in vision",
+          "Blurred vision",
+          "Nausea",
+          "Vomiting x2 today",
+          "Neck pain",
+          "No neck stiffness"
+        ],
+        "patient_history": "Nil significant past medical history"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "No speech disturbance",
+            "No limb weakness",
+            "No numbness",
+            "[ILLEGIBLE] coordination/balance issues"
+          ],
+          "text_raw": "no speech disturbe no limb weakness/numbness [ILLEGIBLE] coordination/balance issues"
+        },
+        "labs_imaging": "Unknown"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Migraine",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: migraine"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Progesterone-only pill (POP)",
+            "dosage": "Unknown",
+            "sig": "Change from COCP to POP",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "As needed for symptom relief",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "NSAIDs",
+            "dosage": "Unknown",
+            "sig": "As needed for symptom relief",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Keep headache diary",
+          "Review in 1 week to discuss prophylactic treatment"
+        ],
+        "patient_instructions": "Change from combined oral contraceptive pill to progesterone-only pill. Maintain regular use of paracetamol or NSAIDs for symptom relief. Keep detailed headache diary. Return for review in 1 week to discuss prophylactic treatment options or earlier if symptoms worsen (headache [ILLEGIBLE] vomiting vision changes) or any concerns."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Generally legible with some critical areas illegible (coordination details and part of worsening symptoms warning)",
+      "critical_ambiguities": [
+        "Coordination/balance exam detail partially illegible",
+        "Medication dosages not specified",
+        "Part of warning symptom list illegible in follow-up instructions"
+      ]
+    }
+  }
+}

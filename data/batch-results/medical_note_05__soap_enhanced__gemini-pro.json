@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "image": "medical_note_05.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T09:00:43.990Z",
+    "latencyMs": 58113
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Dry, itchy skin on chest and back",
+        "hpi": "Patient presents with a 4-day history (4/7 hx) of dry, itchy, sore, and cracked skin on the chest and back. Reports no bleeding, no discharge, and no spread elsewhere. Patient is not aware of any triggers. Applied OTC steroid cream last night with minimal effect. Patient has also tried antihistamines. Systemically well.",
+        "symptoms": [
+          "Dry skin",
+          "Itchy skin",
+          "Sore skin",
+          "Cracked skin",
+          "No bleeding",
+          "No discharge",
+          "No spread of rash",
+          "No fevers",
+          "No vomiting",
+          "No shortness of breath (SOB)",
+          "No cough",
+          "No bowel symptoms"
+        ],
+        "patient_history": "PMH: Eczema, Asthma. DHx: Nil regular medications. Allergies: NKDA (No Known Drug Allergies). Social Hx: Lives with flatmates, works as pharmacy manager, non-smoker, social alcohol use."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Skin: Dry, itchy, sore, cracked skin noted on chest and back (inferred from history/presentation context)"
+          ],
+          "text_raw": "dry itchy skin chest+back sore cracked\nno bleed\nno discharge\nno spread elsewhere"
+        },
+        "labs_imaging": "Pending/None mentioned"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Eczema flare up",
+          "certainty_degree": 0.98,
+          "evidence_text": "Imp: eczema flare up"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Betnovate (Steroid cream)",
+            "dosage": "Unknown strength",
+            "sig": "BD (Twice Daily)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Cetraben (Emollients)",
+            "dosage": "Unknown strength",
+            "sig": "QDS (Four times daily)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Antihistamines",
+            "dosage": "Unknown strength",
+            "sig": "Trial",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "Keep trigger diary",
+          "Review in 10-14 days"
+        ],
+        "patient_instructions": "Keep trigger diary. Return for review in 10-14 days if no better, or earlier if there are concerns or worsening symptoms."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate. Some headers and dates illegible. Medical shorthand used (4/7, BD, QDS). Typos corrected ('cetrabem' to 'Cetraben').",
+      "critical_ambiguities": [
+        "Exact date of visit illegible (??/1/[ILLEGIBLE])",
+        "Specific 'OTC steroid cream' brand used previously is unnamed",
+        "One line regarding effect of OTC cream is illegible ('[ILLEGIBLE] effect'), inferred 'minimal effect' from subsequent line."
+      ]
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T09:39:51.021Z",
+    "latencyMs": 12583
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "48",
+      "gender": "Male",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Weight",
+        "value": "95",
+        "unit": "kg",
+        "flag": "Unknown",
+        "original_text": "WT 95kg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Blood Pressure Systolic",
+        "value": "120",
+        "unit": "mmHg",
+        "flag": "Unknown",
+        "original_text": "BP: 120/80mmHg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Blood Pressure Diastolic",
+        "value": "80",
+        "unit": "mmHg",
+        "flag": "Unknown",
+        "original_text": "BP: 120/80mmHg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Pulse Rate",
+        "value": "84",
+        "unit": "/min",
+        "flag": "Unknown",
+        "original_text": "P: 84/min",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Oxygen Saturation",
+        "value": "98",
+        "unit": "%",
+        "flag": "Unknown",
+        "original_text": "SpO2: 98%",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "CBC",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "CBC, IgE, S. Mg, Vit D3, B12 levels.",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "IgE",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "CBC, IgE, S. Mg, Vit D3, B12 levels.",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Serum Magnesium",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "CBC, IgE, S. Mg, Vit D3, B12 levels.",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Vitamin D3",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "CBC, IgE, S. Mg, Vit D3, B12 levels.",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Vitamin B12",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "CBC, IgE, S. Mg, Vit D3, B12 levels.",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Pulmonary Function Test - Spirometry",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Complete PFT- spirometry, DLco, transfer factor",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "DLCO",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Complete PFT- spirometry, DLco, transfer factor",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Transfer Factor",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Complete PFT- spirometry, DLco, transfer factor",
+        "confidence_score": 1
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Foracort",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 1
+        },
+        {
+          "name": "INCS",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Vaccination",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Good legibility overall. Standard medical abbreviations used. Some abbreviations like 'INCS' may refer to inhaled corticosteroids. Text is well-structured with clear vital signs and treatment plan."
+    }
+  }
+}

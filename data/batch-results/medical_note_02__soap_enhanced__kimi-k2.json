@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "image": "medical_note_02.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:34:58.732Z",
+    "latencyMs": 12602
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Unknown",
+        "hpi": "Patient is doing well this morning",
+        "symptoms": [],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "General: NAD (No acute distress)",
+            "Chest: CTA (B) (Clear to auscultation bilaterally)",
+            "CV: RRR S1S2 OK (Regular rate and rhythm, normal S1/S2)",
+            "Abdomen: soft, non-tender, non-distended, bowel sounds present",
+            "Extremities: no edema"
+          ],
+          "text_raw": "Gen: NAD  Chest: CTA (B)  CV: RRR S1S2 OK  Abd: soft, NT, ND + BS  Ext: ø edema"
+        },
+        "labs_imaging": "Labs reviewed"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Acute Respiratory Failure",
+          "certainty_degree": 0.95,
+          "evidence_text": "1. Acute Resp. Falure"
+        },
+        "differential_diagnosis": [
+          "Septic shock",
+          "AKI (Acute Kidney Injury)",
+          "Med Encephalopathy (Metabolic Encephalopathy)"
+        ]
+      },
+      "plan": {
+        "medications": [],
+        "procedures_ordered": [
+          "Continue antibiotics",
+          "Continue pressors",
+          "Continue ventilator support",
+          "Follow renal function",
+          "Check labs"
+        ],
+        "patient_instructions": "Unknown"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Good legibility. Minor typo in 'Falure' corrected to 'Failure'.",
+      "critical_ambiguities": []
+    }
+  }
+}

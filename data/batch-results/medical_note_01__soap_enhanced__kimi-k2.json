@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:28:36.100Z",
+    "latencyMs": 16862
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Perforated septum with silicon button - routine ENT follow-up",
+        "hpi": "Patient reports doing well one year post-op septal perforation repair with silicon button; 15-year history of septal perforation.",
+        "symptoms": [],
+        "patient_history": "Septal perforation 15-year history; post-op septal perforation repair with silicon button; History of renal cell carcinoma (2007)"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Silicon button in good position",
+            "Nose post-op clear",
+            "Neck (renal cell carcinoma site) clear - no masses",
+            "Ears examination from 2007 - normal"
+          ],
+          "text_raw": "O. nose - ⊕ button in good posn. s/p op - clear. Renal cell neck - clear, ca Ø masses. 2007. ears -> ok."
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Post-op septal perforation repair status",
+          "certainty_degree": 0.9,
+          "evidence_text": "I. s/p septal perforated + silicon plug"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Saline",
+            "dosage": "Unknown",
+            "sig": "PRN (as needed)",
+            "handwriting_confidence": 0.85
+          }
+        ],
+        "procedures_ordered": [],
+        "patient_instructions": "Use saline PRN for nasal care"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Legibility generally fair with two complete lines marked [ILLEGIBLE]",
+      "critical_ambiguities": [
+        "Two lines of physician notes completely illegible",
+        "Exact saline formulation/strength unspecified"
+      ]
+    }
+  }
+}

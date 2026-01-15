@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T08:54:31.203Z",
+    "latencyMs": 40067
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Mr. Jitender Kr",
+      "age": "41",
+      "gender": "Male",
+      "date_of_visit": "2011-08-10"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "SLR (Straight Leg Raise)",
+        "value": "Normal",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "- SLR (N)",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Right Ankle Jerk (Rt AJ)",
+        "value": "Normal",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "Rt AJ / EHL (N)",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Extensor Hallucis Longus (EHL)",
+        "value": "Normal",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "Rt AJ / EHL (N)",
+        "confidence_score": 0.95
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Cap Tricobal",
+          "dosage": "Unknown",
+          "frequency": "OD (Once Daily) - Morning",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Complamina - R",
+          "dosage": "Unknown",
+          "frequency": "HS (Bedtime)",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Oxetol",
+          "dosage": "150 mg",
+          "frequency": "BD (Twice Daily)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Puric",
+          "dosage": "40 mg",
+          "frequency": "OD (Once Daily)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Emanzen D or Zerodol SP",
+          "dosage": "Unknown",
+          "frequency": "BD (Twice Daily)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Esofag D",
+          "dosage": "Unknown",
+          "frequency": "BD (Twice Daily) - Empty Stomach",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Good. Medical abbreviations (OD, BD, HS) and physical exam notations (SLR, AJ, N) are clearly identifiable. 'Uric Acid' and 'Creatinine' appear at the bottom as requested tests without result values, thus excluded from diagnostics."
+    }
+  }
+}

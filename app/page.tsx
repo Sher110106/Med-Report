@@ -50,14 +50,13 @@ export default function LandingPage() {
     {
       title: "Survey",
       description: "Physician evaluation interface for rating model outputs. Powers the research study for benchmarking extraction quality.",
-      href: "#",
+      href: "/survey",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
         </svg>
       ),
       color: "orange",
-      comingSoon: true,
     },
   ];
 
@@ -146,18 +145,8 @@ export default function LandingPage() {
               <Link
                 key={index}
                 href={feature.href}
-                className={`group relative p-6 bg-white rounded-2xl border-2 transition-all duration-500 transform hover:-translate-y-1 ${
-                  feature.comingSoon 
-                    ? 'border-gray-200 cursor-default opacity-60' 
-                    : 'border-gray-200 hover:border-black hover:shadow-lg'
-                }`}
-                onClick={feature.comingSoon ? (e) => e.preventDefault() : undefined}
+                className="group relative p-6 bg-white rounded-2xl border-2 transition-all duration-500 transform hover:-translate-y-1 border-gray-200 hover:border-black hover:shadow-lg"
               >
-                {feature.comingSoon && (
-                  <span className="absolute top-4 right-4 px-2 py-1 text-xs font-medium bg-gray-100 text-gray-500 rounded-full">
-                    Coming Soon
-                  </span>
-                )}
                 <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 transition-all duration-300 ${
                   feature.color === 'blue' ? 'bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white' :
                   feature.color === 'purple' ? 'bg-purple-100 text-purple-600 group-hover:bg-purple-600 group-hover:text-white' :
@@ -168,14 +157,12 @@ export default function LandingPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-2">{feature.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
-                {!feature.comingSoon && (
-                  <div className="mt-4 flex items-center text-sm font-medium text-black opacity-0 group-hover:opacity-100 transition-opacity">
-                    Try it
-                    <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                )}
+                <div className="mt-4 flex items-center text-sm font-medium text-black opacity-0 group-hover:opacity-100 transition-opacity">
+                  Try it
+                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </Link>
             ))}
           </div>

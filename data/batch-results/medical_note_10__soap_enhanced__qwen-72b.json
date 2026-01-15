@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:35:11.862Z",
+    "latencyMs": 15890
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Loss of smell post COVID, effort limitation, mucoid expectoration",
+        "hpi": "48-year-old male jeweler with no known comorbidities reports loss of sense of smell following COVID-19 infection. He feels effort-limited since the infection and has mucoid expectoration. He has a history of GERD, which is sometimes present. He has benefited from Foracort and inhaled corticosteroids (INCS). No known drug allergies. No significant family history.",
+        "symptoms": [
+          "Loss of smell",
+          "Effort limitation",
+          "Mucoid expectoration",
+          "GERD"
+        ],
+        "patient_history": "No known comorbidities, history of asthma, GERD"
+      },
+      "objective": {
+        "vitals": {
+          "bp": "120/80mmHg",
+          "hr": "84/min",
+          "temp": null,
+          "rr": null,
+          "weight": "95kg"
+        },
+        "physical_exam": {
+          "findings": [
+            "Chest: clear"
+          ],
+          "text_raw": "O/E: Chest - clear."
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Post-COVID olfactory dysfunction with respiratory symptoms",
+          "certainty_degree": 0.85,
+          "evidence_text": "Loss of smell post COVID, feels effort limited since, mucoid expectoration"
+        },
+        "differential_diagnosis": [
+          "Asthma",
+          "GERD"
+        ]
+      },
+      "plan": {
+        "medications": [],
+        "procedures_ordered": [
+          "CBC",
+          "IgE",
+          "Serum Magnesium",
+          "Vitamin D3 levels",
+          "Vitamin B12 levels",
+          "Complete Pulmonary Function Test (PFT) - spirometry, DLco, transfer factor",
+          "Vaccination"
+        ],
+        "patient_instructions": "Complete the ordered lab tests and pulmonary function tests. Get vaccinated."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Generally legible, with some minor OCR noise in notation style.",
+      "critical_ambiguities": []
+    }
+  }
+}

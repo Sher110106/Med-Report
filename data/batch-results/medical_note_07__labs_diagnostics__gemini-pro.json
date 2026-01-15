@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T09:17:05.920Z",
+    "latencyMs": 31599
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Ibuprofen",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Text contains significant noise and illegible sections (headers/dates), but clinical narrative and treatment plan are legible. No quantitative diagnostic results were present in the text."
+    }
+  }
+}

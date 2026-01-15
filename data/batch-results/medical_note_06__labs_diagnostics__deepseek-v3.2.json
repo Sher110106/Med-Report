@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:07:40.127Z",
+    "latencyMs": 25702
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Female",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Microgynon",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "original_text": "DH microgynon NKDA",
+          "confidence_score": 0.85
+        },
+        {
+          "name": "Combined Oral Contraceptive Pill",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "original_text": "change COCP to POP",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Progesterone-Only Pill",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "original_text": "change COCP to POP",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Paracetamol/NSAIDs",
+          "dosage": "regular",
+          "frequency": "Unknown",
+          "original_text": "regular paracet/NSAIDs",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly legible with a few ILLEGIBLE markings. Text contains clinical history and plan but no structured diagnostic test results."
+    }
+  }
+}

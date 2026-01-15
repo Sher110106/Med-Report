@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:16:24.646Z",
+    "latencyMs": 7345
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Temperature",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "w/paracet/ibuprofen",
+        "confidence_score": 0
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.8
+        },
+        {
+          "name": "Ibuprofen",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.8
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "The OCR quality is poor. Most of the text is illegible or distorted, making it difficult to extract specific patient metadata or lab results. The treatment plan is moderately clear."
+    }
+  }
+}

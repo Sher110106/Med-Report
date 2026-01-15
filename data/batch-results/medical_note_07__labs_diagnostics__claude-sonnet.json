@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T09:16:33.818Z",
+    "latencyMs": 8670
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Temperature monitoring",
+        "value": "Fever initially, settling with treatment",
+        "unit": "Unknown",
+        "flag": "Abnormal initially, improving",
+        "original_text": "fever initially settling w/paracet/ibuprofen",
+        "confidence_score": 0.8
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Ibuprofen",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Poor quality OCR with multiple illegible sections including date and patient identifiers. Clinical content moderately readable with clear impression of viral URTI/influenza and treatment plan visible."
+    }
+  }
+}

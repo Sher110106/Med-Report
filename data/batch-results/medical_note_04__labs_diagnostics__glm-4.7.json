@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:53:08.896Z",
+    "latencyMs": 103092
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "MR. JITENDER KR",
+      "age": "41",
+      "gender": "Male",
+      "date_of_visit": "2011-08-10"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Uric Acid",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Uric Acid",
+        "confidence_score": 0
+      },
+      {
+        "test_name": "Creatinine",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Creatinine",
+        "confidence_score": 0
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Tricobal",
+          "dosage": "Unknown",
+          "frequency": "OD",
+          "confidence_score": 1
+        },
+        {
+          "name": "Complamina",
+          "dosage": "Unknown",
+          "frequency": "HS (Night)",
+          "confidence_score": 1
+        },
+        {
+          "name": "Oxetol",
+          "dosage": "150 mg",
+          "frequency": "BD",
+          "confidence_score": 1
+        },
+        {
+          "name": "Puric",
+          "dosage": "40 mg",
+          "frequency": "OD",
+          "confidence_score": 1
+        },
+        {
+          "name": "Emanzen D / Zerodol SP",
+          "dosage": "Unknown",
+          "frequency": "BD",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Esofag D",
+          "dosage": "Unknown",
+          "frequency": "BD",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "The text is a prescription note from Muzaffarpur. While the drug names and dosages are legible, the section 'Uric Acid' and 'Creatinine' appears to be a list of ordered tests rather than results, as no values are provided. Clinical exam findings (SLR, AJ/EHL) were observed but excluded as they are not bloodwork/urine/imaging results. The date format (10 08 11) was interpreted as DD/MM/YY based on the location (India)."
+    }
+  }
+}

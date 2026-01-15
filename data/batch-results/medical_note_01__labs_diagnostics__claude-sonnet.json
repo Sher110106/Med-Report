@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T08:31:45.235Z",
+    "latencyMs": 9383
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Richard (Dave) De Bronkart",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2009-09-15"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Nasal Examination - Silicon Button Position",
+        "value": "Good position",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "nose - ⊕ button in good posn.",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Post-operative Status",
+        "value": "Clear",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "s/p op - clear",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Renal Cell Neck Examination",
+        "value": "Clear",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "Renal cell neck - clear",
+        "confidence_score": 0.75
+      },
+      {
+        "test_name": "Cancer Assessment - Masses",
+        "value": "No masses",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "ca Ø masses",
+        "confidence_score": 0.85
+      },
+      {
+        "test_name": "Ear Examination",
+        "value": "OK",
+        "unit": "Qualitative",
+        "flag": "Normal",
+        "original_text": "2007. ears -> ok.",
+        "confidence_score": 0.8
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Saline",
+          "dosage": "Unknown",
+          "frequency": "PRN (as needed)",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate quality OCR with some clear sections and illegible portions. Medical abbreviations and symbols present. Two sections marked as completely illegible."
+    }
+  }
+}

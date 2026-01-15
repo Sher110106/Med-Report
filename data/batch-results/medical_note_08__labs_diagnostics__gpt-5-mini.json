@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:25:11.644Z",
+    "latencyMs": 28198
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Female",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Pregnancy test",
+        "value": "Planned / Pending",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "Plan: 1. pregnancy test",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Urine dipstick",
+        "value": "Planned",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "2. urine dip + MSU",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "MSU (Midstream urine sample)",
+        "value": "Planned",
+        "unit": "Unknown",
+        "flag": "Pending",
+        "original_text": "2. urine dip + MSU",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Urine color",
+        "value": "pink",
+        "unit": "Unknown",
+        "flag": "Abnormal",
+        "original_text": "pink urine",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Hematuria (frank)",
+        "value": "absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no frank haematuria",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Dysuria",
+        "value": "absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "nil dysuria",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Vomiting",
+        "value": "absent",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "no vomit",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Subjective fever / diaphoresis",
+        "value": "feeling hot sweaty",
+        "unit": "Unknown",
+        "flag": "Possible fever",
+        "original_text": "feeling hot sweaty",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Last sexually transmitted disease (STD) screen",
+        "value": "6/12 ago (6 months ago)",
+        "unit": "months",
+        "flag": "Historical",
+        "original_text": "last STD 6/12 ago",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Recent unprotected sexual intercourse",
+        "value": "2/7 ago (2 days ago)",
+        "unit": "days",
+        "flag": "Risk",
+        "original_text": "unprotected SI 2/7 ago",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Last menstrual period (LMP)",
+        "value": "2/52 ago (2 weeks ago)",
+        "unit": "weeks",
+        "flag": "Relevant to pregnancy assessment",
+        "original_text": "LMP 2/52 ago",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Impression",
+        "value": "?UTI; also exclude pregnancy",
+        "unit": "Unknown",
+        "flag": "Suspected",
+        "original_text": "Imp: ?UTI also exclude pregnancy",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Contraception (Implanon)",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Relevant",
+        "original_text": "DH implanon otherwise nil",
+        "confidence_score": 0.95
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Empiric antibiotic for UTI (unspecified)",
+          "dosage": "Not specified",
+          "frequency": "Not specified",
+          "confidence_score": 0.85
+        },
+        {
+          "name": "Paracetamol",
+          "dosage": "Not specified",
+          "frequency": "regular",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Overall legible with some small illegible tokens (e.g., header date and one short line). Clinical content is clear; dates in header ambiguous."
+    }
+  }
+}

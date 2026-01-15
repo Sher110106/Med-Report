@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "image": "medical_note_03.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T08:42:42.583Z",
+    "latencyMs": 9662
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Unknown",
+        "hpi": "Patient with Systemic Lupus Erythematosus with Scleroderma. Brief history of complaints not clearly documented.",
+        "symptoms": [],
+        "patient_history": "Systemic Lupus Erythematosus (SLE) with Scleroderma"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Examination section present but findings not documented"
+        },
+        "labs_imaging": "SGPT, Creatinine, Urine routine microscopy ordered"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Systemic Lupus Erythematosus with Scleroderma",
+          "certainty_degree": 0.98,
+          "evidence_text": "S.L.E. with Scleroderma"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Hydroxychloroquine (HCQs)",
+            "dosage": "200mg",
+            "sig": "Once daily at night",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Methotrexate (Folitrax)",
+            "dosage": "15mg",
+            "sig": "Once per week (Friday night)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Folic Acid (Folvite)",
+            "dosage": "5mg",
+            "sig": "Twice per week (Saturdays, Sundays)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Rabeprazole + Domperidone (Rablet-D)",
+            "dosage": "Unknown",
+            "sig": "Once daily for 2 months before breakfast",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Vitamin D3 (D-logy)",
+            "dosage": "Unknown",
+            "sig": "One capsule every month",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Prednisolone (Wysolone)",
+            "dosage": "5mg",
+            "sig": "Once daily",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "SGPT",
+          "Creatinine",
+          "Urine routine microscopy"
+        ],
+        "patient_instructions": "Continue medications as prescribed. Follow up for laboratory results."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate quality. Document appears to be a prescription format rather than traditional SOAP note. Some sections have headers but minimal content.",
+      "critical_ambiguities": [
+        "Chief complaints section present but content not documented",
+        "Examination section header present but findings not recorded",
+        "Allergic history section present but no information provided"
+      ]
+    }
+  }
+}

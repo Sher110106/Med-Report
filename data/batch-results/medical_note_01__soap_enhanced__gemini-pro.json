@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T08:29:50.129Z",
+    "latencyMs": 52816
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Follow-up for septal perforation with silicon button",
+        "hpi": "Patient is doing well. History of septal perforation for 15 years managed with a silicon button.",
+        "symptoms": [
+          "None reported (Patient states 'Doing well')"
+        ],
+        "patient_history": "Renal cell carcinoma (2007), Septal perforation (x 15 years) with silicon button"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Nose: Silicon button positive in good position",
+            "Surgical site/Oropharynx: Clear",
+            "Neck: Clear, no masses (evaluated for Renal Cell Ca recurrence)",
+            "Ears: OK"
+          ],
+          "text_raw": "O. nose - ⊕ button in good posn.\ns/p op - clear\nRenal cell neck - clear\nca Ø masses\n2007. ears -> ok."
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Status Post Septal Perforation with Silicon Plug",
+          "certainty_degree": 1,
+          "evidence_text": "I. s/p septal perforated\n+ silicon plug"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Saline",
+            "dosage": "Unknown strength",
+            "sig": "PRN (As needed)",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [],
+        "patient_instructions": "Use saline as needed."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate. Medical shorthand and symbols (c̄, ⊕, Ø) used frequently. Some lines illegible.",
+      "critical_ambiguities": "Two lines marked [ILLEGIBLE] in the middle of the note."
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T09:06:40.405Z",
+    "latencyMs": 41102
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Headache (left side), visual aura, nausea",
+        "hpi": "Patient complains of left-sided headache starting a few hours ago. Describes onset as gradual and character as throbbing with nil radiation. Reports visual aura before onset including zigzag lines in vision, photophobia, and blurred vision. Associated with nausea and vomiting (x2 today). Reports neck pain. Denies speech disturbance, limb weakness, or numbness. Mentions coordination/balance issues (context illegible). Denies recent head injury, fever, or rashes. Reports similar episode 2 weeks ago (2/52) which resolved with analgesia. Patient explicitly worried about Brain Ca (Cancer).",
+        "symptoms": [
+          "Headache (left side)",
+          "Throbbing pain",
+          "Visual aura",
+          "Zigzag lines in vision",
+          "Photophobia",
+          "Blurred vision",
+          "Nausea",
+          "Vomiting (x2)",
+          "Neck pain",
+          "Stress",
+          "Coordination/balance issues (Status ambiguous due to illegibility)"
+        ],
+        "patient_history": "PMH: Nil. DH: Microgynon (Combined Oral Contraceptive Pill). Allergies: NKDA (No Known Drug Allergies). FH: Mother has migraine. SH: Lives alone, works in fashion industry, Stressed ++. No mood symptoms, non-smoker, no alcohol (nil smoking/etOH)."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Nil neck stiffness",
+            "No speech disturbance",
+            "No limb weakness/numbness"
+          ],
+          "text_raw": "neck pain nil stiffness no speech disturbe no limb weakness/numbness [ILLEGIBLE] coordination/balance issues"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Migraine",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: migraine"
+        },
+        "differential_diagnosis": [
+          "Brain Cancer (Patient concern, unlikely given findings)"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "COCP (Microgynon)",
+            "dosage": "Unknown",
+            "sig": "Change to POP (Discontinue)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "POP (Progesterone Only Pill)",
+            "dosage": "Unknown",
+            "sig": "Start (Change from COCP)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "Regular use",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "NSAIDs",
+            "dosage": "Unknown",
+            "sig": "Regular use",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Keep headache diary",
+          "Review (r/v) in 1 week",
+          "Discuss prophylactic Rx"
+        ],
+        "patient_instructions": "Keep headache diary. Return in 1 week to discuss prophylactic treatment. Return earlier if worse symptoms (Headache, vomiting, vision) or concerns."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate. Handwritten notes with abbreviations (2/52, r/v, COCP). Date is partially illegible.",
+      "critical_ambiguities": [
+        "[ILLEGIBLE] coordination/balance issues - context unclear if finding is positive or negative",
+        "Exact dosage for Paracetamol/NSAIDs not specified",
+        "Date of visit illegible (??/1/??)"
+      ]
+    }
+  }
+}

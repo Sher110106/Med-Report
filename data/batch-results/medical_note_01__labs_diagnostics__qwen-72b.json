@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:31:35.349Z",
+    "latencyMs": 13619
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Richard (Dave) De Bronkart",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2009-09-15"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Septal Perforation",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "perf sept x 15 yr",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Silicon Button",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "silicon button",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Nasal Examination",
+        "value": "Button in good position, s/p op - clear",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "O. nose - ⊕ button in good posn. s/p op - clear",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Renal Cell Neck Examination",
+        "value": "Clear",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Renal cell neck - clear",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Carcinoma Examination",
+        "value": "No masses",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "ca Ø masses",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Ear Examination",
+        "value": "Ok",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "2007. ears -> ok.",
+        "confidence_score": 0.9
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Polyethylene Glycol (P. PRN)",
+          "dosage": "PRN",
+          "frequency": "As needed",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Saline",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.7
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "The text is mostly legible, but contains some illegible sections that could not be reliably interpreted."
+    }
+  }
+}

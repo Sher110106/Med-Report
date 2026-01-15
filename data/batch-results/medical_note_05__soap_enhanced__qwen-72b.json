@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "image": "medical_note_05.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:59:34.545Z",
+    "latencyMs": 14616
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Dry itchy skin on chest and back",
+        "hpi": "47-year-old patient presents with a 4-day history of dry, itchy skin on the chest and back. Symptoms include soreness and cracking. No bleeding, discharge, or spread to other areas. Patient has tried over-the-counter steroid cream last night with minimal effect and antihistamines. No fever, vomiting, shortness of breath, or cough. Patient believes the symptoms are related to eczema and has no serious concerns.",
+        "symptoms": [
+          "Dry itchy skin on chest and back",
+          "Soreness",
+          "Cracking",
+          "No bleeding",
+          "No discharge",
+          "No spread elsewhere",
+          "No fever",
+          "No vomiting",
+          "No shortness of breath",
+          "No cough",
+          "No bowel symptoms"
+        ],
+        "patient_history": "Eczema, Asthma"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Systemically well"
+          ],
+          "text_raw": "systemically well"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Eczema flare-up",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: eczema flare up"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Betnovate",
+            "dosage": "BD",
+            "sig": "Apply twice daily",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Cetraben",
+            "dosage": "QDS",
+            "sig": "Apply four times daily",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Antihistamines",
+            "dosage": "Unknown",
+            "sig": "Trial",
+            "handwriting_confidence": 0.85
+          }
+        ],
+        "procedures_ordered": [
+          "Keep trigger diary"
+        ],
+        "patient_instructions": "Review in 10-14 days if no improvement or earlier if concerns or worsening"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Some sections are illegible, particularly at the beginning and end of the note.",
+      "critical_ambiguities": [
+        "Initial date and patient identifier are illegible",
+        "Some details at the end of the note are illegible"
+      ]
+    }
+  }
+}

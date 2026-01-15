@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:51:25.302Z",
+    "latencyMs": 27540
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "MR. JITENDER KR",
+      "age": "41",
+      "gender": "M",
+      "date_of_visit": "2011-08-10"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "SLR (Straight Leg Raise)",
+        "value": "Normal",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "SLR (N)",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Right Ankle Jerk",
+        "value": "Normal",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Rt AJ (N)",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Extensor Hallucis Longus",
+        "value": "Normal",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "EHL (N)",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Uric Acid",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Uric Acid",
+        "confidence_score": 0.5
+      },
+      {
+        "test_name": "Creatinine",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Creatinine",
+        "confidence_score": 0.5
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Tricobal",
+          "dosage": "Unknown",
+          "frequency": "OD (Once Daily)",
+          "original_text": "Cap Tricobal OD",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Complamina-R",
+          "dosage": "Unknown",
+          "frequency": "HS (At bedtime)",
+          "original_text": "Complamina - R - HS रात में",
+          "confidence_score": 0.85
+        },
+        {
+          "name": "Oxetol",
+          "dosage": "150 mg",
+          "frequency": "BD (Twice Daily)",
+          "original_text": "Oxetol 150 BD",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "PURIC-40",
+          "dosage": "40 mg",
+          "frequency": "OD (Once Daily)",
+          "original_text": "PURIC - 40 OD",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Emanzen D",
+          "dosage": "Unknown",
+          "frequency": "BD (Twice Daily)",
+          "original_text": "Emanzen D BD",
+          "confidence_score": 0.85
+        },
+        {
+          "name": "Zerodol SP",
+          "dosage": "Unknown",
+          "frequency": "BD (Twice Daily)",
+          "original_text": "Zerodol SP BD",
+          "original_context": "Emanzen D / or Zerodol SP BD",
+          "confidence_score": 0.8
+        },
+        {
+          "name": "Esofag D",
+          "dosage": "Unknown",
+          "frequency": "BD (Twice Daily), खाली पेट (On an empty stomach)",
+          "original_text": "Esofag D - BD खाली पेट",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Legibility is mostly good. Some medication names and dosages are clear. The clinical exam findings (SLR, AJ, EHL) are explicitly stated as 'N' (Normal) with high confidence. However, the lab tests 'Uric Acid' and 'Creatinine' are listed but no values are reported, so they are flagged with unknown results and low confidence. The medication instructions include codes like 'OD', 'BD', and 'HS' which are standard clinical abbreviations.",
+      "notes": [
+        "Found Δ (Rt) S1 Radiculopathy diagnosis, but 'Better now' indicates improvement.",
+        "Medications prescribed 'All for 2 months' with a structured dosing plan visible in the text.",
+        "The date '10 08 11' has been interpreted as DD MM YY format, converting to 2011-08-10."
+      ]
+    }
+  }
+}

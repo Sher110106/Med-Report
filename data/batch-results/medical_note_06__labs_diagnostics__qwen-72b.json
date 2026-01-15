@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:09:47.202Z",
+    "latencyMs": 34753
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Visual Aura",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "visual aura",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Photophobia",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "photophobia",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Blurred Vision",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "blurred vision",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Nausea",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "nauseous vomit x2 today",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Vomiting",
+        "value": "2 times today",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "nauseous vomit x2 today",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Neck Pain",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "neck pain",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Neck Stiffness",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "nil stiffness",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Speech Disturbance",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "no speech disturbe",
+        "confidence_score": 0.8
+      },
+      {
+        "test_name": "Limb Weakness/Numbness",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "no limb weakness/numbness",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Coordination/Balance Issues",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "[ILLEGIBLE] coordination/balance issues",
+        "confidence_score": 0.6
+      },
+      {
+        "test_name": "Head Injury",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "no recent head injury",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Fever",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "no fever",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Rashes",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "no rashes",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Similar Episode",
+        "value": "2/52 ago resolved w/analgesia",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "similar episode 2/52 ago resolved w/analgesia",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Medical History",
+        "value": "Nil",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "PMH nil",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Medication History",
+        "value": "Microgynon, NKDA",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "DH microgynon NKDA",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Family History",
+        "value": "Mother migraine",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "FH mother migraine",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Social History",
+        "value": "Lives alone, fashion industry, stressed ++",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "SH lives alone fashion industry stressed ++",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Mood Symptoms",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "nil mood sx",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Smoking",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "nil smoking/etOH",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Alcohol",
+        "value": "Absent",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "nil smoking/etOH",
+        "confidence_score": 0.9
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Change COCP to POP",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Paracetamol",
+          "dosage": "Regular",
+          "frequency": "Unknown",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "NSAIDs",
+          "dosage": "Regular",
+          "frequency": "Unknown",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "The OCR text is generally legible with some minor distortions, particularly in the 'coordination/balance issues' section."
+    }
+  }
+}

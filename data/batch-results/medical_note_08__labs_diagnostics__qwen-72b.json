@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:23:54.308Z",
+    "latencyMs": 10062
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2024-07-01"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Pregnancy Test",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "1. pregnancy test",
+        "confidence_score": 0
+      },
+      {
+        "test_name": "Urine Dip",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "2. urine dip + MSU",
+        "confidence_score": 0
+      },
+      {
+        "test_name": "MSU",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "2. urine dip + MSU",
+        "confidence_score": 0
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Antibiotics (empirical for UTI)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0
+        },
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "regular",
+          "confidence_score": 0
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "The OCR text is partially illegible, especially in sections detailing symptoms and treatment plans. The exact values and units for diagnostic tests and medications are not provided, leading to low confidence scores."
+    }
+  }
+}

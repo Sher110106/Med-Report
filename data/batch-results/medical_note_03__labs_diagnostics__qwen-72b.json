@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "image": "medical_note_03.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:46:11.362Z",
+    "latencyMs": 12128
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2023-06-16"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "SGPT",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "SGPT",
+        "confidence_score": 0.5
+      },
+      {
+        "test_name": "Creatinine",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Creatinine",
+        "confidence_score": 0.5
+      },
+      {
+        "test_name": "Urine",
+        "value": "RM",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Urine : RM",
+        "confidence_score": 0.8
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "HCQs",
+          "dosage": "200 mg",
+          "frequency": "one daily at night",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "folitrax",
+          "dosage": "15 mg",
+          "frequency": "once per week (Friday night)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Folvite",
+          "dosage": "5 mg",
+          "frequency": "twice per week (Saturdays, Sundays)",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Rablet-D",
+          "dosage": "one daily",
+          "frequency": "before breakfast",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "D-logy",
+          "dosage": "one",
+          "frequency": "every month",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Wysolone",
+          "dosage": "5 mg",
+          "frequency": "once daily",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "The OCR text is mostly legible but lacks specific values for some tests. The medication information is clear."
+    }
+  }
+}

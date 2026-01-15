@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T09:35:23.007Z",
+    "latencyMs": 10643
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Loss of smell post COVID and effort limitation",
+        "hpi": "48-year-old male jeweler with history of occasional smoking presents with loss of smell following COVID infection. Patient reports feeling effort limited since the infection. He has mucoid expectoration with triggers present. History of gastroesophageal reflux. Patient has benefited from Foracort and inhaled corticosteroids.",
+        "symptoms": [
+          "Loss of smell (anosmia)",
+          "Effort limitation",
+          "Mucoid expectoration",
+          "Gastroesophageal reflux"
+        ],
+        "patient_history": "Occasional smoking history, no known comorbidities, no family history of asthma"
+      },
+      "objective": {
+        "vitals": {
+          "bp": "120/80mmHg",
+          "hr": "84/min",
+          "temp": null,
+          "rr": null,
+          "weight": "95kg"
+        },
+        "physical_exam": {
+          "findings": [
+            "Chest examination: clear"
+          ],
+          "text_raw": "O/E: Chest - clear."
+        },
+        "labs_imaging": "SpO2: 98%, No drug allergies noted"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Post-COVID respiratory symptoms with anosmia",
+          "certainty_degree": 0.85,
+          "evidence_text": "Loss of smell post COVID. Feels effort limited since."
+        },
+        "differential_diagnosis": [
+          "Asthma",
+          "Post-viral respiratory dysfunction"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Foracort",
+            "dosage": "Unknown",
+            "sig": "As previously prescribed (patient reports benefit)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Inhaled corticosteroids (INCS)",
+            "dosage": "Unknown",
+            "sig": "As previously prescribed (patient reports benefit)",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Complete Blood Count (CBC)",
+          "IgE levels",
+          "Serum Magnesium",
+          "Vitamin D3 levels",
+          "Vitamin B12 levels",
+          "Complete Pulmonary Function Tests (PFT)",
+          "Spirometry",
+          "DLCO (Diffusion capacity)",
+          "Transfer factor",
+          "Vaccination"
+        ],
+        "patient_instructions": "Complete ordered laboratory tests and pulmonary function studies. Proceed with vaccination as recommended."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Good legibility with standard medical abbreviations. Some abbreviated terms require medical context for interpretation.",
+      "critical_ambiguities": [
+        "INCS dosage and frequency not specified",
+        "Foracort dosage not clearly stated",
+        "Specific vaccination type not mentioned"
+      ]
+    }
+  }
+}

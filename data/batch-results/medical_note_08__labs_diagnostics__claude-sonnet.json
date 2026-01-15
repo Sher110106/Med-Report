@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T09:24:00.518Z",
+    "latencyMs": 5707
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Female",
+      "date_of_visit": "2024-01-27"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Pregnancy Test",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "1. pregnancy test",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Urine Dipstick",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "2. urine dip + MSU",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Midstream Urine (MSU)",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "2. urine dip + MSU",
+        "confidence_score": 1
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Antibiotics",
+          "dosage": "Unknown",
+          "frequency": "Empirical treatment for UTI",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "Regular for pain",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate OCR quality. Some sections illegible but key clinical information and plan are clear. Date partially obscured but inferred as 27/1/24. Patient symptoms and treatment plan well documented."
+    }
+  }
+}

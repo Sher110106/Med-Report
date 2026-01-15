@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:22:53.010Z",
+    "latencyMs": 18619
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2024-07-01"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Pregnancy Test",
+        "value": "Planned",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "pregnancy test",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Urine Dipstick",
+        "value": "Planned",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "urine dip",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "MSU Culture",
+        "value": "Planned",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "MSU",
+        "confidence_score": 1
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Empirical Antibiotic for UTI",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "original_text": "Rx empirically Abx for UTI",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "regular",
+          "original_text": "regular paracet pain",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly legible with 2 instances of [ILLEGIBLE] in history. Standard medical abbreviations clear. Date at top appears to be '?7/1/24' interpreted as July 1, 2024."
+    }
+  }
+}

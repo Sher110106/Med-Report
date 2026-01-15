@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:21:18.512Z",
+    "latencyMs": 20126
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Lower abdominal and suprapubic pain",
+        "hpi": "Patient presented with lower abdominal and suprapubic pain of gradual onset, burning and constant in nature, worsening over the past 2 days. No bowel symptoms, no [ILLEGIBLE] symptoms. Reports urinary symptoms including pink urine, no frank hematuria, no dysuria, no nausea, no vomiting. Patient feels hot and sweaty. Patient is sexually active with a regular partner, last STD test 6 months ago, had unprotected sexual intercourse 2 days ago. Last menstrual period 2 weeks and 5 days ago. No chest pain, shortness of breath, palpitations, headaches, or visual symptoms.",
+        "symptoms": [
+          "Lower abdominal pain",
+          "Suprapubic pain",
+          "Burning sensation",
+          "Worsening pain",
+          "Pink urine",
+          "Feeling hot and sweaty",
+          "Sexually active with regular partner",
+          "Unprotected sexual intercourse 2 days ago",
+          "Last menstrual period 2 weeks and 5 days ago",
+          "No bowel symptoms",
+          "No [ILLEGIBLE] symptoms",
+          "No frank hematuria",
+          "No dysuria",
+          "No nausea",
+          "No vomiting",
+          "No chest pain",
+          "No shortness of breath",
+          "No palpitations",
+          "No headaches",
+          "No visual symptoms"
+        ],
+        "patient_history": "Nil past medical history (PMH), nil past surgical history (PSH). Using Implanon for contraception. No significant family history (FH). Social history includes room sharing with 2 flatmates, works as an accountant, no smoking, social alcohol use."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "[ILLEGIBLE]"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Possible Urinary Tract Infection (UTI)",
+          "certainty_degree": 0.7,
+          "evidence_text": "Imp: ?UTI also exclude pregnancy"
+        },
+        "differential_diagnosis": [
+          "Pregnancy"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Empiric antibiotics for UTI",
+            "dosage": "Unknown",
+            "sig": "Unknown",
+            "handwriting_confidence": 0.4
+          },
+          {
+            "drug": "Paracetamol",
+            "dosage": "Regular",
+            "sig": "For pain",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Pregnancy test",
+          "Urine dip",
+          "Midstream urine (MSU)"
+        ],
+        "patient_instructions": "Return in 24-48 hours if symptoms do not improve or if symptoms worsen (fever, abdominal pain, vomiting). Take regular paracetamol for pain."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Some sections illegible, particularly in symptoms and physical exam.",
+      "critical_ambiguities": [
+        "Symptoms section contains illegible text",
+        "Physical exam findings are illegible",
+        "Dosage and instructions for empiric antibiotics for UTI are illegible"
+      ]
+    }
+  }
+}

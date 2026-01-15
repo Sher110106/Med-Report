@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:49:20.341Z",
+    "latencyMs": 16536
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Radiculopathy (Rt) S1",
+        "hpi": "41-year-old male with right S1 radiculopathy, which is better now.",
+        "symptoms": [
+          "Radiculopathy (Rt) S1"
+        ],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Straight Leg Raise (SLR) Normal",
+            "Right Ankle Jerk (AJ) Normal",
+            "Extensor Hallucis Longus (EHL) Normal"
+          ],
+          "text_raw": "SLR (N) Rt AJ / EHL (N)"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Right S1 Radiculopathy",
+          "certainty_degree": 0.95,
+          "evidence_text": "Δ (Rt) S1 Radiculopathy"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Cap Tricobal",
+            "dosage": "1 pill",
+            "sig": "OD (once daily)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Complamina - R",
+            "dosage": "1 pill",
+            "sig": "HS (bedtime) - 1 0 --- 0 --- 1",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Oxetol 150",
+            "dosage": "150mg",
+            "sig": "BD (twice daily)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "PURIC - 40",
+            "dosage": "40mg",
+            "sig": "OD (once daily)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Emanzen D or Zerodol SP",
+            "dosage": "1 pill",
+            "sig": "BD (twice daily)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Esofag D",
+            "dosage": "1 pill",
+            "sig": "BD (twice daily) - खाली पेट (on an empty stomach)",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [],
+        "patient_instructions": "All medications for 2 months. Monitor Uric Acid and Creatinine levels."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Text is generally legible but contains some non-English characters and abbreviations.",
+      "critical_ambiguities": [
+        "Non-English characters in dosage instructions may affect readability"
+      ]
+    }
+  }
+}

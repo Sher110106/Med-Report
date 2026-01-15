@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:05:47.554Z",
+    "latencyMs": 19484
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Headache on the left side for a few hours",
+        "hpi": "Patient presents with a headache on the left side for a few hours, described as gradual throbbing pain without radiation. Associated symptoms include visual aura (zigzag lines and blurred vision), photophobia, and nausea with vomiting twice today. No speech disturbance, limb weakness/numbness, coordination/balance issues, recent head injury, fever, or rashes. The patient reports a similar episode 2 weeks ago that resolved with analgesia. The patient is worried about brain cancer.",
+        "symptoms": [
+          "Headache (left side, throbbing)",
+          "Visual aura (zigzag lines, blurred vision)",
+          "Photophobia",
+          "Nausea",
+          "Vomiting (2 times today)",
+          "Neck pain (no stiffness)",
+          "No speech disturbance",
+          "No limb weakness/numbness",
+          "No coordination/balance issues",
+          "No recent head injury",
+          "No fever",
+          "No rashes"
+        ],
+        "patient_history": "Past Medical History: None. Drug History: Microgynon (NKDA). Family History: Mother with migraine. Social History: Lives alone, works in the fashion industry, stressed, no mood symptoms, no smoking, no alcohol."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Neck pain (no stiffness)",
+            "No limb weakness/numbness",
+            "No speech disturbance",
+            "No coordination/balance issues"
+          ],
+          "text_raw": "neck pain\nnil stiffness\nno speech disturbe\nno limb weakness/numbness\n[ILLEGIBLE] coordination/balance issues"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Migraine",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: migraine"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Change from COCP to POP",
+            "dosage": "Unknown (plan to change medication)",
+            "sig": "Change from COCP to POP",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Paracetamol",
+            "dosage": "Regular",
+            "sig": "Regular as needed",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "NSAIDs",
+            "dosage": "Regular",
+            "sig": "Regular as needed",
+            "handwriting_confidence": 0.85
+          }
+        ],
+        "procedures_ordered": [
+          "Keep a headache diary",
+          "Follow-up in 1 week to discuss prophylactic Rx or earlier if symptoms worsen (HA, vomiting, vision issues)"
+        ],
+        "patient_instructions": "1. Change COCP to POP\n2. Keep a headache diary\n3. Use regular paracetamol/NSAIDs\n4. Follow-up in 1 week to discuss prophylactic Rx or earlier if worse symptoms (HA, vomiting, vision issues) or concerns"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility. Some sections are partially illegible.",
+      "critical_ambiguities": [
+        "Part of the physical exam section is illegible",
+        "Some patient instructions are partially illegible"
+      ]
+    }
+  }
+}

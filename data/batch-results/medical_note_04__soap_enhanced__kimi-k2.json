@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:49:03.303Z",
+    "latencyMs": 10872
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Right-sided S1 radiculopathy, now better",
+        "hpi": "41-year-old male presenting with right-sided S1 radiculopathy; patient reports improvement in symptoms.",
+        "symptoms": [
+          "Right-sided S1 radiculopathy"
+        ],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Straight Leg Raise test normal",
+            "Right ankle jerk/normal",
+            "Extensor Hallucis Longus normal"
+          ],
+          "text_raw": "SLR (N) Rt AJ / EHL (N) (N)"
+        },
+        "labs_imaging": "Pending: Uric Acid, Creatinine"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Right-sided S1 radiculopathy",
+          "certainty_degree": 0.9,
+          "evidence_text": "Δ (Rt) S1 Radiculopathy"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Tricobal",
+            "dosage": "Unknown",
+            "sig": "OD (morning) for 2 months",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Complamina-R",
+            "dosage": "Unknown",
+            "sig": "HS (night) for 2 months",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Oxetol",
+            "dosage": "150mg",
+            "sig": "BD for 2 months",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "PURIC-40",
+            "dosage": "40mg",
+            "sig": "OD (morning) for 2 months",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Emanzen D or Zerodol SP",
+            "dosage": "Unknown",
+            "sig": "BD for 2 months",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Esofag-D",
+            "dosage": "Unknown",
+            "sig": "BD empty stomach for 2 months",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "Uric Acid test",
+          "Creatinine test"
+        ],
+        "patient_instructions": "All medications for 2 months"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Clear handwriting, fully legible except exact strengths for some meds; numeric vs letter ambiguity not present",
+      "critical_ambiguities": []
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:53:38.103Z",
+    "latencyMs": 11628
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "MR. JITENDER KR",
+      "age": "41",
+      "gender": "M",
+      "date_of_visit": "2011-08-10"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Uric Acid",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Uric Acid",
+        "confidence_score": 0.7
+      },
+      {
+        "test_name": "Creatinine",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Creatinine",
+        "confidence_score": 0.7
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Cap Tricobal",
+          "dosage": "OD 1",
+          "frequency": "0 --- 0",
+          "confidence_score": 1
+        },
+        {
+          "name": "Complamina - R",
+          "dosage": "HS 1",
+          "frequency": "0 --- 1",
+          "confidence_score": 1
+        },
+        {
+          "name": "Oxetol 150",
+          "dosage": "BD 1",
+          "frequency": "0 --- 1",
+          "confidence_score": 1
+        },
+        {
+          "name": "Puric - 40",
+          "dosage": "OD 1",
+          "frequency": "0 --- 0",
+          "confidence_score": 1
+        },
+        {
+          "name": "Emanzen D / or Zerodol SP",
+          "dosage": "BD 1",
+          "frequency": "0 --- 1",
+          "confidence_score": 1
+        },
+        {
+          "name": "Esofag D",
+          "dosage": "BD 1",
+          "frequency": "0 --- 1",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Text is mostly legible, but some lab results are missing values and units."
+    }
+  }
+}

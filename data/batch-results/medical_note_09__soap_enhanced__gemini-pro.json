@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T09:28:19.004Z",
+    "latencyMs": 33461
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Watery diarrhoea, vomiting, abdominal pain",
+        "hpi": "Patient presents with a 3-day history of watery diarrhoea (opening bowels 6 times per day) with no blood. Reports intermittent, crampy Left Lower Quadrant (LLQ) pain with no radiation. Also reports bilious vomiting (no haematemesis). Had a fever on Day 1 but none since. Patient feels lethargic and weak. Symptoms started after eating takeaway from a Chinese restaurant 4 days ago. Sick contacts: Wife and children are vomiting but have no diarrhoea. No other contacts. Condition is affecting Activities of Daily Living (ADLs) and patient requires being near a toilet often.",
+        "symptoms": [
+          "Watery diarrhoea",
+          "Bowels opening x6/day",
+          "No blood in stool",
+          "LLQ pain (crampy, intermittent)",
+          "No pain radiation",
+          "Bilious vomiting",
+          "No haematemesis",
+          "Fever (Day 1 only)",
+          "Lethargy",
+          "Weakness",
+          "Affecting ADLs"
+        ],
+        "patient_history": "PMH: Asthma. Drug History: Inhalers. Social History: Accountant, lives with wife and children. Non-smoker, no alcohol (nil etOH)."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown (Note focuses on history and plan; no specific objective exam data recorded other than 'Impression')"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Gastroenteritis",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: gastroenteritis"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "PRN if fever",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Dioralyte",
+            "dosage": "OTC",
+            "sig": "As directed (implied)",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Conservative management",
+          "Rest",
+          "Increase fluid intake"
+        ],
+        "patient_instructions": "Rest, push fluids. Take Paracetamol for fever and OTC Dioralyte. Review in 3-5 days if not better, or earlier if condition worsens."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate. Some illegible words, abbreviations used (e.g., '3/7', 'd1').",
+      "critical_ambiguities": "Date year is incomplete (24/1/2?). Illegible text in HPI and at bottom of note."
+    }
+  }
+}

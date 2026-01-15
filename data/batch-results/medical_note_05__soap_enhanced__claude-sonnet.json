@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "image": "medical_note_05.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T08:59:45.373Z",
+    "latencyMs": 10327
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Dry itchy skin on chest and back, sore and cracked",
+        "hpi": "4-7 day history of dry itchy skin on chest and back that is sore and cracked. No bleeding, no discharge, no spread elsewhere. No identifiable triggers but patient is aware. Patient tried over-the-counter steroid cream last night with minimal effect. Patient also tried antihistamines.",
+        "symptoms": [
+          "Dry itchy skin",
+          "Sore skin",
+          "Cracked skin"
+        ],
+        "patient_history": "Past medical history of eczema and asthma"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Systemically well",
+            "No fevers",
+            "No vomiting",
+            "No shortness of breath or cough",
+            "No bowel symptoms"
+          ],
+          "text_raw": "systemically well no fevers no vomit no SOB/cough no bowel sx"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Eczema flare up",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: eczema flare up"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Betnovate",
+            "dosage": "Unknown",
+            "sig": "BD (twice daily)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Cetrabem",
+            "dosage": "Unknown",
+            "sig": "QDS (four times daily)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Antihistamines",
+            "dosage": "Unknown",
+            "sig": "Trial",
+            "handwriting_confidence": 0.85
+          }
+        ],
+        "procedures_ordered": [
+          "Keep trigger diary",
+          "Review in 10-14 days if no better or earlier if concerns/worsening"
+        ],
+        "patient_instructions": "Use steroid cream (Betnovate) twice daily, apply emollients (Cetrabem) four times daily, trial antihistamines, keep trigger diary, return for review in 10-14 days if no improvement or earlier if concerns or worsening"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate quality with some illegible sections. Date partially illegible, some words unclear.",
+      "critical_ambiguities": [
+        "Date illegible",
+        "Some effect description partially illegible",
+        "Final signature/notes illegible"
+      ]
+    }
+  }
+}

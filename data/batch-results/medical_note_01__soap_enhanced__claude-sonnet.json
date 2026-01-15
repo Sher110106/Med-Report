@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T08:28:56.809Z",
+    "latencyMs": 8943
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Follow-up for perforated septum with silicon button",
+        "hpi": "Patient with perforated septum for 15 years, status post silicon button placement. Patient reports doing well.",
+        "symptoms": [],
+        "patient_history": "Perforated septum for 15 years, renal cell carcinoma (2007), status post septal surgery"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Silicon button in good position",
+            "Post-operative area clear",
+            "Renal cell neck area clear",
+            "No masses",
+            "Ears okay"
+          ],
+          "text_raw": "nose - ⊕ button in good posn. s/p op - clear Renal cell neck - clear ca Ø masses 2007. ears -> ok."
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Status post septal perforation with silicon plug",
+          "certainty_degree": 0.95,
+          "evidence_text": "s/p septal perforated + silicon plug"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Saline",
+            "dosage": "Unknown",
+            "sig": "PRN (as needed)",
+            "handwriting_confidence": 0.85
+          }
+        ],
+        "procedures_ordered": [],
+        "patient_instructions": "Use saline as needed"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Mixed quality. Clear sections with some illegible handwritten portions at the end.",
+      "critical_ambiguities": [
+        "Two sections marked as [ILLEGIBLE] in the original notes",
+        "Some medical abbreviations and symbols may have interpretation uncertainty"
+      ]
+    }
+  }
+}

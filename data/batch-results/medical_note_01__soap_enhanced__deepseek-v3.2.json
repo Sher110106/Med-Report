@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:27:22.801Z",
+    "latencyMs": 14662
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Follow-up for nasal septal perforation",
+        "hpi": "Patient is a follow-up for a septal perforation of 15 years duration, with a silicon button in place. Patient reports doing well.",
+        "symptoms": [
+          "Doing well"
+        ],
+        "patient_history": "History of septal perforation (15 years), s/p (status post) septal perforation repair with silicon plug/button."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Nose: Button in good position",
+            "Status post operation: Clear",
+            "Renal/Neck: Clear, no masses",
+            "Ears (2007): OK"
+          ],
+          "text_raw": "O. nose - ⊕ button in good posn. s/p op - clear Renal cell neck - clear ca Ø masses 2007. ears -> ok. [ILLEGIBLE] [ILLEGIBLE]"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Status post septal perforation repair",
+          "certainty_degree": 0.9,
+          "evidence_text": "I. s/p septal perforated"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [],
+        "procedures_ordered": [],
+        "patient_instructions": "Use saline PRN (as needed)."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate clarity. Key exam findings and plan are legible, but two lines are marked as wholly illegible, and some medical shorthand is used.",
+      "critical_ambiguities": [
+        "Two lines marked as '[ILLEGIBLE]' in the objective/physical exam section.",
+        "Abbreviations 'O.', 's/p', 'Ø', and 'c̄' interpreted from context.",
+        "Plan medication item 'saline.' is inferred as irrigating solution, not a prescribed drug."
+      ]
+    }
+  }
+}

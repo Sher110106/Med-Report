@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "image": "medical_note_05.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:03:24.655Z",
+    "latencyMs": 16382
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Betnovate (steroid cream)",
+          "dosage": "Unknown",
+          "frequency": "BD",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Cetraben (emollient)",
+          "dosage": "Unknown",
+          "frequency": "QDS",
+          "confidence_score": 0.95,
+          "original_text": "emollients cetrabem QDS"
+        },
+        {
+          "name": "Antihistamines (trial)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.9,
+          "original_text": "trial antihistamines"
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly legible clinical note. Some fragments illegible (date and isolated lines). Medications and plan statements are clear; no laboratory or imaging results documented."
+    }
+  }
+}

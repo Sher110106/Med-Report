@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "image": "medical_note_03.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T08:43:59.333Z",
+    "latencyMs": 43741
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Follow-up / management of S.L.E. with Scleroderma",
+        "hpi": "Patient with known S.L.E. with Scleroderma. Note in chart: \"2 gram June. 16\" (unclear context). Current medication list enumerated. No separate narrative of new symptoms provided.",
+        "symptoms": [],
+        "patient_history": "Systemic Lupus Erythematosus (S.L.E.) with Scleroderma. Allergic history: not stated."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Examination :-\n\n(3) Tab. Folvite 5 mg twice per week\n(Saturdays, Sundays)"
+        },
+        "labs_imaging": "SGPT\nCreatinine\nUrine : RM"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Systemic Lupus Erythematosus (SLE) with Scleroderma",
+          "certainty_degree": 0.98,
+          "evidence_text": "S.L.E. with Scleroderma"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Hydroxychloroquine (HCQs)",
+            "dosage": "200mg",
+            "sig": "one daily at night",
+            "handwriting_confidence": 0.95,
+            "evidence_text": "(1) Tab. HCQs 200mg one daily\nat night"
+          },
+          {
+            "drug": "Folitrax",
+            "dosage": "15 mg",
+            "sig": "once per week (Friday night)",
+            "handwriting_confidence": 0.7,
+            "evidence_text": "(2) Tab. folitrax 15 mg once per week\n(Friday night)"
+          },
+          {
+            "drug": "Folvite",
+            "dosage": "5 mg",
+            "sig": "twice per week (Saturdays, Sundays)",
+            "handwriting_confidence": 0.95,
+            "evidence_text": "(3) Tab. Folvite 5 mg twice per week\n(Saturdays, Sundays)"
+          },
+          {
+            "drug": "Rablet-D",
+            "dosage": "1 tablet",
+            "sig": "one daily before breakfast for 2 months",
+            "handwriting_confidence": 0.6,
+            "evidence_text": "(4) Rablet-D. one daily\nx2 months before breakfast"
+          },
+          {
+            "drug": "D-logy (Cap. D-logy)",
+            "dosage": "one capsule",
+            "sig": "one every month",
+            "handwriting_confidence": 0.5,
+            "evidence_text": "(5) Cap. D-logy one every month"
+          },
+          {
+            "drug": "Wysolone (prednisolone)",
+            "dosage": "5 mg",
+            "sig": "once daily",
+            "handwriting_confidence": 0.95,
+            "evidence_text": "(6) Tab. Wysolone 5 mg once daily"
+          }
+        ],
+        "procedures_ordered": [
+          "Investigations ordered: SGPT, Creatinine, Urine : RM",
+          "2 gram on June 16 (unspecified context in chart)"
+        ],
+        "patient_instructions": "Unknown"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility overall; medication names mostly readable but several brand names/terms ambiguous (e.g., Folitrax, Rablet-D, Cap. D-logy).",
+      "critical_ambiguities": [
+        "\"2 gram June. 16\" — unclear what drug/administration this refers to (date and dose present without context).",
+        "\"Tab. folitrax\" — drug name ambiguous/likely folate-related but not a standard generic name.",
+        "\"Rablet-D\" — product identity unclear from text.",
+        "\"Cap. D-logy\" — product identity unclear (possibly vitamin D preparation).",
+        "\"Urine : RM\" — likely \"Urine R/M (routine/microscopy)\" but abbreviated."
+      ]
+    }
+  }
+}

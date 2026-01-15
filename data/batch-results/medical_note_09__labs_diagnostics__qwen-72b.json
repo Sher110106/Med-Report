@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:30:00.889Z",
+    "latencyMs": 11273
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Stool Test",
+        "value": "Negative for blood",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "3/7 diarrhoea watery no blood",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Body Temperature",
+        "value": "Fever",
+        "unit": "Unknown",
+        "flag": "High",
+        "original_text": "vomit bilous no haem fever d1 nil since",
+        "confidence_score": 0.75
+      },
+      {
+        "test_name": "Lethargy",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "High",
+        "original_text": "lethargic weak",
+        "confidence_score": 0.8
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol",
+          "dosage": "As needed",
+          "frequency": "For fever",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Oral Rehydration Therapy (Diarolyte)",
+          "dosage": "As needed",
+          "frequency": "For diarrhea",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Text is somewhat legible but contains several illegible sections. Overall, the context is understandable, but some details are missing."
+    }
+  }
+}

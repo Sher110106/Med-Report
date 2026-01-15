@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:13:03.052Z",
+    "latencyMs": 51876
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Generally unwell, sore throat, runny nose",
+        "hpi": "4-day history of generally feeling unwell, sore throat, runny nose, fatigue, myalgia, and joint pain. Sore throat is improving. Reports dry constant cough and nasal congestion. Night sweats present for 4 days. Fever initially reported but settling with paracetamol/ibuprofen. Reports shortness of breath on exertion. Headaches are generalized and intermittent without visual symptoms or photophobia. No nausea, vomiting, chest pain, bowel/urinary symptoms, or rashes. Appetite reduced but drinking fluids.",
+        "symptoms": [
+          "Generally unwell",
+          "Sore throat",
+          "Runny nose",
+          "Fatigue",
+          "Myalgia",
+          "Joint pain",
+          "Cough (dry, constant)",
+          "Nasal congestion",
+          "Night sweats",
+          "Fever (initially, settling)",
+          "Shortness of breath on exertion",
+          "Headache (generalized, intermittent)",
+          "Reduced appetite"
+        ],
+        "patient_history": "Past Medical History: nil. Drug History: nil. NKDA (No Known Drug Allergies). Family History: Grandmother with Type 2 Diabetes Mellitus. Social History: Lives alone, accountant, occasional smoker and alcohol drinker. Work is stressful with no mood symptoms."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown"
+        },
+        "labs_imaging": "Unknown"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Viral Upper Respiratory Tract Infection (URTI) / Influenza",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: viral URTI/influenza"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "Regular",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Ibuprofen",
+            "dosage": "Unknown",
+            "sig": "Regular",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "Review in 5-7 days"
+        ],
+        "patient_instructions": "Conservative management: Rest, push fluids, regular paracetamol/ibuprofen. Monitor temperature. Discussed red flag symptoms (shortness of breath, chest pain, fevers); if present, urgent review with Doctor is required."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility. Text is tabular and fragmented with several [ILLEGIBLE] placeholders obscuring specific details (e.g., specific SOB descriptor, date, specific review instructions).",
+      "critical_ambiguities": [
+        "Date is illegible (??/1/[ILLEGIBLE])",
+        "Specific descriptor for Shortness of Breath is illegible",
+        "Review instruction details after 'IN' are illegible"
+      ]
+    }
+  }
+}

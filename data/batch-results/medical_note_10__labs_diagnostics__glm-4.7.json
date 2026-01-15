@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:39:04.653Z",
+    "latencyMs": 127205
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "48",
+      "gender": "Male",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Body Weight",
+        "value": "95",
+        "unit": "kg",
+        "flag": "Normal",
+        "original_text": "WT 95kg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Blood Pressure",
+        "value": "120/80",
+        "unit": "mmHg",
+        "flag": "Normal",
+        "original_text": "BP: 120/80mmHg",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Pulse Rate",
+        "value": "84",
+        "unit": "/min",
+        "flag": "Normal",
+        "original_text": "P: 84/min",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Oxygen Saturation",
+        "value": "98",
+        "unit": "%",
+        "flag": "Normal",
+        "original_text": "SpO2: 98%",
+        "confidence_score": 1
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Foracort",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Intranasal Corticosteroids (INCS)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "OCR quality is good with clear separation of vitals and history. Some abbreviations are used (e.g., 'occ.', 'c Foracort', 'INCS'), but meanings are inferable from context. Lab values listed in Rx section are orders, not results."
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "image": "medical_note_05.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:59:19.429Z",
+    "latencyMs": 18439
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "4/7 hx dry itchy skin chest+back sore cracked",
+        "hpi": "Patient presents with 4-week history of dry, itchy skin on chest and back that is sore and cracked. Denies bleeding, discharge, spread elsewhere, or identifiable triggers. Reports minimal effect from OTC steroid cream used last night and has tried antihistamines. Denies fever, vomiting, shortness of breath, cough, or bowel symptoms.",
+        "symptoms": [
+          "Dry skin",
+          "Itchy skin",
+          "Sore skin",
+          "Cracked skin"
+        ],
+        "patient_history": "Eczema, Asthma"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Systemically well"
+          ],
+          "text_raw": "systemically well no fevers no vomit no SOB/cough no bowel sx"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Eczema flare up",
+          "certainty_degree": 0.9,
+          "evidence_text": "Imp: eczema flare up"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Betnovate",
+            "dosage": "Unknown strength",
+            "sig": "Apply BD (twice daily)",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Cetrabem emollient",
+            "dosage": "Unknown strength",
+            "sig": "Apply QDS (four times daily)",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Antihistamines",
+            "dosage": "Unknown",
+            "sig": "Trial use",
+            "handwriting_confidence": 0.8
+          }
+        ],
+        "procedures_ordered": [
+          "Keep trigger diary",
+          "Review in 10-14 days if no better or earlier if concerns/worsening"
+        ],
+        "patient_instructions": "Use prescribed steroid cream twice daily, apply emollient four times daily, trial antihistamines, keep a trigger diary, and return for review in 10-14 days if no improvement or earlier if concerns/worsening."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Some sections partially illegible with [ILLEGIBLE] markings. Core clinical information preserved despite minor occlusion.",
+      "critical_ambiguities": [
+        "Illegible section after 'minimal effect'",
+        "Illegible section at bottom of note",
+        "Steroid cream strength not specified"
+      ]
+    }
+  }
+}

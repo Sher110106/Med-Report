@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T08:30:20.278Z",
+    "latencyMs": 29645
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Follow-up for septal perforation / silicone button",
+        "hpi": "9/15/09 ENT nose visit. Patient with a septal perforation for approximately 15 years managed with a silicone button/plug. Patient reports doing well.",
+        "symptoms": [
+          "Doing well"
+        ],
+        "patient_history": "Chronic septal perforation x 15 years with silicone button/plug in place; status post operation (s/p op). Prior ear exam 2007 reportedly normal. Other past medical history: Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Nose: silicone button present and in good position",
+            "S/p operation site - clear",
+            "Oral cavity and neck - clear (OCR text: 'Renal cell neck - clear' interpreted)",
+            "No masses noted (OCR text: 'ca Ø masses')",
+            "Ears: ok (noted 2007)"
+          ],
+          "text_raw": "O. nose - ⊕ button in good posn.\ns/p op - clear\nRenal cell neck - clear\nca Ø masses\n2007. ears -> ok."
+        },
+        "labs_imaging": "None mentioned"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Chronic nasal septal perforation with silicone button/plug in place",
+          "certainty_degree": 0.95,
+          "evidence_text": "perf sept x 15 yr c̄\nsilicon button\nI. s/p septal perforated\n+ silicon plug"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Saline (nasal saline)",
+            "dosage": "Unknown",
+            "sig": "PRN",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [],
+        "patient_instructions": "Use saline as needed (PRN)."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate. Most key ENT findings legible but several lines and words are OCR-corrupted (e.g., 'Renal cell neck', 'ca Ø masses', stray illegible lines).",
+      "critical_ambiguities": [
+        "'Renal cell neck - clear' — likely 'Oral cavity and neck - clear' but uncertain",
+        "'ca Ø masses' — interpreted as 'no masses' (uncertain)",
+        "The meaning of 's/p op - clear' (surgical site clear) inferred but could be read differently",
+        "[ILLEGIBLE] lines present in original document (two instances)",
+        "Character 'c̄' in 'perf sept x 15 yr c̄' interpreted as 'with' (w/), but original ambiguous"
+      ]
+    }
+  }
+}

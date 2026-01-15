@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:31:18.788Z",
+    "latencyMs": 39373
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Diarrhea duration",
+        "value": "3",
+        "unit": "days",
+        "flag": "Unknown",
+        "original_text": "3/7 diarrhoea watery no blood",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Stool character",
+        "value": "watery, no blood",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "3/7 diarrhoea watery no blood",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Stool frequency",
+        "value": "6",
+        "unit": "episodes/day",
+        "flag": "High",
+        "original_text": "bowels x6/day LLQ pain crampy intermitt",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Abdominal pain (location & character)",
+        "value": "LLQ, crampy, intermittent",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "bowels x6/day LLQ pain crampy intermitt",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Vomiting (bilious)",
+        "value": "1",
+        "unit": "days (occurred on day 1, nil since)",
+        "flag": "Unknown",
+        "original_text": "vomit bilous no haem fever d1 nil since",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Haematemesis / blood in vomit",
+        "value": "No",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "vomit bilous no haem fever d1 nil since",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Fever (history)",
+        "value": "Occurred day 1, nil since",
+        "unit": "days",
+        "flag": "Unknown",
+        "original_text": "vomit bilous no haem fever d1 nil since",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Recent food exposure",
+        "value": "Takeaway (Chinese) 4 days ago",
+        "unit": "days ago",
+        "flag": "Unknown",
+        "original_text": "takeaway 4/7 ago Chinese rest wife+kids",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Contacts with similar illness",
+        "value": "Wife + children (present), no other contacts reported",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "takeaway 4/7 ago Chinese rest wife+kids\nvomit no diarr no other contacts",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Functional impact",
+        "value": "Affecting ADLs; near toilet often; lethargic, weak",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "lethargic weak\naffecting ADLs near toilet often",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Past medical history - Asthma",
+        "value": "Asthma",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "PMH asthma DH inhalers",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Current therapy - inhalers",
+        "value": "Unspecified inhaler(s)",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "PMH asthma DH inhalers",
+        "confidence_score": 0.9
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol (paracet)",
+          "dosage": "Unknown",
+          "frequency": "As needed if fever",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Diarolyte / oral rehydration solution (OTC)",
+          "dosage": "Unknown",
+          "frequency": "As needed / per packet instructions",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Inhaler(s) (regular asthma therapy)",
+          "dosage": "Unknown",
+          "frequency": "As per usual (patient's existing regimen)",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Overall moderately legible clinical note with several short illegible/fractured fragments (e.g., headings and one-line illegible sections). Most clinical symptom entries are interpretable with high confidence; no laboratory/ imaging values present."
+    }
+  }
+}

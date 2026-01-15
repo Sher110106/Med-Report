@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "image": "medical_note_04.jpg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T08:55:03.557Z",
+    "latencyMs": 31850
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Jitender KR",
+      "age": "41",
+      "gender": "M",
+      "date_of_visit": "2011-08-10"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Right S1 Radiculopathy",
+        "value": "Present",
+        "unit": "Unknown",
+        "flag": "Abnormal",
+        "original_text": "Δ (Rt) S1 Radiculopathy",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Straight Leg Raise (SLR)",
+        "value": "Normal",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "SLR (N)",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Right Ankle Jerk / EHL",
+        "value": "Normal",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Rt AJ / EHL (N)",
+        "confidence_score": 0.85
+      },
+      {
+        "test_name": "Uric Acid",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Uric Acid",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Creatinine",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Creatinine",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Mandal",
+        "value": "Unknown",
+        "unit": "Unknown",
+        "flag": "Unknown",
+        "original_text": "Mandal",
+        "confidence_score": 0.6
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Cap Tricobal",
+          "dosage": "1 tablet",
+          "frequency": "Once daily (OD) - morning (1-0-0)",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Complamina-R",
+          "dosage": "1 tablet",
+          "frequency": "At night (HS) - bedtime",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Oxetol 150",
+          "dosage": "150 mg",
+          "frequency": "Twice daily (BD)",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Puric-40",
+          "dosage": "40 mg",
+          "frequency": "Once daily (OD)",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Emanzen-D or Zerodol SP",
+          "dosage": "1 tablet",
+          "frequency": "Twice daily (BD)",
+          "confidence_score": 0.8
+        },
+        {
+          "name": "Esofag-D",
+          "dosage": "1 tablet",
+          "frequency": "Twice daily (BD) - on empty stomach",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Overall legible. Clinical findings and medication list are reasonably clear though some brand names and dosing formatting required inference. Lab tests (Uric Acid, Creatinine, 'Mandal') are listed without numeric results."
+    }
+  }
+}

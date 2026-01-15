@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:13:21.402Z",
+    "latencyMs": 17846
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Sore throat, runny nose, generally unwell for 4 days",
+        "hpi": "Patient reports 4-day history of generally feeling unwell with sore throat, runny nose, fatigue, myalgia, joint pain. Cough is dry and constant. Nasal congestion and night sweats present. Fever initially present, now settling with paracetamol/ibuprofen. Headaches generalized and intermittent with no visual symptoms or photophobia. Denies chest pain, SOB only on exertion. No N/V, no bowel/urinary symptoms. Drinking fluids and reduced appetite. No rashes.",
+        "symptoms": [
+          "Sore throat",
+          "Runny nose",
+          "Fatigue",
+          "Myalgia",
+          "Joint pain",
+          "Cough (dry, constant)",
+          "Nasal congestion",
+          "Night sweats",
+          "Fever (settling)",
+          "Headaches (generalized, intermittent)",
+          "Shortness of breath (on exertion)",
+          "Reduced appetite"
+        ],
+        "patient_history": "No past medical history, no drug history, no known drug allergies. Family history: grandmother with Type 2 Diabetes Mellitus. Social history: lives alone, accountant, occasional smoker/alcohol, stressful work, no mood symptoms."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Viral Upper Respiratory Tract Infection/Influenza",
+          "certainty_degree": 0.9,
+          "evidence_text": "Imp: viral URTI/influenza"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol/Ibuprofen",
+            "dosage": "Regular",
+            "sig": "As needed for fever/symptoms",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "Conservative management",
+          "Monitor temperature",
+          "Review in 5-7 days (incomplete)"
+        ],
+        "patient_instructions": "Rest, push fluids, red flag counseling - return urgently if SOB, chest pain, or fevers present."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Multiple lines illegible, including SOB detail, instruction parts, and follow-up timing. Several sections of text obscured.",
+      "critical_ambiguities": [
+        "SOB detail on exertion incomplete",
+        "Follow-up timeline unclear due to illegible suffix"
+      ]
+    }
+  }
+}

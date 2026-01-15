@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "image": "medical_note_03.jpeg",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T08:47:01.584Z",
+    "latencyMs": 39523
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2016-06-02"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "ALT (SGPT)",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "SGPT",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Creatinine",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Creatinine",
+        "confidence_score": 1
+      },
+      {
+        "test_name": "Urine Routine & Microscopy",
+        "value": "Ordered",
+        "unit": "Unknown",
+        "flag": "Normal",
+        "original_text": "Urine : RM",
+        "confidence_score": 0.95
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "HCQs",
+          "dosage": "200 mg",
+          "frequency": "one daily at night",
+          "confidence_score": 1
+        },
+        {
+          "name": "Folitrax",
+          "dosage": "15 mg",
+          "frequency": "once per week (Friday night)",
+          "confidence_score": 1
+        },
+        {
+          "name": "Folvite",
+          "dosage": "5 mg",
+          "frequency": "twice per week (Saturdays, Sundays)",
+          "confidence_score": 1
+        },
+        {
+          "name": "Rablet-D",
+          "dosage": "Unknown",
+          "frequency": "one daily x2 months before breakfast",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "D-logy",
+          "dosage": "Unknown",
+          "frequency": "one every month",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Wysolone",
+          "dosage": "5 mg",
+          "frequency": "once daily",
+          "confidence_score": 1
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Medication list is high quality and clearly structured. Date contained OCR noise ('2 gram' inferred as '2nd'). Diagnostic tests (SGPT, Creatinine, Urine RM) are listed as orders/requests without numeric results."
+    }
+  }
+}

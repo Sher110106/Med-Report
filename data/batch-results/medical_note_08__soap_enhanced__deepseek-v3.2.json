@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:19:04.881Z",
+    "latencyMs": 63411
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Lower abdominal/suprapubic pain for 2 days",
+        "hpi": "Patient presents with a 2-day history of lower abdominal/suprapubic pain, described as burning, constant, and worsening. Associated symptoms include pink urine, nausea (no vomiting), and feeling hot and sweaty. Denies bowel symptoms, vomiting, frank haematuria, dysuria, chest pain, shortness of breath, palpitations, headaches, and visual symptoms. Sexually active with a regular partner, last STD check 6 months ago, unprotected sex 2 days ago, LMP 2 weeks ago. Past medical history is nil, surgical history nil, drug history includes implanon contraceptive, family history nil, social history: roomshares with 2 flatmates, works as an accountant, non-smoker, social alcohol use.",
+        "symptoms": [
+          "Lower abdominal pain",
+          "Suprapubic pain",
+          "Burning pain",
+          "Pink urine",
+          "Nausea",
+          "Feeling hot",
+          "Sweating",
+          "Urinary symptoms (unspecified)"
+        ],
+        "patient_history": "Implanon contraceptive, no other significant medical, surgical, or family history. Social: roomshare, non-smoker, social alcohol use."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Urinary Tract Infection (Probable)",
+          "certainty_degree": 0.7,
+          "evidence_text": "Imp: ?UTI also exclude pregnancy"
+        },
+        "differential_diagnosis": [
+          "Pregnancy"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Antibiotic (empirical for UTI)",
+            "dosage": "Unknown",
+            "sig": "Empirically for UTI",
+            "handwriting_confidence": 0.5
+          },
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "Regular for pain",
+            "handwriting_confidence": 0.8
+          }
+        ],
+        "procedures_ordered": [
+          "Pregnancy test",
+          "Urine dipstick and MSU",
+          "Follow-up in 24-48 hours if symptoms not improving or worse"
+        ],
+        "patient_instructions": "Review in 24-48 hours if symptoms not improving or if experiencing fever, abdominal pain, vomiting."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly legible with minor illegible parts in symptoms section.",
+      "critical_ambiguities": [
+        "[ILLEGIBLE] in urinary symptoms section",
+        "Specific medication dosages not specified",
+        "Partial illegibility in symptoms description"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:30:27.536Z",
+    "latencyMs": 6756
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Richard (Dave) De Bronkart",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2009-09-15"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "saline",
+          "dosage": "Unknown",
+          "frequency": "PRN (as needed)",
+          "original_text": "P. PRN saline.",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Document contains several illegible sections and appears to be a follow-up ENT visit note primarily focused on physical exam findings and procedural history rather than lab/diagnostic results. No quantifiable test results (bloodwork, urine, imaging) were found to extract per the CRITICAL RULE."
+    }
+  }
+}

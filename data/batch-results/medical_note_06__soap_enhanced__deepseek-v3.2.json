@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:04:34.106Z",
+    "latencyMs": 21679
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Headache (left side, throbbing) with visual aura and vomiting",
+        "hpi": "Patient presents with a left-sided throbbing headache that began a few hours ago. It was preceded by a visual aura (zigzag lines). Associated symptoms include photophobia, blurred vision, nausea, and vomiting twice today. There is also neck pain. No radiation from the headache. A similar episode occurred 2 weeks ago, which resolved with analgesia. Patient expresses concern about possible brain cancer (brain Ca).",
+        "symptoms": [
+          "Headache (left-sided, throbbing)",
+          "Visual aura (zigzag lines)",
+          "Photophobia",
+          "Blurred vision",
+          "Nausea",
+          "Vomiting (x2)",
+          "Neck pain"
+        ],
+        "patient_history": "No significant past medical history (PMH nil). Family history of migraine (mother). Patient uses hormonal contraceptive (Microgynon). Lives alone, works in fashion industry, reports high stress. No mood symptoms, smoking, or alcohol use."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "No neck stiffness",
+            "No speech disturbance",
+            "No limb weakness or numbness",
+            "No reported coordination or balance issues",
+            "No recent head injury",
+            "No fever",
+            "No rashes"
+          ],
+          "text_raw": "neck pain nil stiffness; no speech disturbe; no limb weakness/numbness; [ILLEGIBLE] coordination/balance issues; no recent head injury no fever no rashes"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Migraine",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: migraine"
+        },
+        "differential_diagnosis": [
+          "Possible brain cancer (patient concern)"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol",
+            "dosage": null,
+            "sig": "regular use",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "NSAIDs",
+            "dosage": null,
+            "sig": "regular use",
+            "handwriting_confidence": 0.95
+          }
+        ],
+        "procedures_ordered": [
+          "Review in 1 week",
+          "Headache diary",
+          "Change contraceptive from COCP to POP"
+        ],
+        "patient_instructions": "Keep a headache diary. Review in 1 week to discuss prophylactic medication. Return earlier if symptoms worsen (headache, vomiting, vision changes) or if concerns arise."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly legible with good structure. One line regarding coordination/balance is fully marked as [ILLEGIBLE]. The word 'Ca' for cancer is inferred from context. Minor abbreviation expansions performed (e.g., 2/52, COCP).",
+      "critical_ambiguities": [
+        "Line '[ILLEGIBLE] coordination/balance issues' is unreadable; cannot determine if this is a positive or negative finding.",
+        "In the plan item '4.', a section after '(HA [ILLEGIBLE] vomit vision)' contains illegible text regarding specific worsening symptoms to watch for."
+      ]
+    }
+  }
+}

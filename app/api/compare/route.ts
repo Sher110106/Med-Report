@@ -21,7 +21,7 @@ import {
   generateImageHash,
   ModelRunResult,
 } from "@/lib/storage";
-import { OCR_EXTRACTION_PROMPT, SOAP_FROM_TEXT_PROMPT } from "@/lib/prompts";
+import { OCR_EXTRACTION_PROMPT, SOAP_FROM_TEXT_ENHANCED_PROMPT } from "@/lib/prompts";
 
 // Define all models we want to compare
 interface ModelConfig {
@@ -217,7 +217,7 @@ export async function POST(request: NextRequest) {
 
     // Step 2: Run all models in parallel
     const modelPromises = ALL_MODELS.map((model) =>
-      runModel(model, ocrText, SOAP_FROM_TEXT_PROMPT)
+      runModel(model, ocrText, SOAP_FROM_TEXT_ENHANCED_PROMPT)
     );
 
     const results = await Promise.all(modelPromises);

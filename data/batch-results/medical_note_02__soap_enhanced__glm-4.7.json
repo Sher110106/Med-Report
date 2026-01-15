@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "image": "medical_note_02.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:34:45.616Z",
+    "latencyMs": 38422
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Patient doing well this morning",
+        "hpi": "Patient is reported to be doing well this morning (PM).",
+        "symptoms": [],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Vital Signs Stable",
+            "General: No Acute Distress",
+            "Chest: Clear to Auscultation Bilaterally",
+            "Cardiovascular: Regular Rate and Rhythm, S1S2 OK",
+            "Abdomen: Soft, Non-Tender, Non-Distended, Bowel Sounds Present",
+            "Extremities: No edema"
+          ],
+          "text_raw": "VSS Gen: NAD Chest: CTA (B) CV: RRR S1S2 OK Abd: soft, NT, ND + BS Ext: ø edema"
+        },
+        "labs_imaging": "Labs reviewed (no specific values provided)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Acute Respiratory Failure",
+          "certainty_degree": 0.95,
+          "evidence_text": "1. Acute Resp. Falure"
+        },
+        "differential_diagnosis": [
+          "Septic Shock",
+          "Acute Kidney Injury (AKI)",
+          "Metabolic Encephalopathy"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Antibiotics",
+            "dosage": "Unknown",
+            "sig": "Continue",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Vasopressors",
+            "dosage": "Unknown",
+            "sig": "Continue",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Continue ventilator support",
+          "Follow renal function",
+          "Check labs"
+        ],
+        "patient_instructions": "None documented"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Legible text with standard medical abbreviations.",
+      "critical_ambiguities": [
+        "Med Encephalopathy interpreted as Metabolic Encephalopathy based on context (AKI/Septic shock).",
+        "Resp. Falure corrected to Respiratory Failure."
+      ]
+    }
+  }
+}

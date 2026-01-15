@@ -1,15 +1,22 @@
 import OpenAI from "openai";
 
-// OpenRouter API client using OpenAI-compatible interface
-const client = new OpenAI({
-  baseURL: "https://openrouter.ai/api/v1",
-  apiKey: process.env.OPENROUTER_API_KEY || "",
-});
+// Lazy initialization for OpenRouter client
+let client: OpenAI | null = null;
+
+function getClient(): OpenAI {
+  if (!client) {
+    client = new OpenAI({
+      baseURL: "https://openrouter.ai/api/v1",
+      apiKey: process.env.OPENROUTER_API_KEY || "",
+    });
+  }
+  return client;
+}
 
 // Model IDs on OpenRouter
 export const OPENROUTER_MODELS = {
-  DEEPSEEK_V3_2: "deepseek/deepseek-chat-v3-0324",
-  GLM_4_7: "thudm/glm-4-32b",
+  DEEPSEEK_V3_2: "deepseek/deepseek-v3.2",
+  GLM_4_7: "z-ai/glm-4.7",
   KIMI_K2: "moonshotai/kimi-k2",
   QWEN_72B: "qwen/qwen-2.5-72b-instruct",
 } as const;
@@ -49,7 +56,7 @@ export async function callOpenRouter(
   }
 
   try {
-    const response = await client.chat.completions.create({
+    const response = await getClient().chat.completions.create({
       model: modelId,
       messages: [
         { role: "system", content: systemPrompt },

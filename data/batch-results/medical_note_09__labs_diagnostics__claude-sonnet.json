@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "claude-sonnet",
+    "modelName": "Claude Sonnet 4.5",
+    "provider": "bedrock",
+    "timestamp": "2026-01-14T09:30:08.773Z",
+    "latencyMs": 7383
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "2024-01-24"
+    },
+    "diagnostics_and_labs": [
+      {
+        "test_name": "Bowel Movement Frequency",
+        "value": "6",
+        "unit": "per day",
+        "flag": "High",
+        "original_text": "bowels x6/day",
+        "confidence_score": 0.95
+      },
+      {
+        "test_name": "Diarrhea Duration",
+        "value": "3",
+        "unit": "days",
+        "flag": "Unknown",
+        "original_text": "3/7 diarrhoea watery no blood",
+        "confidence_score": 0.9
+      },
+      {
+        "test_name": "Fever Duration",
+        "value": "1",
+        "unit": "day",
+        "flag": "Unknown",
+        "original_text": "fever d1 nil since",
+        "confidence_score": 0.85
+      }
+    ],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "If fever",
+          "confidence_score": 0.9
+        },
+        {
+          "name": "Dioralyte",
+          "dosage": "OTC",
+          "frequency": "Unknown",
+          "confidence_score": 0.85
+        },
+        {
+          "name": "Asthma Inhalers",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.8
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate quality with several illegible sections. Clear clinical notes structure but multiple [ILLEGIBLE] portions affecting completeness. Medical abbreviations and terminology are mostly readable."
+    }
+  }
+}

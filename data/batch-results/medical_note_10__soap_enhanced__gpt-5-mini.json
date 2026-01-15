@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:36:37.281Z",
+    "latencyMs": 34044
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Loss of smell (post COVID); exertional limitation; mucoid expectoration",
+        "hpi": "48-year-old male jeweler. Used to smoke occasionally. No known comorbs. Loss of smell post COVID. Feels effort limited since. Mucoid expectoration. Triggers positive. GER +/- . Has benefited c Foracort + INCS. History of asthma. No drug allergies. No family (history). Weight 95kg.",
+        "symptoms": [
+          "Loss of smell (anosmia) post COVID",
+          "Effort limited / exertional limitation",
+          "Mucoid expectoration",
+          "Triggers positive (suggests allergic triggers)",
+          "Possible GER (GER +/-)"
+        ],
+        "patient_history": "48-year-old male jeweler; ex-smoker (used to smoke occasionally); No known comorbidities documented; History of asthma; Has benefited from Foracort (inhaled corticosteroid/combination) and INCS (intranasal corticosteroid); No drug allergies; 'No family' recorded (interpreted as no relevant family history)."
+      },
+      "objective": {
+        "vitals": {
+          "bp": "120/80 mmHg",
+          "hr": "84/min",
+          "temp": null,
+          "rr": null,
+          "weight": "95 kg"
+        },
+        "physical_exam": {
+          "findings": [
+            "Chest clear"
+          ],
+          "text_raw": "O/E: Chest - clear."
+        },
+        "labs_imaging": "Pending: CBC, IgE, Serum Mg, Vitamin D3 level, Vitamin B12 level; Complete PFT - spirometry, DLco (transfer factor); Vaccination (to be given)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Post-COVID loss of smell (anosmia)",
+          "certainty_degree": 0.98,
+          "evidence_text": "Loss of smell post COVID."
+        },
+        "differential_diagnosis": [
+          "Asthma (history of asthma)",
+          "Gastroesophageal reflux disease (possible) (GER +/-)"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Foracort (budesonide/formoterol combination - inferred)",
+            "dosage": "Unknown",
+            "sig": "Continuing/has benefited from prior use (no new prescription details provided)",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "INCS (intranasal corticosteroid - unspecified)",
+            "dosage": "Unknown",
+            "sig": "Continuing/has benefited from prior use (no new prescription details provided)",
+            "handwriting_confidence": 0.8
+          }
+        ],
+        "procedures_ordered": [
+          "CBC",
+          "IgE",
+          "Serum Magnesium (S. Mg)",
+          "Vitamin D3 level",
+          "Vitamin B12 level",
+          "Complete PFT - spirometry",
+          "DLco / transfer factor",
+          "Vaccination (unspecified vaccine)"
+        ],
+        "patient_instructions": "Vaccinate. Complete ordered blood tests and pulmonary function testing."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate; short abbreviations and shorthand present but overall interpretable (some OCR punctuation/spacing).",
+      "critical_ambiguities": [
+        "'Used to sm. occ.' interpreted as 'Used to smoke occasionally' (ex-smoker) - moderate confidence",
+        "'N. known comorbs.' interpreted as 'No known comorbidities' - moderate confidence",
+        "'No family' ambiguous; interpreted as 'No family history' - low/moderate confidence",
+        "'GER +/-' interpreted as possible gastroesophageal reflux disease (GERD) - moderate confidence",
+        "'Triggers +' ambiguous (positive triggers) - could indicate allergic triggers - moderate confidence",
+        "Foracort identification as budesonide/formoterol combination inferred from drug name (brand variations exist) - moderate confidence",
+        "Dosages for Foracort and INCS not provided in text (marked Unknown)"
+      ]
+    }
+  }
+}

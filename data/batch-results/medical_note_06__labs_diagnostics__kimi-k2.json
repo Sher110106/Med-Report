@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:09:11.948Z",
+    "latencyMs": 11239
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Female (implied by COCP use)",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "Microgynon (COCP)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 1
+        },
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "As needed",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "NSAIDs",
+          "dosage": "Unknown",
+          "frequency": "As needed",
+          "confidence_score": 0.95
+        },
+        {
+          "name": "Progestogen-only pill (POP)",
+          "dosage": "Unknown",
+          "frequency": "Daily",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly legible; minor illegible fragments in coordination and follow-up warning section do not affect core clinical data extraction."
+    }
+  }
+}

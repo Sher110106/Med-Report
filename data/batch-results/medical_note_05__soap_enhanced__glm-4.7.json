@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "image": "medical_note_05.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:59:00.486Z",
+    "latencyMs": 159759
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Dry, itchy, sore, and cracked skin on chest and back for 4 days",
+        "hpi": "Patient presents with a 4-day history of dry, itchy, sore, and cracked skin affecting the chest and back. Reports no bleeding, discharge, or spread of the rash. Patient is aware of the condition but identifies no specific triggers. Tried OTC steroid cream last night with minimal effect. Has also tried antihistamines. Patient is systemically well with no fevers, vomiting, shortness of breath, cough, or bowel symptoms. Patient suspects this is related to their eczema.",
+        "symptoms": [
+          "Dry skin",
+          "Itchy skin",
+          "Sore skin",
+          "Cracked skin",
+          "Chest rash",
+          "Back rash"
+        ],
+        "patient_history": "Eczema, Asthma. No Known Drug Allergies (NKDA). No regular medications."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Not explicitly documented"
+        },
+        "labs_imaging": "None"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Eczema flare up",
+          "certainty_degree": 0.98,
+          "evidence_text": "Imp: eczema flare up"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Betnovate (Betamethasone)",
+            "dosage": "Unknown",
+            "sig": "Topical cream BD (twice daily)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Cetraben",
+            "dosage": "Unknown",
+            "sig": "Emollient QDS (four times daily)",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Trial antihistamines",
+          "Keep trigger diary"
+        ],
+        "patient_instructions": "Review in 10-14 days if no better, or earlier if there are concerns or worsening."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Generally good legibility with specific formatting. Date is illegible. 'Cetrabem' corrected to 'Cetraben' based on context.",
+      "critical_ambiguities": [
+        "Date illegible (??/1/[ILLEGIBLE])",
+        "Specific dosage strengths for medications not listed",
+        "One word before 'effect' is illegible"
+      ]
+    }
+  }
+}

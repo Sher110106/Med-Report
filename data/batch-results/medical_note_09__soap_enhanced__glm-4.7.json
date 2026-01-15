@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "glm-4.7",
+    "modelName": "GLM 4.7",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:26:57.067Z",
+    "latencyMs": 42117
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Diarrhoea and LLQ abdominal pain",
+        "hpi": "Patient reports a 3-day history of watery diarrhoea (approximately 6 times per day) with no blood. Associated symptoms include intermittent, crampy pain in the Left Lower Quadrant (LLQ) which does not radiate. Patient experienced bilous vomiting with no haematemesis and fever for 1 day, but both have resolved. Patient feels lethargic and weak. History includes eating Chinese takeaway food 4 days ago; wife and children also ate but have no vomiting, diarrhoea, or other symptoms. Condition is affecting Activities of Daily Living (ADLs), requiring patient to stay near the toilet frequently.",
+        "symptoms": [
+          "Watery diarrhoea",
+          "LLQ abdominal pain (crampy, intermittent)",
+          "Bilous vomiting",
+          "Fever (1 day duration)",
+          "Lethargy",
+          "Weakness"
+        ],
+        "patient_history": "Asthma (on inhalers). Non-smoker, non-drinker. Social history: Accountant, lives with wife and children."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Not explicitly documented in note."
+        },
+        "labs_imaging": "None mentioned"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Gastroenteritis",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: gastroenteritis"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "Take if fever",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Dioralyte",
+            "dosage": "Unknown",
+            "sig": "OTC (Oral rehydration)",
+            "handwriting_confidence": 0.85
+          }
+        ],
+        "procedures_ordered": [],
+        "patient_instructions": "Conservative management: rest and push fluids. Take Paracetamol if fever and OTC Dioralyte for hydration. Review in 3-5 days if not better, or return earlier if symptoms worsen."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Generally readable but contains medical shorthand (e.g., '3/7', 'd1', 'nil radiatn') and some illegible sections.",
+      "critical_ambiguities": [
+        "Date format '? 24/1/2?' is ambiguous",
+        "Text after 'nil since' is illegible",
+        "End of note contains illegible text"
+      ]
+    }
+  }
+}

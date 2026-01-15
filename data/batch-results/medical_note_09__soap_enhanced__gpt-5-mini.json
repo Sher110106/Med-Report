@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:28:57.003Z",
+    "latencyMs": 37495
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Watery diarrhoea for 3 days",
+        "hpi": "Patient reports 3/7 watery diarrhoea, stools approximately 6 times per day. LLQ crampy intermittent abdominal pain, no radiation. Vomiting bilious; no haem (no blood) with vomit; fever day 1 only, nil since. Lethargic and weak. Ate a Chinese takeaway 4/7 ago. Wife and children have had vomiting but no diarrhoea; no other contacts reported. Symptoms affecting ADLs; near toilet often.",
+        "symptoms": [
+          "Watery diarrhoea",
+          "Diarrhoea frequency ~6/day",
+          "No blood in stool (reported)",
+          "LLQ abdominal pain (crampy, intermittent)",
+          "No radiation of pain",
+          "Vomiting (bilious)",
+          "No haem (no blood) with vomit",
+          "Fever (day 1 only, resolved since)",
+          "Lethargy",
+          "Weakness",
+          "Symptoms affecting activities of daily living (near toilet often)",
+          "Family members (wife and children) with vomiting without diarrhoea"
+        ],
+        "patient_history": "Past medical history: Asthma. Current medications: inhalers. Social history: Accountant; lives with wife and children. Non-smoker. No alcohol (nil etOH)."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Lethargic",
+            "Weak"
+          ],
+          "text_raw": "[ILLEGIBLE]\n                                   lethargic weak"
+        },
+        "labs_imaging": "None mentioned"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Gastroenteritis",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: gastroenteritis"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol",
+            "dosage": "Unknown",
+            "sig": "If fever (PRN)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Dioralyte (oral rehydration solution / OTC rehydration)",
+            "dosage": "Unknown",
+            "sig": "OTC as directed",
+            "handwriting_confidence": 0.85
+          }
+        ],
+        "procedures_ordered": [
+          "Review / follow-up in 3-5 days if not better",
+          "Return earlier if worse"
+        ],
+        "patient_instructions": "Conservative management: rest, push fluids, paracet if fever, OTC Dioralyte. Review in 3-5 days if not improved; return earlier if worse."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility. Most clinical content readable but multiple short fragments illegible or ambiguous (dates, bracketed illegible lines, some phrasing).",
+      "critical_ambiguities": [
+        "Date line unreadable: '? 24/1/2?'",
+        "Bracketed '[ILLEGIBLE]' lines (one preceding 'lethargic weak' and one at end) - content unknown",
+        "Phrase 'rest wife+kids' ambiguous; likely means 'wife + kids vomit, no diarrhoea' but original line unclear",
+        "'no haem' ambiguous whether referring to vomit or stool (interpreted as no blood with vomit and no blood in stool)",
+        "Spelling/brand: 'diarolyte' interpreted as 'Dioralyte' / oral rehydration solution",
+        "No vitals or formal physical exam documented"
+      ]
+    }
+  }
+}

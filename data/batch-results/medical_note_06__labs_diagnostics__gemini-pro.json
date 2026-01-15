@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "image": "medical_note_06.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T09:10:21.408Z",
+    "latencyMs": 25829
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Female",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "POP (Progestogen-only pill)",
+          "dosage": "Unknown",
+          "frequency": "Unknown",
+          "confidence_score": 0.9,
+          "original_text": "change COCP to POP"
+        },
+        {
+          "name": "Paracetamol",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.95,
+          "original_text": "regular paracet"
+        },
+        {
+          "name": "NSAIDs",
+          "dosage": "Unknown",
+          "frequency": "Regular",
+          "confidence_score": 0.98,
+          "original_text": "regular ... NSAIDs"
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate. Text contains standard medical abbreviations (2/52, COCP, POP, DH, PMH) and some illegible artifacts, but clinical intent is clear. No quantitative lab results or vitals were present in the source text."
+    }
+  }
+}

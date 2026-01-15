@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "image": "medical_note_01.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:28:47.364Z",
+    "latencyMs": 10762
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Perforated septum for 15 years",
+        "hpi": "Patient with a perforated septum for 15 years, currently doing well with a silicon button in place. History of renal cell neck involvement, ears are ok.",
+        "symptoms": [],
+        "patient_history": "Perforated septum for 15 years, renal cell neck involvement, ears ok"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Silicon button in good position",
+            "Nose post-op clear",
+            "Renal cell neck clear",
+            "No masses"
+          ],
+          "text_raw": "O. nose - ⊕ button in good posn. s/p op - clear Renal cell neck - clear ca Ø masses"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Perforated septum with silicon button in place",
+          "certainty_degree": 0.95,
+          "evidence_text": "I. s/p septal perforated + silicon plug"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Saline",
+            "dosage": "PRN",
+            "sig": "As needed",
+            "handwriting_confidence": 0.8
+          }
+        ],
+        "procedures_ordered": [],
+        "patient_instructions": "Continue using saline PRN"
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Some sections are illegible, but key clinical information is readable.",
+      "critical_ambiguities": [
+        "Two sections are illegible and cannot be read safely"
+      ]
+    }
+  }
+}

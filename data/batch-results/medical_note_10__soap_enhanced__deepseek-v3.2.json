@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "image": "medical_note_10.jpeg",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:32:13.916Z",
+    "latencyMs": 18892
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Loss of smell post COVID, effort limitation, mucoid expectoration",
+        "hpi": "48-year-old male jeweler with loss of smell following COVID infection, feels effort limited since. Reports mucoid expectoration. Triggers are positive. Occasional GERD symptoms. No known comorbidities. Has benefited from Foracort + INCS (inhaled corticosteroids).",
+        "symptoms": [
+          "Loss of smell (post-COVID)",
+          "Effort limitation / dyspnea",
+          "Mucoid expectoration",
+          "Triggers positive",
+          "GERD"
+        ],
+        "patient_history": "No known comorbidities. Possible history of asthma (benefitted from inhalers). No drug allergies. No family history of asthma mentioned."
+      },
+      "objective": {
+        "vitals": {
+          "bp": "120/80 mmHg",
+          "hr": "84/min",
+          "temp": null,
+          "rr": null,
+          "weight": "95 kg"
+        },
+        "physical_exam": {
+          "findings": [
+            "Chest auscultation clear"
+          ],
+          "text_raw": "Chest - clear."
+        },
+        "labs_imaging": "Pending (ordered)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Post-COVID Olfactory Dysfunction with Persistent Respiratory Symptoms?",
+          "certainty_degree": 0.75,
+          "evidence_text": "Loss of smell post COVID. Feels effort limited since. Triggers +. Has benefited c Foracort + INCS. No explicit Dx, but assessment implied from HPI."
+        },
+        "differential_diagnosis": [
+          "Asthma",
+          "Post-COVID syndrome"
+        ]
+      },
+      "plan": {
+        "medications": [],
+        "procedures_ordered": [
+          "CBC, IgE, S. Mg, Vit D3, B12 levels",
+          "Complete PFT: spirometry, DLco, transfer factor",
+          "Vaccinate"
+        ],
+        "patient_instructions": "Unknown. The section instructs to 'Vaccinate' which is a plan item."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly clear OCR with minor formatting/typos (e.g., sm. -> occasional, c -> with, comorbs -> comorbidities) but medically intelligible. Contextual inference required for abbreviations.",
+      "critical_ambiguities": [
+        "The 'No' vs 'h/o' notation for asthma is ambiguous. The text says 'No any drug allergy' and 'No family' but then 'h/o asthma' follows on the next line, suggesting 'No family h/o asthma' or 'No' may be a typocat.'/hX'? The evidence is ambiguous for diagnosis."
+      ]
+    }
+  }
+}

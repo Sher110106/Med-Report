@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "image": "medical_note_02.webp",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gemini-pro",
+    "modelName": "Gemini Pro 3.0",
+    "provider": "gemini",
+    "timestamp": "2026-01-14T08:36:01.772Z",
+    "latencyMs": 37829
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Follow-up / Critical Care Rounds",
+        "hpi": "Patient is doing well this morning (Am).",
+        "symptoms": [],
+        "patient_history": "Unknown"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "General: No Acute Distress (NAD)",
+            "Chest: Clear to auscultation bilaterally (CTA (B))",
+            "Cardiovascular: Regular rate and rhythm (RRR), S1S2 OK",
+            "Abdomen: Soft, non-tender (NT), non-distended (ND), positive bowel sounds (+ BS)",
+            "Extremities: No edema (ø edema)"
+          ],
+          "text_raw": "VSS\nGen: NAD\nChest: CTA (B)\nCV: RRR S1S2 OK\nAbd: soft, NT, ND + BS\nExt: ø edema"
+        },
+        "labs_imaging": "Labs reviewed (results not specified)"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Acute Respiratory Failure",
+          "certainty_degree": 0.95,
+          "evidence_text": "1. Acute Resp. Falure"
+        },
+        "differential_diagnosis": [
+          "Septic shock",
+          "Acute Kidney Injury (AKI)",
+          "Med Encephalopathy (Likely Metabolic or Medical Encephalopathy)"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Antibiotics",
+            "dosage": "Unknown",
+            "sig": "Continue",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Vasopressors",
+            "dosage": "Unknown",
+            "sig": "Continue",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Ventilator management (cont vent)",
+          "Monitor renal function",
+          "Check labs"
+        ],
+        "patient_instructions": "Continue current management (Abx, pressors, vent). Follow renal function. Check labs."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Legible with minor medical abbreviations and typos.",
+      "critical_ambiguities": [
+        "Vitals listed as 'VSS' (Stable) without numeric values.",
+        "Diagnosis 'Med Encephalopathy' likely refers to Metabolic Encephalopathy, but 'Med' is preserved due to ambiguity."
+      ]
+    }
+  }
+}

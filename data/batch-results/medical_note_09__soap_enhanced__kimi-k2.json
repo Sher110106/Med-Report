@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "image": "medical_note_09.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "kimi-k2",
+    "modelName": "Kimi K2 Thinking",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:27:13.631Z",
+    "latencyMs": 16063
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Diarrhoea for 3 days, watery stools",
+        "hpi": "3-day history of watery diarrhoea without blood, occurring 6 times daily, associated with intermittent crampy left-lower-quadrant pain. Vomiting bilious on day 1 but none since. No fever reported. History of consuming takeaway from Chinese restaurant 4 days ago with wife and children; no vomiting or diarrhoea reported in contacts. Patient reports lethargy and weakness affecting ADLs, staying near toilet frequently.",
+        "symptoms": [
+          "Diarrhoea (watery, 6/day)",
+          "LLQ pain (crampy, intermittent)",
+          "Vomiting (bilious, day 1 only)",
+          "Lethargy",
+          "Weakness"
+        ],
+        "patient_history": "Asthma (uses inhalers)"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "[ILLEGIBLE]"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Gastroenteritis",
+          "certainty_degree": 0.9,
+          "evidence_text": "Imp: gastroenteritis"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol (Paracetamol)",
+            "dosage": "OTC",
+            "sig": "If fever",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Diarolyte",
+            "dosage": "OTC",
+            "sig": "As needed for rehydration",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Review in 3-5 days",
+          "Earlier if worse"
+        ],
+        "patient_instructions": "Conservative management: rest, push fluids. Return earlier if symptoms worsen."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility with several sections illegible; key clinical details preserved.",
+      "critical_ambiguities": [
+        "Illegible physical exam section",
+        "Illegible social history text"
+      ]
+    }
+  }
+}

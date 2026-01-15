@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "qwen-72b",
+    "modelName": "Qwen2.5-72B-Instruct",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:13:39.875Z",
+    "latencyMs": 17971
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Sore throat, runny nose, fatigue, myalgia, joint pain, night sweats, fever, intermittent headaches, reduced appetite, occasional smoker, work stress",
+        "hpi": "47-year-old patient presenting with a 4/7 history of being generally unwell, sore throat, runny nose, fatigue, myalgia, joint pain, dry constant cough, night sweats, and fever that initially settled with paracetamol/ibuprofen. No chest pain, shortness of breath on exertion, visual symptoms, nausea, vomiting, bowel or urinary symptoms, rashes. Reduced fluid intake and appetite. Patient lives alone, is an accountant, and an occasional smoker and alcohol consumer. Work is described as stressful with no mood symptoms.",
+        "symptoms": [
+          "Sore throat",
+          "Runny nose",
+          "Fatigue",
+          "Myalgia",
+          "Joint pain",
+          "Dry constant cough",
+          "Night sweats",
+          "Fever",
+          "Intermittent headaches (generalized)",
+          "Reduced fluid intake",
+          "Reduced appetite",
+          "No chest pain",
+          "No shortness of breath on exertion",
+          "No visual symptoms",
+          "No photophobia",
+          "No nausea",
+          "No vomiting",
+          "No bowel symptoms",
+          "No urinary symptoms",
+          "No rashes",
+          "Occasional smoker",
+          "Work stress"
+        ],
+        "patient_history": "No past medical history (PMH nil). No drug history (DH nil). No known drug allergies (NKDA). Family history: Grandmother with Type 2 Diabetes Mellitus (T2DM). Social history: Lives alone, accountant, occasional smoker, occasional alcohol use, work is stressful."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "No physical exam findings mentioned"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Viral Upper Respiratory Tract Infection (URTI)/Influenza",
+          "certainty_degree": 0.9,
+          "evidence_text": "Imp: viral URTI/influenza"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol",
+            "dosage": "Regular",
+            "sig": "Push fluids, regular paracetamol/ibuprofen",
+            "handwriting_confidence": 0.85
+          },
+          {
+            "drug": "Ibuprofen",
+            "dosage": "Regular",
+            "sig": "Push fluids, regular paracetamol/ibuprofen",
+            "handwriting_confidence": 0.85
+          }
+        ],
+        "procedures_ordered": [
+          "Monitor temperature",
+          "Follow-up in 5-7 days"
+        ],
+        "patient_instructions": "Rest, push fluids, regular paracetamol/ibuprofen. Monitor temperature. Return in 5-7 days. Discussion of red flag symptoms (SOB, chest pain, fevers) if present for urgent review with Dr."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Partially illegible sections. Most sections legible.",
+      "critical_ambiguities": [
+        "Chief complaint illegible for some words",
+        "Plan section illegible for some words"
+      ]
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "image": "medical_note_08.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:22:33.889Z",
+    "latencyMs": 28354
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Lower abdominal / suprapubic pain for 2 days",
+        "hpi": "Patient reports 2/7 ago onset of lower abdominal / suprapubic pain, gradual onset, described as burning, constant and worsening. Reports pink urine, no frank haematuria, nil dysuria. Reports nausea but no vomiting (\"nausea no vomit\", also earlier text \"no vomit\"). Reports feeling hot and sweaty. Sexually active with regular partner; last STD 6/12 ago; unprotected sexual intercourse 2/7 ago. LMP 2/52 ago. Denies bowel symptoms. Denies chest pain, shortness of breath, palpitations, headaches or visual symptoms.",
+        "symptoms": [
+          "Lower abdominal pain",
+          "Suprapubic pain",
+          "Burning",
+          "Constant pain",
+          "Worsening pain",
+          "Pink urine",
+          "No frank haematuria",
+          "Nil dysuria",
+          "Nausea",
+          "No vomiting",
+          "Feeling hot",
+          "Sweaty",
+          "Sexually active, unprotected sexual intercourse 2 days ago",
+          "Recent LMP 2 weeks ago",
+          "No bowel symptoms",
+          "No chest pain",
+          "No shortness of breath",
+          "No palpitations",
+          "No headaches",
+          "No visual symptoms"
+        ],
+        "patient_history": "PMH: nil. PSH: nil. Drug history: Implanon; otherwise nil. FH: nil. Social Hx: roomshare with 2 flatmates; occupation: accountant; nil smoking; social alcohol. Sexual history: sexually active, regular partner, last STD 6 months ago, unprotected intercourse 2 days ago. LMP 2 weeks ago."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown (no physical exam section documented in note)"
+        },
+        "labs_imaging": "Pregnancy test ordered; urine dip + MSU (midstream urine sample) ordered"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Possible urinary tract infection (UTI) — pregnancy to be excluded",
+          "certainty_degree": 0.7,
+          "evidence_text": "Imp: ?UTI also exclude pregnancy"
+        },
+        "differential_diagnosis": [
+          "Urinary tract infection (possible)",
+          "Pregnancy (to be excluded)"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Empiric antibiotic (unspecified) for UTI",
+            "dosage": "Unknown",
+            "sig": "Empiric antibiotic prescribed for UTI (unspecified in note)",
+            "handwriting_confidence": 0.5
+          },
+          {
+            "drug": "Paracetamol (regular)",
+            "dosage": "Unknown",
+            "sig": "Regular paracet for pain (as written: \"regular paracet pain\")",
+            "handwriting_confidence": 0.75
+          }
+        ],
+        "procedures_ordered": [
+          "Pregnancy test",
+          "Urine dip",
+          "MSU (midstream urine sample / urine culture)",
+          "Empiric antibiotics for UTI (prescribed)",
+          "Review in 24-48 hours if symptoms not improving",
+          "Review earlier if worse symptoms (fever, abdominal pain, vomiting)"
+        ],
+        "patient_instructions": "Pregnancy test and urine dip/MSU today. Start empiric antibiotics for UTI. Regular paracetamol for pain. Review in 24-48 hours if symptoms not improving or earlier if worse (fever, increased abdominal pain, vomiting)."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility with multiple shorthand/illegible tokens; overall clinical intent clear but several specifics (medication name/dose, some text lines) are ambiguous.",
+      "critical_ambiguities": [
+        "Line: \"no [ILLEGIBLE] sx        urinary sx\" - unclear what was negated",
+        "Standalone line: \"[ILLEGIBLE]\" - unknown content (appears after 'feeling hot sweaty')",
+        "Empiric antibiotic prescribed but specific drug and dosage not specified in text",
+        "Paracetamol dosing/route/frequency not specified (written only as 'regular paracet pain')",
+        "Duplicate/contradictory mentions of vomiting: 'no vomit' and 'nausea no vomit' (interpreted as nausea without vomiting)",
+        "Social alcohol amount/frequency not specified (\"social EtOH\")",
+        "No physical exam or vital signs documented"
+      ]
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "image": "medical_note_05.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:01:18.662Z",
+    "latencyMs": 34169
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Dry, itchy skin of chest and back (sore, cracked) - 4/7 history",
+        "hpi": "4/7 hx dry itchy skin chest+back sore cracked. No bleed, no discharge, no spread elsewhere. Steroid cream OTC last night with minimal effect. Patient has tried antihistamines. Systemically well. No fevers. No vomit. No SOB/cough. No bowel sx. PMH: eczema, asthma. DHx nil regular. NKDA. SH: lives with flatmates, pharmacist manager, non-smoker, social EtOH. ICE: pt thinks eczema related, no concerns.",
+        "symptoms": [
+          "Dry skin",
+          "Itchy skin",
+          "Soreness of skin",
+          "Cracked skin",
+          "Chest involvement (rash on chest)",
+          "Back involvement (rash on back)",
+          "No bleed",
+          "No discharge",
+          "No spread elsewhere",
+          "Minimal effect from OTC steroid cream",
+          "Tried antihistamines",
+          "Systemically well",
+          "No fevers",
+          "No vomiting",
+          "No shortness of breath/cough",
+          "No bowel symptoms"
+        ],
+        "patient_history": "Past Medical History: eczema; asthma. Drug history: none regular (DHx nil regular). Allergies: NKDA. Social: lives with flatmates, pharmacist manager, non-smoker, social alcohol."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [
+            "Systemically well",
+            "No fevers",
+            "No vomiting",
+            "No shortness of breath/cough",
+            "No bowel symptoms",
+            "No bleeding",
+            "No discharge",
+            "No spread elsewhere",
+            "Sore, cracked skin on chest and back"
+          ],
+          "text_raw": "systemically well\nno fevers                PMH eczema asthma\nno vomit\nno SOB/cough\nno bowel sx\nno bleed                 no triggers\nno discharge             aware\nno spread elsewhere      steroid cream OTC last night\n                         [ILLEGIBLE] effect\n                         minimal effect\n                                           pt tried antihistamines\n\nsystemically well\nno fevers                PMH eczema asthma\nno vomit\nno SOB/cough\nno bowel sx              DHx nil regular nkDA"
+        },
+        "labs_imaging": "None mentioned"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Eczema flare up",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: eczema flare up"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Betnovate (topical steroid cream)",
+            "dosage": "Unknown (strength not specified)",
+            "sig": "BD (twice daily)",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Cetraben (emollient) [OCR: cetrabem]",
+            "dosage": "Unknown (emollient)",
+            "sig": "QDS (four times daily)",
+            "handwriting_confidence": 0.75
+          },
+          {
+            "drug": "Antihistamines (unspecified)",
+            "dosage": "Unknown",
+            "sig": "Trial / as needed",
+            "handwriting_confidence": 0.65
+          }
+        ],
+        "procedures_ordered": [
+          "Keep trigger diary",
+          "Review in 10-14 days if no better or earlier if concerns/worsening"
+        ],
+        "patient_instructions": "Use steroid cream (Betnovate) BD. Use emollients (Cetraben) QDS. Trial antihistamines. Keep a trigger diary. Review (r/v) in 10-14 days if no improvement or earlier if concerns/worsening."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate legibility. Most clinical content legible but multiple [ILLEGIBLE] markers and minor OCR errors (e.g., 'cetrabem' likely 'Cetraben'; '4/7 hx' interpreted as 4 days). Some lines repeated/fragmented.",
+      "critical_ambiguities": [
+        "[ILLEGIBLE] occurrences in note header and within treatment effect line",
+        "Exact strength/dose (mg/g) of Betnovate topical steroid not specified / not legible",
+        "'cetrabem' likely 'Cetraben' (emollient) but spelling uncertain",
+        "DHx line 'DHx nil regular nkDA' ambiguous — interpreted as no regular medications and NKDA",
+        "No specific antihistamine named or dosing provided"
+      ]
+    }
+  }
+}

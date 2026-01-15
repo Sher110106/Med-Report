@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "gpt-5-mini",
+    "modelName": "GPT-5-mini",
+    "provider": "azure",
+    "timestamp": "2026-01-14T09:15:05.229Z",
+    "latencyMs": 23473
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Generally unwell with sore throat, runny nose, cough, fatigue, myalgia, joint pain",
+        "hpi": "4/7 history of feeling generally unwell with sore throat (improving), runny nose, fatigue, myalgia, joint pain. Sore throat, dry constant cough, nasal congestion. Night sweats for 4/7. Fever initially, settling with paracet/ibuprofen. No chest pain. Shortness of breath noted with uncertain qualifier on exertion (SOB [ILLEGIBLE] on exertion). Headaches: generalized, intermittent, no visual symptoms or photophobia. No nausea/vomiting, no bowel or urinary symptoms. Drinking fluids. Reduced appetite. No rashes.",
+        "symptoms": [
+          "Generally unwell",
+          "Sore throat",
+          "Runny nose",
+          "Fatigue",
+          "Myalgia",
+          "Joint pain",
+          "Cough (dry, constant)",
+          "Nasal congestion",
+          "Night sweats (4/7)",
+          "Fever (initially, settling with medication)",
+          "No chest pain",
+          "Shortness of breath on exertion (qualifier partially illegible)",
+          "Headaches (generalized, intermittent)",
+          "No visual symptoms / no photophobia",
+          "No nausea or vomiting",
+          "No bowel symptoms",
+          "No urinary symptoms",
+          "Drinking fluids",
+          "Reduced appetite",
+          "No rashes"
+        ],
+        "patient_history": "PMH: nil. Drug history (DH): nil. NKDA. Family history: grandmother with Type 2 Diabetes Mellitus. Social history: lives alone, occupation: accountant, occasional smoker, occasional alcohol (etOH). Work stressful. No mood symptoms."
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown"
+        },
+        "labs_imaging": "Unknown"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Viral upper respiratory tract infection / Influenza",
+          "certainty_degree": 0.95,
+          "evidence_text": "Imp: viral URTI/influenza"
+        },
+        "differential_diagnosis": [
+          "Viral upper respiratory tract infection",
+          "Influenza"
+        ]
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Paracetamol (paracet)",
+            "dosage": "Unknown",
+            "sig": "Regular paracet (unspecified dosing); used to settle fever/pain",
+            "handwriting_confidence": 0.9
+          },
+          {
+            "drug": "Ibuprofen",
+            "dosage": "Unknown",
+            "sig": "Regular ibuprofen (unspecified dosing); used to settle fever/pain",
+            "handwriting_confidence": 0.9
+          }
+        ],
+        "procedures_ordered": [
+          "Conservative management: rest and push fluids (mx rest push fluids)",
+          "Monitor temperature",
+          "Review in 5-7 days (r/v 5-7d IN[ILLEGIBLE])",
+          "Discussed red flag symptoms (SOB, chest pain, fevers); urgent review with Dr if present"
+        ],
+        "patient_instructions": "Conservative management: rest, push fluids, regular paracet/ibuprofen as required. Monitor temperature. Return/review in 5-7 days. If red flag symptoms occur (shortness of breath, chest pain, persistent fevers) seek urgent review with doctor."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Moderate. Most clinical content readable but several tokens are illegible (marked [ILLEGIBLE]) and some short phrases truncated/unclear.",
+      "critical_ambiguities": [
+        "Header/date line: '??/1/[ILLEGIBLE]' - illegible",
+        "Sore throat line: 'improving [ILLEGIBLE]' - unspecified qualifier",
+        "SOB line: 'SOB [ILLEGIBLE] on exertion' - unclear word between SOB and 'on exertion'",
+        "Plan line: 'r/v 5-7d IN[ILLEGIBLE]' - unclear trailing text after IN",
+        "Final trailing line: '[ILLEGIBLE]' - content missing/unclear"
+      ]
+    }
+  }
+}

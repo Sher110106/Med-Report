@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "image": "medical_note_05.png",
+    "prompt": "soap_enhanced",
+    "promptName": "SOAP Enhanced",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T08:56:20.224Z",
+    "latencyMs": 53836
+  },
+  "output": {
+    "soap_note": {
+      "subjective": {
+        "chief_complaint": "Dry, itchy skin on chest and back, sore and cracked, for 7 days (history)",
+        "hpi": "Patient presents with a 7-day history of dry, itchy skin on the chest and back, which is sore and cracked. No bleeding, discharge, or spread elsewhere. Patient has tried over-the-counter steroid cream last night with minimal effect and has also tried antihistamines. Patient is systemically well with no fevers, vomiting, shortness of breath, cough, or bowel symptoms. Patient thinks it is eczema-related and has no concerns.",
+        "symptoms": [
+          "Dry itchy skin",
+          "Sore cracked skin"
+        ],
+        "patient_history": "Eczema, Asthma"
+      },
+      "objective": {
+        "vitals": {
+          "bp": null,
+          "hr": null,
+          "temp": null,
+          "rr": null,
+          "weight": null
+        },
+        "physical_exam": {
+          "findings": [],
+          "text_raw": "Unknown"
+        },
+        "labs_imaging": "Pending"
+      },
+      "assessment": {
+        "primary_diagnosis": {
+          "value": "Eczema flare-up",
+          "certainty_degree": 0.98,
+          "evidence_text": "Imp: eczema flare up"
+        },
+        "differential_diagnosis": []
+      },
+      "plan": {
+        "medications": [
+          {
+            "drug": "Betnovate",
+            "dosage": "Unknown",
+            "sig": "BD (twice daily)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Cetraben",
+            "dosage": "Unknown",
+            "sig": "QDS (four times daily)",
+            "handwriting_confidence": 0.95
+          },
+          {
+            "drug": "Antihistamine (unspecified)",
+            "dosage": "Unknown",
+            "sig": "Trial",
+            "handwriting_confidence": 0.7
+          }
+        ],
+        "procedures_ordered": [
+          "Keep trigger diary",
+          "Review in 10-14 days"
+        ],
+        "patient_instructions": "Use steroid cream Betnovate twice daily, emollients Cetraben four times daily, trial antihistamines, keep a trigger diary, and return for review in 10-14 days if no improvement or earlier if concerns."
+      }
+    },
+    "metadata": {
+      "ocr_quality_check": "Mostly clear with some illegible sections at the start and end; clinical content is legible and structured.",
+      "critical_ambiguities": [
+        "Start of document illegible (date)",
+        "End of document partially illegible",
+        "Minimal effect after steroid cream - context clear but exact phrasing may vary."
+      ]
+    }
+  }
+}

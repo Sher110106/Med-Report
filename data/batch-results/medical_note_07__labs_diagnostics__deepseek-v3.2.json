@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "image": "medical_note_07.png",
+    "prompt": "labs_diagnostics",
+    "promptName": "Labs Diagnostics",
+    "model": "deepseek-v3.2",
+    "modelName": "DeepSeek V3.2",
+    "provider": "openrouter",
+    "timestamp": "2026-01-14T09:15:32.724Z",
+    "latencyMs": 26993
+  },
+  "output": {
+    "patient_metadata": {
+      "name": "Unknown",
+      "age": "Unknown",
+      "gender": "Unknown",
+      "date_of_visit": "Unknown"
+    },
+    "diagnostics_and_labs": [],
+    "treatment_plan": {
+      "medications": [
+        {
+          "name": "paracetamol/ibuprofen",
+          "dosage": "Unknown",
+          "frequency": "regular",
+          "original_text": "regular paracet/ibuprofen",
+          "confidence_score": 0.95
+        }
+      ]
+    },
+    "metadata": {
+      "ocr_quality_check": "Poor. Significant portions of text are illegible or missing, including the patient identifier, key dates, and the end of the plan section. The middle section containing clinical history is the most legible."
+    }
+  }
+}
