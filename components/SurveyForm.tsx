@@ -67,7 +67,8 @@ export default function SurveyForm({
   };
 
   const output = modelOutput as Record<string, unknown> | null;
-  const soapNote = output?.output && (output.output as Record<string, unknown>)?.soap_note as Record<string, unknown> | undefined;
+  const outputRecord = output?.output as Record<string, unknown> | undefined;
+  const soapNote = outputRecord?.soap_note as { subjective?: unknown; objective?: unknown; assessment?: unknown; plan?: unknown } | undefined;
 
   // Format SOAP section nicely
   const formatSoapSection = (section: unknown): React.ReactNode => {
