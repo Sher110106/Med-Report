@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { callGeminiWithText } from "@/lib/gemini";
-import { SOAP_FROM_TEXT_PROMPT } from "@/lib/prompts";
+import { SOAP_FROM_TEXT_ENHANCED_PROMPT } from "@/lib/prompts";
 import { ProcessingResponse } from "@/lib/types";
 
 export async function POST(request: NextRequest) {
@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
 
     const rawResponse = await callGeminiWithText(
       "pro",
-      SOAP_FROM_TEXT_PROMPT,
+      SOAP_FROM_TEXT_ENHANCED_PROMPT,
       ocrText
     );
 

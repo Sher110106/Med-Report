@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { callGeminiWithImage } from "@/lib/gemini";
-import { SOAP_EXTRACTION_PROMPT } from "@/lib/prompts";
+import { SOAP_EXTRACTION_ENHANCED_PROMPT } from "@/lib/prompts";
 import { ProcessingResponse } from "@/lib/types";
 
 export async function POST(request: NextRequest) {
@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
 
     const rawResponse = await callGeminiWithImage(
       "pro",
-      SOAP_EXTRACTION_PROMPT,
+      SOAP_EXTRACTION_ENHANCED_PROMPT,
       base64Image,
       image.type
     );
