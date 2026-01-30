@@ -130,19 +130,19 @@ export default function LabsResultsDisplay({ data, processingTime }: LabsResults
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div>
             <div className="text-xs text-gray-500 uppercase">Name</div>
-            <div className="font-medium">{data.patient_metadata.name}</div>
+            <div className="font-medium">{data.patient_metadata?.name ?? "Unknown"}</div>
           </div>
           <div>
             <div className="text-xs text-gray-500 uppercase">Age</div>
-            <div className="font-medium">{data.patient_metadata.age}</div>
+            <div className="font-medium">{data.patient_metadata?.age ?? "Unknown"}</div>
           </div>
           <div>
             <div className="text-xs text-gray-500 uppercase">Gender</div>
-            <div className="font-medium">{data.patient_metadata.gender}</div>
+            <div className="font-medium">{data.patient_metadata?.gender ?? "Unknown"}</div>
           </div>
           <div>
             <div className="text-xs text-gray-500 uppercase">Visit Date</div>
-            <div className="font-medium">{data.patient_metadata.date_of_visit}</div>
+            <div className="font-medium">{data.patient_metadata?.date_of_visit ?? "Unknown"}</div>
           </div>
         </div>
       </div>
@@ -159,20 +159,20 @@ export default function LabsResultsDisplay({ data, processingTime }: LabsResults
           <div>
             <div className="text-xs text-gray-500 uppercase mb-1">Chief Complaint</div>
             <div className="bg-blue-50 p-3 rounded-lg text-blue-900">
-              {data.clinical_assessment.chief_complaint}
+              {data.clinical_assessment?.chief_complaint ?? "Not specified"}
             </div>
           </div>
           <div>
             <div className="text-xs text-gray-500 uppercase mb-1">Diagnosis</div>
             <div className="bg-orange-50 p-3 rounded-lg text-orange-900 font-medium">
-              {data.clinical_assessment.diagnosis}
+              {data.clinical_assessment?.diagnosis ?? "Not specified"}
             </div>
           </div>
-          {data.clinical_assessment.symptoms.length > 0 && (
+          {(data.clinical_assessment?.symptoms?.length ?? 0) > 0 && (
             <div>
               <div className="text-xs text-gray-500 uppercase mb-1">Symptoms</div>
               <div className="flex flex-wrap gap-2">
-                {data.clinical_assessment.symptoms.map((symptom, i) => (
+                {data.clinical_assessment?.symptoms?.map((symptom, i) => (
                   <span key={i} className="bg-gray-100 px-3 py-1 rounded-full text-sm">
                     {symptom}
                   </span>
@@ -191,7 +191,7 @@ export default function LabsResultsDisplay({ data, processingTime }: LabsResults
           </svg>
           Diagnostics & Labs
         </h3>
-        {data.diagnostics_and_labs.length > 0 ? (
+        {(data.diagnostics_and_labs?.length ?? 0) > 0 ? (
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
@@ -204,7 +204,7 @@ export default function LabsResultsDisplay({ data, processingTime }: LabsResults
                 </tr>
               </thead>
               <tbody>
-                {data.diagnostics_and_labs.map((lab, i) => (
+                {data.diagnostics_and_labs?.map((lab, i) => (
                   <tr key={i} className="border-b hover:bg-gray-50">
                     <td className="py-2 px-3">
                       <div className="font-medium">{lab.test_name}</div>
@@ -236,9 +236,9 @@ export default function LabsResultsDisplay({ data, processingTime }: LabsResults
         {/* Medications */}
         <div className="mb-4">
           <div className="text-sm font-medium text-gray-700 mb-2">Medications</div>
-          {data.treatment_plan.medications.length > 0 ? (
+          {(data.treatment_plan?.medications?.length ?? 0) > 0 ? (
             <div className="grid gap-3">
-              {data.treatment_plan.medications.map((med, i) => (
+              {data.treatment_plan?.medications?.map((med, i) => (
                 <div key={i} className="bg-red-50 p-3 rounded-lg flex justify-between items-start">
                   <div>
                     <div className="font-medium text-red-900">{med.name}</div>
@@ -256,11 +256,11 @@ export default function LabsResultsDisplay({ data, processingTime }: LabsResults
         </div>
 
         {/* Procedures Ordered */}
-        {data.treatment_plan.procedures_ordered.length > 0 && (
+        {(data.treatment_plan?.procedures_ordered?.length ?? 0) > 0 && (
           <div className="mb-4">
             <div className="text-sm font-medium text-gray-700 mb-2">Procedures Ordered</div>
             <div className="flex flex-wrap gap-2">
-              {data.treatment_plan.procedures_ordered.map((proc, i) => (
+              {data.treatment_plan?.procedures_ordered?.map((proc, i) => (
                 <span key={i} className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">
                   {proc}
                 </span>
@@ -270,11 +270,11 @@ export default function LabsResultsDisplay({ data, processingTime }: LabsResults
         )}
 
         {/* Lifestyle Advice */}
-        {data.treatment_plan.lifestyle_advice && data.treatment_plan.lifestyle_advice !== "Unknown" && (
+        {data.treatment_plan?.lifestyle_advice && data.treatment_plan?.lifestyle_advice !== "Unknown" && (
           <div>
             <div className="text-sm font-medium text-gray-700 mb-2">Lifestyle Advice</div>
             <div className="bg-green-50 p-3 rounded-lg text-green-900">
-              {data.treatment_plan.lifestyle_advice}
+              {data.treatment_plan?.lifestyle_advice}
             </div>
           </div>
         )}
@@ -285,10 +285,10 @@ export default function LabsResultsDisplay({ data, processingTime }: LabsResults
         <h3 className="font-medium text-gray-700 mb-2">Extraction Notes</h3>
         <div className="space-y-2 text-gray-600">
           <div>
-            <span className="font-medium">OCR Quality:</span> {data.metadata.ocr_quality_check}
+            <span className="font-medium">OCR Quality:</span> {data.metadata?.ocr_quality_check ?? "Unknown"}
           </div>
           <div>
-            <span className="font-medium">Notes:</span> {data.metadata.extraction_notes}
+            <span className="font-medium">Notes:</span> {data.metadata?.extraction_notes ?? "None"}
           </div>
         </div>
       </div>
